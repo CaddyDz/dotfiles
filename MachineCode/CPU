@@ -1,0 +1,7 @@
+A sample program in machine code for an imaginary 8-bit CPU might look like the following
+
+Operation	Value		Meaning
+	100		11110		LOAD	11110
+	101		10100		STORE	10100
+	110		10100		INCREMENT	10100
+	000		00000		PAUSE
