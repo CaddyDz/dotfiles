@@ -7,7 +7,7 @@ export ZSH=/home/caddy/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="afowler"
+ZSH_THEME="caddy"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian vagrant battery github laravel python pylint sudo taskwarrior)
+plugins=(git debian vagrant github laravel sudo taskwarrior)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,10 +81,20 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias zshconf="nano ~/.zshrc"
+alias omz="cd ~/.oh-my-zsh"
+alias media="cd /media/caddy/Data/"
+alias mysql="mysql -u root -p"
+alias dotfiles="cd ~/Documents/dotfiles/"
 # Homestead Vagrant Environment Variables
 function v() {
     ( cd ~/Documents/Homestead && vagrant $* )
+}
+# APT Package Manager Variables
+function ars() {
+	( sudo service apache2 restart )
+}
+# Daemons Managing Variables
+function srv(){
+	( sudo service $* )
 }
