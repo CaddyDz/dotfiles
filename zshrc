@@ -88,11 +88,12 @@ alias mysql="mysql -u root -p"
 alias dotfiles="cd ~/Documents/dotfiles/"
 alias size="wc -c"
 alias caddy="cd ~/Documents/Websites/caddy/"
-alias english="cd ~/Documents/vagrant/English && if (killall -q -0 atom) then atom . ; fi"
+# alias english="cd ~/Documents/vagrant/English && if (killall -q -0 atom) then atom . ; fi"
+alias catalyst="cd ~/Documents/NativeProjects/Rimi/src/script/ && ./rimi_server.pl"
 # Homestead Vagrant Environment Variables
-function v() {
-    ( cd ~/Documents/Homestead && vagrant $* )
-}
+#function v() {
+#    ( cd ~/Documents/Homestead && vagrant $* )
+#}
 # APT Package Manager Variables
 function ars() {
 	( sudo service apache2 restart )
@@ -106,3 +107,16 @@ function powernex(){
 	( cd ~/OSDev/PowerNex/ )
 }
 # cd to sn & open in atom
+function english(){
+	( cd ~/Documents/vagrant/English/ && atom . )
+}
+function c() {rm -rf objs powernex.iso && echo "Clean successful" || echo "Clean failed"}
+function v() {initPowerNex && ninja}
+function b() {v && qemu-system-x86_64 -cdrom powernex.iso -m 2048 -monitor stdio -serial file:COM1.log -no-reboot 2>/dev/null}
+function a() {addr2line -e objs/powernex.iso.objs/disk/boot/powernex.krl $1}
+function initPowerNex() {
+	if [ ! -f build.ninja ]; then
+		dub fetch reggae
+		dub run reggae -- -b ninja .
+	fi
+}
