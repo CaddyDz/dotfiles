@@ -1,8 +1,0 @@
-[push]
-	default = simple
-[user]
-	name = Salim Djerbouh
-	email = tbitw31@gmail.com
-[core]
-	editor = vim
-	autocrlf = true
