@@ -1,0 +1,102 @@
+# DEBIAN
+# Debian Experimental
+deb http://ftp.de.debian.org/debian experimental main contrib non-free
+deb-src http://ftp.de.debian.org/debian experimental main contrib
+
+# Debian Sid
+# CURRENT UNSTABLE
+deb http://ftp.de.debian.org/debian sid main contrib non-free
+deb-src http://ftp.de.debian.org/debian sid main contrib non-free
+
+# Debian 8.0 (Jessie)
+# CURRENT TESTING
+deb http://ftp.de.debian.org/debian/ jessie main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ jessie main contrib non-free
+deb http://security.debian.org/ jessie/updates main contrib non-free
+deb-src http://security.debian.org/ jessie/updates main contrib non-free
+deb http://ftp.de.debian.org/debian/ jessie-updates main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ jessie-updates main contrib non-free
+deb http://ftp.de.debian.org/debian jessie-backports main contrib non-free
+deb-src http://ftp.de.debian.org/debian jessie-backports main contrib non-free
+
+# Debian 7.0 (Wheezy)
+# CURRENT STABLE
+deb http://ftp.de.debian.org/debian/ wheezy main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ wheezy main contrib non-free
+deb http://security.debian.org/ wheezy/updates main contrib non-free
+deb-src http://security.debian.org/ wheezy/updates main contrib non-free
+deb http://ftp.de.debian.org/debian/ wheezy-updates main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ wheezy-updates main contrib non-free
+deb http://ftp.de.debian.org/debian wheezy-backports main contrib non-free
+deb-src http://ftp.de.debian.org/debian wheezy-backports main contrib non-free
+
+# Debian 6.0 (Squeeze)
+# CURRENT OLDSTABLE
+deb http://ftp.de.debian.org/debian/ squeeze main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ squeeze main contrib non-free
+deb http://security.debian.org/ squeeze/updates main contrib non-free
+deb-src http://security.debian.org/ squeeze/updates main contrib non-free
+
+# UBUNTU
+# Ubuntu 13.04 (Raring)
+deb http://de.archive.ubuntu.com/ubuntu/ raring main
+deb-src http://de.archive.ubuntu.com/ubuntu/ raring main
+
+# Ubuntu 12.10 (Quantal)
+deb http://de.archive.ubuntu.com/ubuntu/ quantal main
+deb-src http://de.archive.ubuntu.com/ubuntu/ quantal main
+
+# Ubuntu 12.04LTS (Precise)
+deb http://de.archive.ubuntu.com/ubuntu/ precise main
+deb-src http://de.archive.ubuntu.com/ubuntu/ precise main
+
+# Ubuntu 11.10 (Oneiric)
+deb http://de.archive.ubuntu.com/ubuntu/ oneiric main
+deb-src http://de.archive.ubuntu.com/ubuntu/ oneiric main
+
+# Ubuntu 10.04LTS (Lucid)
+deb http://de.archive.ubuntu.com/ubuntu/ lucid main
+deb-src http://de.archive.ubuntu.com/ubuntu/ lucid main
+
+# Ubuntu 8.04LTS (Hardy)
+deb http://de.archive.ubuntu.com/ubuntu/ hardy main
+deb-src http://de.archive.ubuntu.com/ubuntu/ hardy main
+
+# DESKTOP ENVIRONMENTS 
+# MATE
+deb http://repo.mate-desktop.org/debian jessie main
+deb-src http://repo.mate-desktop.org/debian jessie main
+deb http://repo.mate-desktop.org/debian wheezy main
+deb-src http://repo.mate-desktop.org/debian wheezy main
+deb http://repo.mate-desktop.org/ubuntu raring main
+deb http://repo.mate-desktop.org/ubuntu quantal main
+deb http://repo.mate-desktop.org/ubuntu precise main
+
+# OTHER
+# Deb Multimedia
+deb http://www.deb-multimedia.org jessie main non-free
+deb-src http://www.deb-multimedia.org jessie main non-free
+deb http://www.deb-multimedia.org wheezy main non-free
+deb-src http://www.deb-multimedia.org wheezy main non-free
+
+# Webmin
+deb http://download.webmin.com/download/repository sarge contrib
+deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib
+
+# VirtualBox
+deb http://download.virtualbox.org/virtualbox/debian wheezy contrib non-free  no deb-src available
+deb http://download.virtualbox.org/virtualbox/debian squeeze contrib non-free  no deb-src available
+
+# Steam
+deb http://repo.steampowered.com/steam/ precise steam
+deb-src http://repo.steampowered.com/steam/ precise steam
+
+# MariaDB
+deb http://mirror.netcologne.de/mariadb/repo/5.5/debian wheezy main
+deb-src http://mirror.netcologne.de/mariadb/repo/5.5/debian wheezy main
+
+# Oracle
+deb http://oss.oracle.com/debian unstable main non-free
+
+# Spotify
+deb http://repository.spotify.com stable non-free
