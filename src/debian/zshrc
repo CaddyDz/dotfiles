@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=/opt/nodejs/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/caddy/.oh-my-zsh
@@ -90,6 +91,7 @@ alias size="wc -c"
 alias caddy="cd ~/Documents/Websites/caddy/"
 alias english="cd ~/Documents/NativeProjects/vagrant/English && atom ."
 alias catalyst="cd ~/Documents/NativeProjects/Rimi/src/script/ && ./rimi_server.pl"
+alias install="sudo dpkg -i $"
 # Homestead Vagrant Environment Variables
 function v() {
     ( cd ~/Homestead && vagrant $* )
