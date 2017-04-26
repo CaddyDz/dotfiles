@@ -1,0 +1,41 @@
+---
+ip: "192.168.10.10"
+memory: 512
+cpus: 1
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: ~/Documents/NativeProjects/vagrant
+      to: /home/vagrant/Code
+
+sites:
+    - map: english.dz
+      to: /home/vagrant/Code/English/public
+    - map: blog.dev
+      to: /home/vagrant/Code/blog/public
+    - map: larasocial.dev
+      to: /home/vagrant/Code/Larasocial/public
+    - map: ajax.dev
+      to: /home/vagrant/Code/ajax/public
+
+databases:
+    - english
+    - blog
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
