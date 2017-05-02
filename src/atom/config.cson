@@ -1,0 +1,30 @@
+"*":
+  "atom-material-ui":
+    treeView:
+      blendTabs: true
+      compactList: true
+  autosave:
+    enabled: true
+  core:
+    autoHideMenuBar: true
+    automaticallyUpdate: false
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 17
+    scrollPastEnd: true
+    softWrap: true
+    tabType: "soft"
+  emmet: {}
+  "exception-reporting":
+    userId: "0a6c863a-d27d-1039-54d7-7d2c63f57cbe"
+  "linter-ui-default":
+    showPanel: true
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
