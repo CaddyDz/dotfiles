@@ -1,0 +1,15 @@
+export PATH=$HOME/bin:/usr/local/bin:/Users/mac/.composer/vendor/bin:/Users/mac/nwjs:$PATH
+export PATH="/usr/local/sbin:$PATH"
+export ZSH=/Users/mac/.oh-my-zsh
+ZSH_THEME="caddy"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+alias zshconf="nano ~/.zshrc"
+alias omz="cd ~/.oh-my-zsh"
+alias user="mysql -uroot -e 'use english;select name, email from users limit 10;'"
+alias mysql="mysql -uroot"
+alias db="php artisan migrate:refresh --seed"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+function delete(){
+	mysql -e "use english;delete from $1;"
+}
