@@ -10,32 +10,30 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Documents/NativeProjects/vagrant
+    - map: ~/Documents
       to: /home/vagrant/Code
 
 sites:
+    - map: homestead.app
+      to: /home/vagrant/Code/Laravel/public
+    - map: martship.dev
+      to: /home/vagrant/Code/martship/public
     - map: english.dz
       to: /home/vagrant/Code/English/public
-    - map: blog.dev
-      to: /home/vagrant/Code/blog/public
     - map: larasocial.dev
       to: /home/vagrant/Code/Larasocial/public
-    - map: ajax.dev
-      to: /home/vagrant/Code/ajax/public
+    - map: singlecringle.dev
+      to: /home/vagrant/Code/SingleCringle/public
+    - map: blog.dev
+      to: /home/vagrant/Code/blog/public
+    - map: laracogs.dev
+      to: /home/vagrant/Code/laracogs/public
 
 databases:
-    - english
+    - homestead
+    - laracogs
+    - martship
+    - larasocial
+    - singlecringle
     - blog
-
-# blackfire:
-#     - id: foo
-#       token: bar
-#       client-id: foo
-#       client-token: bar
-
-# ports:
-#     - send: 50000
-#       to: 5000
-#     - send: 7777
-#       to: 777
-#       protocol: udp
+    - english
