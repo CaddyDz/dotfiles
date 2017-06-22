@@ -1,0 +1,4 @@
+'.source.php':
+  'comment':
+    'prefix' : 'comment'
+    'body': '/**\n * $1\n * @param $2\n * @var $3\n * @return $4\n */$5'
