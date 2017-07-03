@@ -1,7 +1,8 @@
 export ZSH=/home/caddy/.oh-my-zsh
-export PATH=/home/caddy/.config/composer/vendor/bin:$PATH
-ZSH_THEME="nebirhos"
-plugins=(git debian vagrant github laravel sudo taskwarrior)
+export PATH=/home/caddy/.config/composer/vendor/bin:/usr/local/php7/bin:/home/caddy/NativeProjects/Rimi/script:/home/caddy/Downloads/node/bin:$PATH
+eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
+ZSH_THEME="caddy"
+plugins=(git debian vagrant github laravel sudo taskwarrior zsh-wakatime)
 source $ZSH/oh-my-zsh.sh
 alias zshconf="nano ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
@@ -10,14 +11,17 @@ alias mysql="mysql -u root -p"
 alias dotfiles="cd ~/Documents/dotfiles/"
 alias size="wc -c"
 alias caddy="cd ~/Documents/Websites/caddy/"
-alias english="cd ~/Documents/NativeProjects/vagrant/English && code ."
-alias catalyst="cd ~/Documents/NativeProjects/Rimi/src/script/ && ./rimi_server.pl"
+alias english="cd ~/NativeProjects/English && code ."
 alias install="sudo dpkg -i"
 alias lan="sudo ifconfig"
-alias test="vendor/bin/phpunit"
-alias db="php artisan migrate:refresh --seed"
+function r() {
+    ( cd /opt/redis/src && ./redis-server )
+}
+function rc() {
+    ( cd /opt/redis/src && ./redis-cli )
+}
 function v() {
-    ( cd ~/Documents/Homestead && vagrant $* )
+    ( cd ~/Homestead && vagrant $* )
 }
 function ars() {
 	( sudo service apache2 restart )
@@ -27,9 +31,6 @@ function srv(){
 }
 function powernex(){
 	( cd ~/OSDev/PowerNex/ )
-}
-function english(){
-	( cd ~/Documents/NativeProjects/vagrant/English/ && atom . )
 }
 function c() {rm -rf objs powernex.iso && echo "Clean successful" || echo "Clean failed"}
 function b() {v && qemu-system-x86_64 -cdrom powernex.iso -m 2048 -monitor stdio -serial file:COM1.log -no-reboot 2>/dev/null}
