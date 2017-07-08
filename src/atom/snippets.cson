@@ -2,3 +2,8 @@
   'comment':
     'prefix' : 'comment'
     'body': '/**\n * $1\n * @param $2\n * @var $3\n * @return $4\n */$5'
+'.blade.php':
+  'bstext':
+    'prefix' : 'bstext'
+    'body': '<div class="form-group">\n\t<label for="$1">$2:</label>\n\t<input type="text" class="form-control" name="$1" id="$1">\n</div>\n$3'
+
