@@ -1,11 +1,13 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/home/vagrant/.composer/vendor/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH
 export ZSH=/home/vagrant/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git Composer common-aliases sudo laravel4)
+plugins=(git composer common-aliases sudo laravel4)
 source $ZSH/oh-my-zsh.sh
-alias zshconf="sudo nano ~/.zshrc"
+alias zshconf="nano ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
 alias db="php artisan migrate:refresh --seed"
-alias test="vendor/bin/phpunit"
 alias user="mysql -e 'use english;select name, email from users limit 10;'"
+alias test="vendor/bin/phpunit"
+function delete(){
+        mysql -e "use english;delete from $1;"
+}
