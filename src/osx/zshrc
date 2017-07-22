@@ -1,5 +1,5 @@
 export PATH=$HOME/bin:/usr/local/bin:/Users/mac/.composer/vendor/bin:/Users/mac/nwjs:$PATH
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/mysql-5.6.36-macos10.12-x86_64/bin:$PATH"
 export ZSH=/Users/mac/.oh-my-zsh
 ZSH_THEME="caddy"
 plugins=(git)
@@ -11,8 +11,14 @@ alias mysql="mysql -uroot"
 alias db="php artisan migrate:refresh --seed"
 alias clean="find . -name .DS_Store -delete"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+function r(){
+	( cd ~/redis/src && ./redis-server )
+}
+function rc(){
+	( cd ~/redis/src && ./redis-cli )
+}
 function delete(){
-	mysql -e "use english;delete from $1;"
+	( mysql -e "use english;delete from $1;" )
 }
 function v(){
 	( cd ~/Homestead && vagrant $* )
