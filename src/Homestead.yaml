@@ -22,18 +22,22 @@ sites:
       to: /home/vagrant/Code/English/public
     - map: larasocial.dev
       to: /home/vagrant/Code/Larasocial/public
-    - map: singlecringle.dev
-      to: /home/vagrant/Code/SingleCringle/public
-    - map: blog.dev
-      to: /home/vagrant/Code/blog/public
+    - map: deta.dev
+      to: /home/vagrant/Code/Deta/public
+    - map: fresh.app
+      to: /home/vagrant/Code/fresh/public
     - map: laracogs.dev
       to: /home/vagrant/Code/laracogs/public
+    - map: galaxy.edu
+      to: /home/vagrant/Code/Galaxy/public
 
 databases:
     - homestead
     - laracogs
     - martship
     - larasocial
-    - singlecringle
-    - blog
+    - deta
+    - fresh
     - english
+    - galaxy
+    - uxie
