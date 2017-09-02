@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      beautifyEntireFileOnSave: false
   "atom-material-ui":
     treeView:
       blendTabs: true
@@ -12,16 +15,35 @@
       "wrap-guide"
     ]
     telemetryConsent: "no"
+    restorePreviousWindowsOnStart: "no"
+    titleBar: "custom"
+    useProxySettingsWhenCallingApm: false
   editor:
     fontSize: 17
     scrollPastEnd: true
     softWrap: true
     tabType: "soft"
-  emmet: {}
+    zoomFontWhenCtrlScrolling: true
   "exception-reporting":
-    userId: "0a6c863a-d27d-1039-54d7-7d2c63f57cbe"
-  "linter-ui-default":
-    showPanel: true
+    userId: ""
+  "linter-jshint":
+    lintInlineJavaScript: true
+  "linter-ui-default": {}
+  "selector-to-tag":
+    activeForFileTypes: [
+      "htm"
+      "html"
+      "kit"
+      "shtml"
+      "tmpl"
+      "tpl"
+      "xhtml"
+      "php"
+      "vue"
+    ]
+    solveTagsOnly: false
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
   welcome:
     showOnStartup: false
 ".blade.html.php.text":

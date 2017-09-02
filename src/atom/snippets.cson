@@ -6,4 +6,3 @@
   'bstext':
     'prefix' : 'bstext'
     'body': '<div class="form-group">\n\t<label for="$1">$2:</label>\n\t<input type="text" class="form-control" name="$1" id="$1">\n</div>\n$3'
-
