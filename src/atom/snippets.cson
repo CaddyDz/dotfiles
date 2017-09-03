@@ -5,4 +5,12 @@
 '.blade.php':
   'bstext':
     'prefix' : 'bstext'
-    'body': '<div class="form-group">\n\t<label for="$1">$2:</label>\n\t<input type="text" class="form-control" name="$1" id="$1">\n</div>\n$3'
+    'body': '<div class="form-group">\n\t<label for="${1:crash}">$2:</label>\n\t<input type="text" class="form-control" name="$1" id="$1">\n</div>\n$3'
+'.source.js':
+  'vue.component':
+    'prefix' : 'vue.component'
+    'body': 'Vue.component (\'${1:name}\', {\n\tprops: [\n\t\t\'${2:property}\',\n\t],\n\ttemplate: `\n\t\t${3:html}\n\t`,\n\tmethods: {\n\t\t${4:method_name}() {\n\t\t\t${5:// code}\n\t\t}\n\t}\n});\n$6'
+'.source.js':
+  'new vue':
+    'prefix' : 'new vue'
+    'body': 'new Vue({\n\tel: \'${1:#app}\',\n\tdata: {\n\t\t${2:name} : \'${3:value}\',\n\t}\n});\n$7'
