@@ -8,7 +8,7 @@
     'body': '<div class="form-group">\n\t<label for="${1:crash}">$2:</label>\n\t<input type="text" class="form-control" name="$1" id="$1">\n</div>\n$3'
   'Vue JS Router':
     'prefix' : 'router'
-    'body': '<router-link to="${1:url}">${2:title}</router-link>\n\t$3'
+    'body': '<router-link to="${1:url}" exact>${2:title}</router-link>\n\t$3'
 '.source.js':
   'vue.component':
     'prefix' : 'vue.component'
