@@ -28,8 +28,8 @@ sites:
       to: /home/vagrant/Code/fresh/public
     - map: galaxy.edu
       to: /home/vagrant/Code/Galaxy/public
-    - map: forum.dev
-      to: /home/vagrant/Code/forum/public
+    - map: scoped-slots.dev
+      to: /home/vagrant/Code/scoped-slots/public
 
 databases:
     - homestead
@@ -39,5 +39,6 @@ databases:
     - fresh
     - galaxy
     - deta
-    - forum
+    - scoped-slots
+
 ssl: true
