@@ -10,34 +10,34 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Documents
+    - map: ~/Documents/Homestead
       to: /home/vagrant/Code
 
 sites:
     - map: homestead.app
       to: /home/vagrant/Code/Laravel/public
-    - map: martship.dev
-      to: /home/vagrant/Code/martship/public
     - map: english.dz
       to: /home/vagrant/Code/English/public
     - map: larasocial.dev
       to: /home/vagrant/Code/Larasocial/public
     - map: deta.dev
       to: /home/vagrant/Code/Deta/public
-    - map: fresh.app
-      to: /home/vagrant/Code/fresh/public
     - map: laracogs.dev
       to: /home/vagrant/Code/laracogs/public
+    - map: fresh.app
+      to: /home/vagrant/Code/fresh/public
     - map: galaxy.edu
       to: /home/vagrant/Code/Galaxy/public
+    - map: forum.dev
+      to: /home/vagrant/Code/forum/public
 
 databases:
     - homestead
     - laracogs
-    - martship
     - larasocial
-    - deta
-    - fresh
     - english
+    - fresh
     - galaxy
-    - uxie
+    - deta
+    - forum
+ssl: true
