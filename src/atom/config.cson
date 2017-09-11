@@ -2,33 +2,33 @@
   "atom-beautify":
     general:
       beautifyEntireFileOnSave: false
-  "atom-material-ui":
-    treeView:
-      blendTabs: true
-      compactList: true
   autosave:
     enabled: true
   core:
-    autoHideMenuBar: true
+    allowPendingPaneItems: false
     automaticallyUpdate: false
+    closeDeletedFileTabs: true
     disabledPackages: [
       "wrap-guide"
+      "semantic-ui"
+      "selector-to-tag"
     ]
-    telemetryConsent: "no"
+    openEmptyEditorOnStart: false
+    projectHome: "/Users/mac/Documents"
     restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
     titleBar: "custom"
     useProxySettingsWhenCallingApm: false
   editor:
-    fontSize: 17
     scrollPastEnd: true
     softWrap: true
-    tabType: "soft"
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
-    userId: ""
+    userId: "fe310803-0894-4927-9551-ba0d8c559019"
   "linter-jshint":
     lintInlineJavaScript: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 69
   "selector-to-tag":
     activeForFileTypes: [
       "htm"
@@ -40,13 +40,16 @@
       "xhtml"
       "php"
       "vue"
+      "js"
+      "blade.php"
     ]
-    solveTagsOnly: false
+    closeSelfclosingTags: true
+    expandBlockTags: true
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
   welcome:
     showOnStartup: false
-".blade.html.php.text":
+".blade.html.php":
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
