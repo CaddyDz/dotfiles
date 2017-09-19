@@ -5,26 +5,32 @@
   autosave:
     enabled: true
   core:
-    allowPendingPaneItems: false
+    autoHideMenuBar: true
     automaticallyUpdate: false
     closeDeletedFileTabs: true
+    closeEmptyWindows: false
     disabledPackages: [
       "wrap-guide"
       "semantic-ui"
       "selector-to-tag"
     ]
     openEmptyEditorOnStart: false
-    projectHome: "/Users/mac/Documents"
-    restorePreviousWindowsOnStart: "no"
+    projectHome: "/home/caddy/Documents"
     telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
     titleBar: "custom"
     useProxySettingsWhenCallingApm: false
   editor:
+    fontFamily: "Fira Code"
+    fontSize: 20
     scrollPastEnd: true
     softWrap: true
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
-    userId: "fe310803-0894-4927-9551-ba0d8c559019"
+    userId: "bd96517d-f96f-40a5-8f69-d480ed222c89"
   "linter-jshint":
     lintInlineJavaScript: true
   "linter-ui-default":
@@ -47,6 +53,7 @@
     expandBlockTags: true
   wakatime:
     apikey: "Saved in your ~/.wakatime.cfg file"
+    debug: true
   welcome:
     showOnStartup: false
 ".blade.html.php":
