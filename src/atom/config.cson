@@ -5,9 +5,9 @@
   autosave:
     enabled: true
   core:
-    allowPendingPaneItems: false
     automaticallyUpdate: false
     closeDeletedFileTabs: true
+    closeEmptyWindows: false
     disabledPackages: [
       "wrap-guide"
       "semantic-ui"
@@ -17,9 +17,14 @@
     projectHome: "/Users/mac/Documents"
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
     titleBar: "custom"
     useProxySettingsWhenCallingApm: false
   editor:
+    fontFamily: "Fira Code"
     scrollPastEnd: true
     softWrap: true
     zoomFontWhenCtrlScrolling: true
@@ -29,6 +34,7 @@
     lintInlineJavaScript: true
   "linter-ui-default":
     panelHeight: 69
+    showPanel: true
   "selector-to-tag":
     activeForFileTypes: [
       "htm"
@@ -50,6 +56,10 @@
   welcome:
     showOnStartup: false
 ".blade.html.php":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
+".blade.html.php.text":
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
