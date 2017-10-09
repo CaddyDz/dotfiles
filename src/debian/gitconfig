@@ -3,7 +3,7 @@
 [user]
 	name = Salim Djerbouh
 	email = tbitw31@gmail.com
-	signingkey = F89DC49D732803BF
+	signingkey = best-kept-secret
 [core]
 	editor = vim
 	autocrlf = input

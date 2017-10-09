@@ -1,67 +1,67 @@
 "*":
   "atom-beautify":
-    general:
-      beautifyEntireFileOnSave: false
+	general:
+	  beautifyEntireFileOnSave: false
   autosave:
-    enabled: true
+	enabled: true
   core:
-    autoHideMenuBar: true
-    automaticallyUpdate: false
-    closeDeletedFileTabs: true
-    closeEmptyWindows: false
-    disabledPackages: [
-      "wrap-guide"
-      "semantic-ui"
-      "selector-to-tag"
-    ]
-    openEmptyEditorOnStart: false
-    projectHome: "/home/caddy/Documents"
-    telemetryConsent: "no"
-    themes: [
-      "atom-material-ui"
-      "atom-material-syntax"
-    ]
-    titleBar: "custom"
-    useProxySettingsWhenCallingApm: false
+	autoHideMenuBar: true
+	automaticallyUpdate: false
+	closeDeletedFileTabs: true
+	closeEmptyWindows: false
+	disabledPackages: [
+	  "wrap-guide"
+	  "semantic-ui"
+	  "selector-to-tag"
+	]
+	openEmptyEditorOnStart: false
+	projectHome: "/home/caddy/Documents"
+	telemetryConsent: "no"
+	themes: [
+	  "atom-material-ui"
+	  "atom-material-syntax"
+	]
+	titleBar: "custom"
+	useProxySettingsWhenCallingApm: false
   editor:
-    fontFamily: "Fira Code"
-    fontSize: 20
-    scrollPastEnd: true
-    softWrap: true
-    zoomFontWhenCtrlScrolling: true
+	fontFamily: "Fira Code"
+	fontSize: 20
+	scrollPastEnd: true
+	softWrap: true
+	zoomFontWhenCtrlScrolling: true
   "exception-reporting":
-    userId: "bd96517d-f96f-40a5-8f69-d480ed222c89"
+	userId: "bd96517d-f96f-40a5-8f69-d480ed222c89"
   "linter-jshint":
-    lintInlineJavaScript: true
+	lintInlineJavaScript: true
   "linter-ui-default":
-    panelHeight: 69
-    showPanel: true
+	panelHeight: 69
+	showPanel: true
   "selector-to-tag":
-    activeForFileTypes: [
-      "htm"
-      "html"
-      "kit"
-      "shtml"
-      "tmpl"
-      "tpl"
-      "xhtml"
-      "php"
-      "vue"
-      "js"
-      "blade.php"
-    ]
-    closeSelfclosingTags: true
-    expandBlockTags: true
+	activeForFileTypes: [
+	  "htm"
+	  "html"
+	  "kit"
+	  "shtml"
+	  "tmpl"
+	  "tpl"
+	  "xhtml"
+	  "php"
+	  "vue"
+	  "js"
+	  "blade.php"
+	]
+	closeSelfclosingTags: true
+	expandBlockTags: true
   wakatime:
-    apikey: "Saved in your ~/.wakatime.cfg file"
-    debug: true
+	apikey: "Saved in your ~/.wakatime.cfg file"
+	debug: true
   welcome:
-    showOnStartup: false
+	showOnStartup: false
 ".blade.html.php":
   editor:
-    commentEnd: " --}}"
-    commentStart: "{{-- "
+	commentEnd: " --}}"
+	commentStart: "{{-- "
 ".blade.html.php.text":
   editor:
-    commentEnd: " --}}"
-    commentStart: "{{-- "
+	commentEnd: " --}}"
+	commentStart: "{{-- "
