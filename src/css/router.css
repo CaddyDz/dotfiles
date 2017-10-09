@@ -1,115 +1,118 @@
 @namespace url(http://www.w3.org/1999/xhtml);
-.head_dim{
-  background: none; background-color: rgba(20,0,0,0.5);
-}
-.logo{
-  visibility: hidden;
-}
-.help span{
-  color: red;
-}
-#index_plmn_name{
-  visibility: hidden;
-}
-#statement_main{
-  visibility: hidden;
-}
-#footer img{
-  visibility: hidden;
-}
-body{
-  background-color: black !important;
-  color: white !important;
-}
-#statistics_mobile h2{
-  background-color: black;
-}
-.center_box{
-  background: rgba(0,0,0,0.5);
-}
-#login_wrapper{
-  background: rgba(0,0,0,0.5) !important;
-}
-.body_bg{
-  background: none;
-}
-.title_info pre{
-  color: cyan;
-  text-shadow: 1px 1px 0 red;
-}
-div#union_main_menu{
-  background: rgba(50,0,0,0.2) !important;
-}
-div#union_main_menu a{
-  color: red;
-}
-.content{
-  background: rgba(0, 0, 170, 0.50);
-}
-.main_left{
-  background: rgba(0, 0, 0, 0.17);
-}
-.content_right{
-  background: rgba(0, 0, 10, 0.30);
-  border-color: cyan;
-}
-#footer{
-  background: none;
-  color: orange;
-}
-.clr_bold_login_box_info_table .connection table, .clr_bold_login_box_info_table table, #index_connection_status{
-  color: white;
-}
-.login_box_info{
-  background: rgba(0,0,0,0.6);
-}
-.agile_lgtab h2{
-  background: rgba(0,0,0,0.5);
-}
-.sms_dialog_table, .upload_dialog_table, .dialog_table, .dialog_table_bottom, .sms_dialog_table_bottom, .upload_dialog_table_bottom,.sms_dialog_bottom, .dialog_bottom, .upload_dialog_bottom{
-  background: none !important;
-  background-color: rgba(0,0,0,0.5) !important;
-}
-.agile_lgtab_total, .agile_lgtab h2{
-  border-color: red;
-}
-tr th{
-  background: rgba(0,50,0,0.6) !important;
-  border-color: green !important;
-}
-.button_wrapper{
-  color: black;
-}
-.main_menu ul li a:hover span, .main_menu ul li a.active:hover, .main_menu ul li a.active{
-  background: rgba(0,0,50,0.5);
-}
-#recipients_number{
-  background: black;
-  color: red;
-  border-color: red;
-}
-#message_content{
-  background: black;
-  color: aqua;
-  border: 1px solid aqua;
-}
-#iv_wrapper, .wait_div, #ifream_dialog, #div_wrapper_newVersion{
-  background: green !important;
-}
-.age_list{
-  color: red;
-}
-/* Login Dialog Style */
-.login_dialog_table{
-  background-color: black;
-}
-.login_dialog_table_bottom{
-  background-color: black;
-  color: white;
-}
-.login_dialog_table_bottom input[type=text]{
-  color: white;
-}
-#sms_menu{
-  background-color: black;
+
+@-moz-document url("http://192.168.8.1/") {
+  .head_dim{
+    background: none; background-color: rgba(20,0,0,0.5);
+  }
+  .logo{
+    visibility: hidden;
+  }
+  .help span{
+    color: red;
+  }
+  #index_plmn_name{
+    visibility: hidden;
+  }
+  #statement_main{
+    visibility: hidden;
+  }
+  #footer img{
+    visibility: hidden;
+  }
+  body{
+    background-color: black !important;
+    color: white !important;
+  }
+  #statistics_mobile h2{
+    background-color: black;
+  }
+  .center_box{
+    background: rgba(0,0,0,0.5);
+  }
+  #login_wrapper{
+    background: rgba(0,0,0,0.5) !important;
+  }
+  .body_bg{
+    background: none;
+  }
+  .title_info pre{
+    color: cyan;
+    text-shadow: 1px 1px 0 red;
+  }
+  div#union_main_menu{
+    background: rgba(50,0,0,0.2) !important;
+  }
+  div#union_main_menu a{
+    color: red;
+  }
+  .content{
+    background: rgba(0, 0, 170, 0.50);
+  }
+  .main_left{
+    background: rgba(0, 0, 0, 0.17);
+  }
+  .content_right{
+    background: rgba(0, 0, 10, 0.30);
+    border-color: cyan;
+  }
+  #footer{
+    background: none;
+    color: orange;
+  }
+  .clr_bold_login_box_info_table .connection table, .clr_bold_login_box_info_table table, #index_connection_status{
+    color: white;
+  }
+  .login_box_info{
+    background: rgba(0,0,0,0.6);
+  }
+  .agile_lgtab h2{
+    background: rgba(0,0,0,0.5);
+  }
+  .sms_dialog_table, .upload_dialog_table, .dialog_table, .dialog_table_bottom, .sms_dialog_table_bottom, .upload_dialog_table_bottom,.sms_dialog_bottom, .dialog_bottom, .upload_dialog_bottom{
+    background: none !important;
+    background-color: rgba(0,0,0,0.5) !important;
+  }
+  .agile_lgtab_total, .agile_lgtab h2{
+    border-color: red;
+  }
+  tr th{
+    background: rgba(0,50,0,0.6) !important;
+    border-color: green !important;
+  }
+  .button_wrapper{
+    color: black;
+  }
+  .main_menu ul li a:hover span, .main_menu ul li a.active:hover, .main_menu ul li a.active{
+    background: rgba(0,0,50,0.5);
+  }
+  #recipients_number{
+    background: black;
+    color: red;
+    border-color: red;
+  }
+  #message_content{
+    background: black;
+    color: aqua;
+    border: 1px solid aqua;
+  }
+  #iv_wrapper, .wait_div, #ifream_dialog, #div_wrapper_newVersion{
+    background: green !important;
+  }
+  .age_list{
+    color: red;
+  }
+  /* Login Dialog Style */
+  .login_dialog_table{
+    background-color: black;
+  }
+  .login_dialog_table_bottom{
+    background-color: black;
+    color: white;
+  }
+  .login_dialog_table_bottom input[type=text]{
+    color: white;
+  }
+  #sms_menu{
+    background-color: black;
+  }
 }
