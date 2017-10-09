@@ -11,3 +11,6 @@ alias test="vendor/bin/phpunit"
 function delete(){
         mysql -e "use english;delete from $1;"
 }
+function rem(){
+	mysql -e "use galaxy;delete from students where family_name = 'Djerbouh';delete from level_student"
+}
