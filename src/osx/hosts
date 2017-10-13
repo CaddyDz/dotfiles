@@ -1,18 +1,8 @@
-##
-# Host Database
-#
-# localhost is used to configure the loopback interface
-# when the system is booting.  Do not change this entry.
-##
 127.0.0.1	localhost
 255.255.255.255	broadcasthost
 ::1             localhost 
 192.168.10.10	english.dz
-192.168.10.10	laracogs.dev
-192.168.10.10	homestead.app
-192.168.10.10	larasocial.dev
-192.168.10.10	uxie.dev
-192.168.10.10	fresh.app
 192.168.10.10	galaxy.edu
 192.168.10.10	deta.dev
-192.168.10.10	scoped-slots.dev
+192.168.10.10	invest.dev
+192.168.10.10	forum.dev
