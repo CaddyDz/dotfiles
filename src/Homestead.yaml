@@ -10,35 +10,24 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Documents/Homestead
+    - map: ~/Documents
       to: /home/vagrant/Code
 
 sites:
     - map: homestead.app
-      to: /home/vagrant/Code/Laravel/public
-    - map: english.dz
-      to: /home/vagrant/Code/English/public
-    - map: larasocial.dev
-      to: /home/vagrant/Code/Larasocial/public
-    - map: deta.dev
-      to: /home/vagrant/Code/Deta/public
-    - map: laracogs.dev
-      to: /home/vagrant/Code/laracogs/public
+      to: /home/vagrant/Code/public
     - map: fresh.app
       to: /home/vagrant/Code/fresh/public
+    - map: invest.dev
+      to: /home/vagrant/Code/Invest/public
     - map: galaxy.edu
       to: /home/vagrant/Code/Galaxy/public
-    - map: scoped-slots.dev
-      to: /home/vagrant/Code/scoped-slots/public
+    - map: inventors.dz
+      to: /home/vagrant/Code/dz-inventors/public
 
 databases:
     - homestead
-    - laracogs
-    - larasocial
-    - english
     - fresh
+    - invest
     - galaxy
-    - deta
-    - scoped-slots
-
-ssl: true
+    - inventors
