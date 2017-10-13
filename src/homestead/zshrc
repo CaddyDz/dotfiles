@@ -14,3 +14,6 @@ function delete(){
 function rem(){
 	mysql -e "use galaxy;delete from students where family_name = 'Djerbouh';delete from level_student"
 }
+function reset(){
+	mysql -e "drop database $1;create database $1;"
+}
