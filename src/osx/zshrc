@@ -1,5 +1,8 @@
-export PATH=$HOME/bin:/usr/local/bin:/Users/mac/.composer/vendor/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
+# Add a path to Ruby 2.4 compiler
 export PATH="/usr/local/Cellar/ruby/2.4.1_2/bin:$PATH"
+# Add a path to "nethogs" (A network usage monitor)
+export PATH="/usr/local/Cellar/nethogs/0.8.5/sbin:$PATH"
 export ZSH=/Users/mac/.oh-my-zsh
 ZSH_THEME="caddy"
 plugins=(git)
