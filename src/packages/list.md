@@ -1,15 +1,21 @@
+arc-dark-theme
 atom
 apt-transport-https
 b43-fwcutter
 broadcom-sta-dkms
 build-essential
 checkinstall
-htop
 code
-Flareget
+corebird
+discord
+etcher
+htop
 vbox_extention_pack(same as version)
 python3-multibootusb
-etcher
+mpv
 mysql-client
+slack
 zsh
 vim
+virtualbox
+vagrant
