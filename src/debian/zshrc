@@ -1,6 +1,6 @@
 export ZSH=/home/caddy/.oh-my-zsh
 ZSH_THEME="caddy"
-plugins=(git debian vagrant github laravel sudo)
+plugins=(git debian vagrant github laravel sudo wakatime-zsh)
 source $ZSH/oh-my-zsh.sh
 alias zshconf="nano ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
@@ -10,6 +10,8 @@ alias caddy="cd ~/Documents/Caddy/"
 alias english="cd ~/Documents/English && atom ."
 alias install="sudo dpkg -i"
 alias lan="sudo ifconfig"
+alias fr="setxkbmap fr"
+alias en="setxkbmap us"
 function v() {
     ( cd ~/Homestead && vagrant $* )
 }
