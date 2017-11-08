@@ -1,44 +1,23 @@
 export ZSH=/home/caddy/.oh-my-zsh
-export PATH=/home/caddy/.config/composer/vendor/bin:/usr/local/php7/bin:/home/caddy/NativeProjects/Rimi/script:/home/caddy/Downloads/node/bin:$PATH
-eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 ZSH_THEME="caddy"
-plugins=(git debian vagrant github laravel sudo taskwarrior zsh-wakatime)
+plugins=(git debian vagrant github laravel sudo wakatime-zsh)
 source $ZSH/oh-my-zsh.sh
 alias zshconf="nano ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
-alias media="cd /media/caddy/Data/"
-alias mysql="mysql -u root -p"
 alias dotfiles="cd ~/Documents/dotfiles/"
 alias size="wc -c"
-alias caddy="cd ~/Documents/Websites/caddy/"
-alias english="cd ~/NativeProjects/English && code ."
+alias caddy="cd ~/Documents/Caddy/"
+alias english="cd ~/Documents/English && atom ."
 alias install="sudo dpkg -i"
 alias lan="sudo ifconfig"
-function r() {
-    ( cd /opt/redis/src && ./redis-server )
-}
-function rc() {
-    ( cd /opt/redis/src && ./redis-cli )
-}
+alias fr="setxkbmap fr"
+alias en="setxkbmap us"
 function v() {
     ( cd ~/Homestead && vagrant $* )
-}
-function ars() {
-	( sudo service apache2 restart )
 }
 function srv(){
 	( sudo service $* )
 }
-function powernex(){
-	( cd ~/OSDev/PowerNex/ )
-}
-function c() {rm -rf objs powernex.iso && echo "Clean successful" || echo "Clean failed"}
-function b() {v && qemu-system-x86_64 -cdrom powernex.iso -m 2048 -monitor stdio -serial file:COM1.log -no-reboot 2>/dev/null}
-function a() {addr2line -e objs/powernex.iso.objs/disk/boot/powernex.krl $1}
-function initPowerNex() {
-	if [ ! -f build.ninja ]; then
-		dub fetch reggae
-		dub run reggae -- -b ninja .
-	fi
-}
 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
