@@ -15,6 +15,7 @@ alias db="php artisan migrate:refresh --seed"
 alias clean="find . -name .DS_Store -delete"
 alias nah="git checkout -- . && git reset --hard HEAD && git clean -f"
 alias size="wc -c"
+alias irb="irb --simple-prompt"
 function delete(){
 	( mysql -e "use english;delete from $1;" )
 }
