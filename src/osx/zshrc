@@ -14,6 +14,7 @@ alias mysql="mysql -uroot"
 alias db="php artisan migrate:refresh --seed"
 alias clean="find . -name .DS_Store -delete"
 alias nah="git checkout -- . && git reset --hard HEAD && git clean -f"
+alias wip="git add . && git commit -m 'wip'"
 alias size="wc -c"
 alias irb="irb --simple-prompt"
 function delete(){
