@@ -10,6 +10,7 @@ alias user="mysql -e 'use english;select name, email from users limit 10;'"
 alias test="vendor/bin/phpunit"
 alias theme1="mysql -e 'use nbi3oYii;update setting set value=\"basic1\" where name=\"theme\";'"
 alias theme2="mysql -e 'use nbi3oYii;update setting set value=\"basic2\" where name=\"theme\";'"
+alias delcat="mysql -e 'use nbi3oYii;delete from category where id > 6;'"
 function delete(){
         mysql -e "use english;delete from $1;"
 }
