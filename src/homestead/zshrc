@@ -1,19 +1,21 @@
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.composer/vendor/bin:$PATH
 export ZSH=/home/vagrant/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git composer common-aliases sudo laravel4)
+plugins=(git ubuntu composer common-aliases sudo laravel4)
 source $ZSH/oh-my-zsh.sh
 alias zshconf="nano ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
 alias db="php artisan migrate:refresh --seed"
 alias user="mysql -e 'use english;select name, email from users limit 10;'"
 alias test="vendor/bin/phpunit"
+alias theme1="mysql -e 'use nbi3oYii;update setting set value=\"basic1\" where name=\"theme\";'"
+alias theme2="mysql -e 'use nbi3oYii;update setting set value=\"basic2\" where name=\"theme\";'"
 function delete(){
         mysql -e "use english;delete from $1;"
 }
 function rem(){
-	mysql -e "use galaxy;delete from students where family_name = 'Djerbouh';delete from level_student"
+        mysql -e "use galaxy;delete from students where family_name = 'Djerbouh';delete from level_student"
 }
 function reset(){
-	mysql -e "drop database $1;create database $1;"
+        mysql -e "drop database $1;create database $1;"
 }
