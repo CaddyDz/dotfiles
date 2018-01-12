@@ -16,18 +16,53 @@ folders:
 sites:
     - map: homestead.app
       to: /home/vagrant/Code/public
+    - map: nbi3oyii.app
+      to: /home/vagrant/Code/nbi3oYii
+      hhvm: true
     - map: fresh.app
-      to: /home/vagrant/Code/fresh/public
-    - map: invest.dev
-      to: /home/vagrant/Code/Invest/public
+      to: /home/vagrant/Code/fresh/web
+      hhvm: true
+    - map: uxie.app
+      to: /home/vagrant/Code/Uxie/public
+    - map: english.dz
+      to: /home/vagrant/Code/English/public
+    - map: deta.app
+      to: /home/vagrant/Code/Deta/public
+    - map: caddy.dz
+      to: /home/vagrant/Code/Caddy
     - map: galaxy.edu
       to: /home/vagrant/Code/Galaxy/public
-    - map: inventors.dz
-      to: /home/vagrant/Code/dz-inventors/public
-
+    - map: martship.app
+      to: /home/vagrant/Code/Martship/public
+    - map: invest.app
+      to: /home/vagrant/Code/Invest/public
+    - map: humhub.app
+      to: /home/vagrant/Code/Humhub
+    - map: timino.app
+      to: /home/vagrant/Code/Timino/pub
+      
 databases:
     - homestead
+    - nbi3oyii
     - fresh
-    - invest
+    - uxie
+    - english
+    - deta
     - galaxy
-    - inventors
+    - martship
+    - invest
+    - humhub
+    - timino
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
