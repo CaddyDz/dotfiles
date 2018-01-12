@@ -14,31 +14,31 @@ folders:
       to: /home/vagrant/Code
 
 sites:
-    - map: homestead.app
+    - map: homestead.test
       to: /home/vagrant/Code/public
-    - map: nbi3oyii.app
+    - map: nbi3oyii.test
       to: /home/vagrant/Code/nbi3oYii
       hhvm: true
-    - map: fresh.app
+    - map: fresh.test
       to: /home/vagrant/Code/fresh/web
       hhvm: true
-    - map: uxie.app
+    - map: uxie.test
       to: /home/vagrant/Code/Uxie/public
     - map: english.dz
       to: /home/vagrant/Code/English/public
-    - map: deta.app
+    - map: deta.test
       to: /home/vagrant/Code/Deta/public
     - map: caddy.dz
       to: /home/vagrant/Code/Caddy
     - map: galaxy.edu
       to: /home/vagrant/Code/Galaxy/public
-    - map: martship.app
+    - map: martship.test
       to: /home/vagrant/Code/Martship/public
-    - map: invest.app
+    - map: invest.test
       to: /home/vagrant/Code/Invest/public
-    - map: humhub.app
+    - map: humhub.test
       to: /home/vagrant/Code/Humhub
-    - map: timino.app
+    - map: timino.test
       to: /home/vagrant/Code/Timino/pub
       
 databases:
