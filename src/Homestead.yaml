@@ -1,4 +1,3 @@
----
 ip: "192.168.10.10"
 memory: 512
 cpus: 1
@@ -14,55 +13,12 @@ folders:
       to: /home/vagrant/Code
 
 sites:
-    - map: homestead.test
-      to: /home/vagrant/Code/public
-    - map: nbi3oyii.test
-      to: /home/vagrant/Code/nbi3oYii
-      hhvm: true
     - map: fresh.test
       to: /home/vagrant/Code/fresh/web
       hhvm: true
-    - map: uxie.test
-      to: /home/vagrant/Code/Uxie/public
     - map: english.dz
       to: /home/vagrant/Code/English/public
-    - map: deta.test
-      to: /home/vagrant/Code/Deta/public
-    - map: caddy.dz
-      to: /home/vagrant/Code/Caddy
-    - map: galaxy.edu
-      to: /home/vagrant/Code/Galaxy/public
-    - map: martship.test
-      to: /home/vagrant/Code/Martship/public
-    - map: invest.test
-      to: /home/vagrant/Code/Invest/public
-    - map: humhub.test
-      to: /home/vagrant/Code/Humhub
-    - map: timino.test
-      to: /home/vagrant/Code/Timino/pub
       
 databases:
-    - homestead
-    - nbi3oyii
     - fresh
-    - uxie
     - english
-    - deta
-    - galaxy
-    - martship
-    - invest
-    - humhub
-    - timino
-
-# blackfire:
-#     - id: foo
-#       token: bar
-#       client-id: foo
-#       client-token: bar
-
-# ports:
-#     - send: 50000
-#       to: 5000
-#     - send: 7777
-#       to: 777
-#       protocol: udp
