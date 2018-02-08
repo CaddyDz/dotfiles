@@ -18,7 +18,10 @@ sites:
       hhvm: true
     - map: english.dz
       to: /home/vagrant/Code/English/public
+    - map: invest.gov
+      to: /home/vagrant/Code/Invest/public
       
 databases:
     - fresh
     - english
+    - invest
