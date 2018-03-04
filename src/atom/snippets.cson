@@ -9,6 +9,9 @@
   'Vue JS Router':
     'prefix' : 'router'
     'body': '<router-link to="${1:url}" exact>${2:title}</router-link>\n\t$3'
+  'Localization retrieval':
+    'prefix' : 'translate'
+    'body': '{{ __(\'${1}\') }}'
 '.source.js':
   'VueJS component':
     'prefix' : 'component'
