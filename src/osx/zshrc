@@ -1,0 +1,20 @@
+export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin:$PATH
+export ZSH=/Users/caddydz/.oh-my-zsh
+ZSH_THEME="caddy"
+plugins=(git osx vagrant github laravel sudo wakatime)
+source $ZSH/oh-my-zsh.sh
+alias zshconf="nano ~/.zshrc"
+alias omz="cd ~/.oh-my-zsh"
+alias dotfiles="cd ~/Documents/dotfiles/"
+alias size="wc -c"
+alias caddy="cd ~/Documents/Caddy/"
+alias english="cd ~/Documents/English && atom ."
+alias wip="git add . && git commit -m 'wip'"
+alias nah="git checkout -- . && git reset --hard HEAD && git clean -f"
+alias install="brew install"
+alias clean="find . -name .DS_Store -delete"
+function v() {
+    ( cd ~/Homestead && vagrant $* )
+}
+alias gcs="git commit -s -S"
+source ~/.aliases
