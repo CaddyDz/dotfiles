@@ -1,7 +1,20 @@
+# Git Aliases
 alias gs="git status"
 alias gl="git log"
 alias gcom="git checkout master"
-alias gaa="git add ."
 alias gc="git commit -m"
-alias gp="git push"
-alias nah="git reset --hard && git clean -df"
+alias gcs="git commit -s -S"
+alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
+alias wip="git add . && git commit -m 'wip'"
+alias zshconf="nano ~/.zshrc"
+alias omz="cd ~/.oh-my-zsh"
+# Directories Aliases
+alias dotfiles="cd ~/Documents/dotfiles/"
+alias caddy="cd ~/Documents/Caddy/"
+alias english="cd ~/Documents/English && atom ."
+# Useful aliases
+alias install="brew install"
+alias clean="find . -name .DS_Store -delete"
+alias db="php artisan migrate:refresh --seed"
+alias test="vendor/bin/phpunit"
+alias copy="pbcopy <"
