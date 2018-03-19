@@ -4,26 +4,13 @@ export ZSH=/Users/caddydz/.oh-my-zsh
 ZSH_THEME="caddy"
 plugins=(git osx composer vagrant github laravel sudo wakatime)
 source $ZSH/oh-my-zsh.sh
-alias zshconf="nano ~/.zshrc"
-alias omz="cd ~/.oh-my-zsh"
-alias dotfiles="cd ~/Documents/dotfiles/"
-alias caddy="cd ~/Documents/Caddy/"
-alias english="cd ~/Documents/English && atom ."
-alias wip="git add . && git commit -m 'wip'"
-alias nah="git checkout -- . && git reset --hard HEAD && git clean -f"
-alias install="brew install"
-alias clean="find . -name .DS_Store -delete"
-alias db="php artisan migrate:refresh --seed"
-alias test="vendor/bin/phpunit"
-alias copy="pbcopy <"
 function vue() {
 	( cd ~/Downloads/VueCode/ && git checkout lesson-$* )
 }
 function reset() {
-        mysql -e "drop database $1;create database $1;"
+mysql -e "drop database $1;create database $1;"
 }
 function v() {
-    ( cd ~/Homestead && vagrant $* )
+		( cd ~/Homestead && vagrant $* )
 }
-alias gcs="git commit -s -S"
 source ~/.aliases
