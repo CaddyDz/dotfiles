@@ -81,7 +81,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>915 361 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 50 1680 978 0 0 1680 1028 </string>
+	<string>0 73 1680 955 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -684,6 +684,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>542037942.58362198</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -747,6 +749,8 @@
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.1.5</string>
 </dict>
