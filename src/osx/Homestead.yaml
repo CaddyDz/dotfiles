@@ -1,42 +1,42 @@
 ip: "192.168.10.10"
-memory: 512
+memory: 2048
 cpus: 1
 provider: virtualbox
 
 authorize: ~/.ssh/id_rsa.pub
 
 keys:
-    - ~/.ssh/id_rsa
+		- ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Documents
-      to: /home/vagrant/Code
+		- map: ~/Documents
+			to: /home/vagrant/Code
 
 sites:
-    - map: fresh.test
-      to: /home/vagrant/Code/Fresh/public
-      hhvm: true
-    - map: english.dz
-      to: /home/vagrant/Code/English/public
-    - map: invest.gov
-      to: /home/vagrant/Code/Invest/public
-    - map: martship.test
-      to: /home/vagrant/Code/Martship/public
-    - map: galaxy.edu
-      to: /home/vagrant/Code/Galaxy/public
-    - map: tphst.com
-      to: /home/vagrant/Code/TPHST/public
-    - map: bitshopit.com
-      to: /home/vagrant/Code/Bitshopit/public
-    - map: council.com
-      to: /home/vagrant/Code/Council/public
-      
+		- map: fresh.test
+			to: /home/vagrant/Code/Fresh/public
+			hhvm: true
+		- map: english.dz
+			to: /home/vagrant/Code/English/public
+		- map: invest.gov
+			to: /home/vagrant/Code/Invest/public
+		- map: martship.test
+			to: /home/vagrant/Code/Martship/public
+		- map: galaxy.edu
+			to: /home/vagrant/Code/Galaxy/public
+		- map: tphst.com
+			to: /home/vagrant/Code/TPHST/public
+		- map: bitshopit.com
+			to: /home/vagrant/Code/Bitshopit/public
+		- map: council.com
+			to: /home/vagrant/Code/Council/public
+			
 databases:
-    - fresh
-    - english
-    - invest
-    - mlm3
-    - galaxy
-    - tphst
-    - bitshopit
-    - council
+		- fresh
+		- english
+		- invest
+		- mlm3
+		- galaxy
+		- tphst
+		- bitshopit
+		- council
