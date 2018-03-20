@@ -5,7 +5,7 @@ alias gcom="git checkout master"
 alias gc="git commit -m"
 alias gcs="git commit -s -S"
 alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
-alias wip="git add . && git commit -m 'wip'"
+alias wip="git add . && git commit -s -S -m 'Work In Progress' -m 'This is a trash commit to save changes'"
 alias zshconf="nano ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
 # Directories Aliases
