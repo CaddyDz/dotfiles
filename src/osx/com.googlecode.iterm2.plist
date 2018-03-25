@@ -81,7 +81,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>915 361 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 73 1680 955 0 0 1680 1028 </string>
+	<string>0 50 838 978 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -743,6 +743,10 @@
 	<false/>
 	<key>TabStyle</key>
 	<integer>1</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+	</array>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
