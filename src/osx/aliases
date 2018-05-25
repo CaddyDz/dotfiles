@@ -24,7 +24,7 @@ alias tinker="php artisan tinker"
 alias python="/usr/local/bin/python3"
 alias pip="/usr/local/bin/pip3"
 alias composer="php -n /usr/local/bin/composer"
-alias nethogs="sudo nethogs
+alias nethogs="sudo nethogs"
 # Deployment aliases
 alias ssh-groot="ssh root@153.92.210.180"
 alias ssh-dermato="ssh -p 65002 u385209005@156.67.222.85"
