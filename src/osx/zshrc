@@ -1,16 +1,12 @@
 export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin:/usr/local/Cellar/nethogs/0.8.5/sbin:$PATH
 export PATH=$HOME/Downloads/Apps:$PATH
-export ZSH=/Users/caddydz/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="caddy"
-plugins=(git osx composer vagrant github laravel sudo wakatime)
+plugins=(git osx composer vagrant github laravel sudo zsh-wakatime)
 source $ZSH/oh-my-zsh.sh
-function vue() {
-	( cd ~/Downloads/VueCode/ && git checkout lesson-$* )
-}
 function reset() {
-mysql -e "drop database $1;create database $1;"
+		mysql -e "drop database $1;create database $1;"
 }
-function v() {
-		( cd ~/Homestead && vagrant $* )
-}
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 source ~/.aliases
+export PATH="/usr/local/sbin:${HOME}/Downloads/Apps:/bin:/usr/sbin:/sbin"
