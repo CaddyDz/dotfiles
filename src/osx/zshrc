@@ -9,4 +9,4 @@ function reset() {
 }
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 source ~/.aliases
-export PATH="/usr/local/sbin:${HOME}/Downloads/Apps:/bin:/usr/sbin:/sbin"
+export PATH="/usr/bin:/usr/local/sbin:${HOME}/Downloads/Apps:/bin:/usr/sbin:/sbin":$PATH
