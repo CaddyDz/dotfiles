@@ -1,67 +1,67 @@
 "*":
-  "atom-beautify":
+	"atom-beautify":
 	general:
-	  beautifyEntireFileOnSave: false
-  autosave:
-	enabled: true
-  core:
-	autoHideMenuBar: true
-	automaticallyUpdate: false
-	closeDeletedFileTabs: true
-	closeEmptyWindows: false
+		beautifyEntireFileOnSave: false
+	autosave:
+		enabled: true
+	core:
+		autoHideMenuBar: true
+		automaticallyUpdate: false
+		closeDeletedFileTabs: true
+		closeEmptyWindows: false
 	disabledPackages: [
-	  "wrap-guide"
-	  "semantic-ui"
-	  "selector-to-tag"
+		"wrap-guide"
+		"semantic-ui"
+		"selector-to-tag"
 	]
 	openEmptyEditorOnStart: false
-	projectHome: "/home/caddy/Documents"
+	projectHome: "/home/caddy/Code"
 	telemetryConsent: "no"
 	themes: [
-	  "atom-material-ui"
-	  "atom-material-syntax"
+		"atom-material-ui"
+		"atom-material-syntax"
 	]
 	titleBar: "custom"
 	useProxySettingsWhenCallingApm: false
-  editor:
-	fontFamily: "Fira Code"
-	fontSize: 20
-	scrollPastEnd: true
-	softWrap: true
-	zoomFontWhenCtrlScrolling: true
-  "exception-reporting":
+	editor:
+		fontFamily: "Fira Code"
+		fontSize: 20
+		scrollPastEnd: true
+		softWrap: true
+		zoomFontWhenCtrlScrolling: true
+	"exception-reporting":
 	userId: "bd96517d-f96f-40a5-8f69-d480ed222c89"
-  "linter-jshint":
+	"linter-jshint":
 	lintInlineJavaScript: true
-  "linter-ui-default":
+	"linter-ui-default":
 	panelHeight: 69
 	showPanel: true
-  "selector-to-tag":
+	"selector-to-tag":
 	activeForFileTypes: [
-	  "htm"
-	  "html"
-	  "kit"
-	  "shtml"
-	  "tmpl"
-	  "tpl"
-	  "xhtml"
-	  "php"
-	  "vue"
-	  "js"
-	  "blade.php"
+		"htm"
+		"html"
+		"kit"
+		"shtml"
+		"tmpl"
+		"tpl"
+		"xhtml"
+		"php"
+		"vue"
+		"js"
+		"blade.php"
 	]
 	closeSelfclosingTags: true
 	expandBlockTags: true
-  wakatime:
-	apikey: "Saved in your ~/.wakatime.cfg file"
-	debug: true
-  welcome:
-	showOnStartup: false
+	wakatime:
+		apikey: "Saved in your ~/.wakatime.cfg file"
+		debug: true
+	welcome:
+		showOnStartup: false
 ".blade.html.php":
-  editor:
-	commentEnd: " --}}"
-	commentStart: "{{-- "
+	editor:
+		commentEnd: " --}}"
+		commentStart: "{{-- "
 ".blade.html.php.text":
-  editor:
-	commentEnd: " --}}"
-	commentStart: "{{-- "
+	editor:
+		commentEnd: " --}}"
+		commentStart: "{{-- "
