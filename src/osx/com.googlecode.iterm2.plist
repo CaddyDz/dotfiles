@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -36,8 +40,12 @@
 	<integer>256</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSColorPanelMode</key>
+	<string>6</string>
+	<key>NSColorPickerPreferredRGBEntryMode</key>
+	<integer>2</integer>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents/dotfiles/src/osx</string>
+	<string>~/Code/dotfiles/src/osx</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -48,6 +56,11 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 263.000000, NO, NO</string>
+		<string>0.000000, 264.000000, 224.000000, 43.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -79,13 +92,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>474 377 613 378 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>915 361 796 473 0 0 1680 1028 </string>
+	<string>233 269 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 50 838 978 0 0 1680 1028 </string>
+	<string>0 93 1116 685 0 0 1280 778 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>1030 50 1018 1208 0 0 2048 1258 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
@@ -249,7 +266,9 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
+			<key>Blur Radius</key>
+			<real>9.0724361516497449</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -611,7 +630,9 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 15</string>
+			<string>FiraCode-Retina 18</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -655,7 +676,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.24184644670050764</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -667,7 +688,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.3</real>
+			<real>1.5</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -676,8 +697,18 @@
 			<string>/Users/caddydz</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
+	<key>NoSyncConfirmShellIntegrationCommand</key>
+	<true/>
+	<key>NoSyncConfirmShellIntegrationCommand_selection</key>
+	<integer>0</integer>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
+	<key>NoSyncInstallUtilitiesPackage</key>
+	<true/>
+	<key>NoSyncInstallUtilitiesPackage_selection</key>
+	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
 	<string>D5CD307F-95D8-4FA3-A42A-8CE02ABF2B51</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -690,6 +721,10 @@
 	<real>542037942.58362198</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -724,7 +759,9 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/caddydz/Documents/dotfiles/src/osx</string>
+	<string>/Users/caddydz/Code/dotfiles/src/osx</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
