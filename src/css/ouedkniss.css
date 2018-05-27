@@ -1,0 +1,23 @@
+@-moz-document domain("www.ouedkniss.com/") {
+	.html {
+		background-color: #1d1d1d;
+	}
+	#topbar a {
+		color: #bbb6b6;
+	}
+	#menu_recherche_query {
+		background-color: #999;
+	}
+	#page {
+		background-color: #333;
+	}
+	#page_top {
+		background-color: #333;
+	}
+	#menu_sousmenu_annonces_categories {
+		background-color: #444;
+	}
+	.tbascm .tbascm_recomanded {
+		
+	}
+}
