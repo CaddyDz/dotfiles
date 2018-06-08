@@ -1,23 +1,91 @@
-@-moz-document domain("www.ouedkniss.com/") {
-	.html {
-		background-color: #1d1d1d;
-	}
-	#topbar a {
-		color: #bbb6b6;
-	}
-	#menu_recherche_query {
-		background-color: #999;
-	}
-	#page {
-		background-color: #333;
-	}
-	#page_top {
-		background-color: #333;
-	}
-	#menu_sousmenu_annonces_categories {
-		background-color: #444;
-	}
-	.tbascm .tbascm_recomanded {
-		background-color: #333 !important;
-	}
+.html {
+  background-color: #1d1d1d;
+}
+#topbar a {
+  color: #bbb6b6;
+}
+#menu_recherche_query {
+  background-color: #999;
+}
+#page {
+  background-color: #333;
+}
+#page_top {
+  background-color: #333;
+}
+#menu_sousmenu_annonces_categories {
+  background-color: #444;
+}
+.tbascm {
+  background-color: #333;
+}
+.tbascm a.tbascm_sc {
+  color: #999;
+}
+.tp_titre {
+  background-color: #333;
+  color: #999;
+}
+#list-last-stores {
+  background-color: #333;
+}
+#may_like {
+  background-color: #333;
+  color: #999;
+}
+.plus_visitees_titre {
+  background-color: #333;
+  color: #999;
+}
+#categories h1 {
+  color: #999;
+}
+#categories a {
+  color: #999;
+}
+#categories .categorie_tout {
+  color: #999;
+}
+#categories h2 {
+  background-color: #1d1d1d !important;
+}
+#footer {
+  background-color: #333;
+  color: #999;
+}
+.footer_block, .footer_block > a {
+  color: #999 !important;
+}
+#footer_copyrights > div.boxed {
+  color: #999;
+}
+#tbrss_contenu {
+  background-color: #333;
+  color: #999;
+}
+.tbrs label {
+  color: #999;
+}
+.dialog_box {
+  background-color: rgba(51, 51, 51, 0.90);
+}
+.dialog_box_contenu {
+  background-color: #333;
+}
+.window_annonce .window_annonce_titre {
+  color: #999;
+}
+
+.dialog_box_message, .window_conversation_nom, .window_conversation_message, .window_no_result {
+  color: #999;
+}
+h1 {
+  background-color: #333;
+  color: #999
+}
+.info, .label_large {
+  color: #999;
+}
+#data>p, .map>small {
+  color: #999;
 }
