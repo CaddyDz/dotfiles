@@ -1,13 +1,18 @@
 {
-	"workbench.sideBar.location": "right",
+	"workbench.sideBar.location": "left",
 	"files.autoSave": "afterDelay",
 	"editor.renderWhitespace": "boundary",
-	"editor.fontSize": 18,
+	"editor.fontSize": 14,
 	"editor.detectIndentation": false,
 	"editor.wordWrap": "on",
-	"editor.mouseWheelZoom": true,
-	"editor.tabSize": 2,
-	"window.menuBarVisibility": "toggle",
+	"editor.mouseWheelZoom": false,
+	"editor.tabSize": 1,
 	"git.confirmSync": false,
-	"workbench.colorTheme": "Solarized Dark"
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.startupEditor": "newUntitledFile",
+	"window.zoomLevel": -1,
+	"editor.fontFamily": "Fira Code",
+	"explorer.confirmDelete": false,
+	"editor.minimap.enabled": false,
+	"editor.insertSpaces": false
 }
