@@ -1,9 +1,0 @@
-[push]
-	default = simple
-[user]
-	name = Salim Djerbouh
-	email = tbitw31@gmail.com
-	signingkey = best-kept-secret
-[core]
-	editor = vim
-	autocrlf = input
