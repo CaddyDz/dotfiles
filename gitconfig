@@ -1,0 +1,14 @@
+[push]
+	default = simple
+[user]
+	name = Salim Djerbouh
+	email = github@caddydz.me
+	signingkey = best-kept-secret
+[core]
+	editor = vim
+	autocrlf = input
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
