@@ -1,5 +1,7 @@
-export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin:/usr/local/Cellar/nethogs/0.8.5/sbin:$PATH
-export PATH="/usr/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin":$PATH
+export PATH=/usr/bin:/usr/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/bin:/sbin:$PATH
+export PATH=~/.composer/vendor/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="caddy"
 plugins=(git osx composer github laravel sudo)
