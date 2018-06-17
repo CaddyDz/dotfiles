@@ -24,9 +24,17 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>EnableDivisionView</key>
+	<false/>
+	<key>HideActivityIndicator</key>
+	<true/>
 	<key>HideFromDockAndAppSwitcher</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
+	<true/>
+	<key>HideTabCloseButton</key>
 	<true/>
 	<key>Hotkey</key>
 	<true/>
@@ -38,6 +46,8 @@
 	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>256</integer>
+	<key>JobName</key>
+	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -92,11 +102,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>474 377 613 378 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>233 291 796 473 0 0 1280 778 </string>
+	<string>233 291 796 473 0 0 1280 800 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 68 890 710 0 0 1280 778 </string>
+	<string>643 0 637 800 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1030 50 1018 1208 0 0 2048 1258 </string>
 	<key>New Bookmarks</key>
@@ -778,6 +788,10 @@
 	<true/>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<false/>
+	<key>ShowPaneTitles</key>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.10000000000000001</real>
 	<key>StretchTabsToFillBar</key>
@@ -793,6 +807,8 @@
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
+	<false/>
+	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
