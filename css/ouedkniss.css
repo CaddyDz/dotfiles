@@ -140,6 +140,7 @@ h1 {
 .produit,
 #contact_page,
 .button,
-.sous_menu a {
+.sous_menu a,
+.annonce_left .annonce_get_description {
 	color: aliceblue;
 }
