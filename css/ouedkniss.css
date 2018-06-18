@@ -107,7 +107,15 @@ h1 {
 .annonce_wilaya,
 .sous_menu_categories a,
 .comment_name,
-#left #categories a {
+#left #categories a,
+#sous_menu_a_mes_annonces,
+#sous_menu_a_ajouter_annonce,
+#sous_menu_a_mes_messages,
+#sous_menu_a_abonnements,
+#sous_menu_a_profile,
+#sous_menu_a_password,
+#sous_menu_a_telephones,
+#sous_menu_a_addresses {
 	color: #999;
 }
 
