@@ -1,135 +1,177 @@
-@namespace url(http://www.w3.org/1999/xhtml);
+body {
+	background: #3b4c5e;
+	color: #e1ffff;
+}
 
-@-moz-document domain("wakatime.com") {
-	body {
-			background: #3b4c5e;
-			color: #e1ffff;
-	}
-	.navbar {
-			background: #29333a;
-	}
-	.navbar .navbar-header a.navbar-brand {
-			color: #e1ffff;
-	}
-	a {
-			color: #88b5dd;
-	}
-	a:hover {
-			color: #609dd2;
-	}
-	#date-picker {
-			color: #88b5dd;
-			border-bottom-color: #88b5dd;
-	}
-	#date-picker:hover {
-			color: #609dd2;
-			border-bottom-color: #609dd2;
-	}
-	.white-well {
-			background: #2d353c;
-			border-color: #222;
-	}
-	#footer .container, #footer .container-fluid {
-			border-top-color: #222;
-	}
-	.form-control {
-			color: #e1ffff;
-			background: #2d353c;
-			border-color: #222;
-	}
-	.btn-default{
-			color: #e1ffff;
-			background-color: #2d353c;
-			border-color: #222;
-	}
-	.btn-default:hover, .btn-default:focus {
-			color: #e1ffff;
-			background-color: #586774;
-			border-color: #333;
-	}
+.navbar {
+	background: #29333a;
+}
 
-	.btn-default:active{
-			color: #CCC !important;
-			background-color: #374049 !important;
-			border-color: #333 !important;
-	}
+.navbar .navbar-header a.navbar-brand {
+	color: #e1ffff;
+}
 
-	.modal-content {
-			background: #29333a;
-	}
+a {
+	color: #88b5dd;
+}
 
-	.modal-header {
-			border-bottom-color: #222;
-	}
+a:hover {
+	color: #609dd2;
+}
 
-	.modal-header .close {
-			color: #e1ffff;
-	}
+#date-picker {
+	color: #88b5dd;
+	border-bottom-color: #88b5dd;
+}
 
-	.modal-footer {
-			border-top-color: #222;
-	}
+#date-picker:hover {
+	color: #609dd2;
+	border-bottom-color: #609dd2;
+}
 
-	.navbar .navbar-nav li a.navbar-btn{
-			color:#e1ffff;
-			border-color:#e1ffff !important;
-	}
+.white-well {
+	background: #2d353c;
+	border-color: #222;
+}
 
-	.navbar .navbar-nav li a.navbar-btn:hover,
-	.navbar .navbar-nav li a.navbar-btn:focus{
-			background:#586774;
-	}
+#footer .container,
+#footer .container-fluid {
+	border-top-color: #222;
+}
 
-	.navbar .navbar-nav li a.navbar-btn:active{
-			background-color: #374049 !important;
-	}
+.form-control {
+	color: #e1ffff;
+	background: #2d353c;
+	border-color: #222;
+}
 
-	#logged-in{
-			color:#e1ffff;
-	}
+.btn-default {
+	color: #e1ffff;
+	background-color: #2d353c;
+	border-color: #222;
+}
 
-	#fat-menu.open #logged-in{
-			background: #29333a;
-	}
+.btn-default:hover,
+.btn-default:focus {
+	color: #e1ffff;
+	background-color: #586774;
+	border-color: #333;
+}
 
-	.dropdown-menu {
-			background: #29333a;
-	}
+.btn-default:active {
+	color: #CCC !important;
+	background-color: #374049 !important;
+	border-color: #333 !important;
+}
 
-	.dropdown-menu li a {
-			color: #e1ffff;
-	}
+.modal-content {
+	background: #29333a;
+}
 
-	.dropdown-menu li a:hover {
-			color: #e1ffff;
-			background:#586774;
-	}
+.modal-header {
+	border-bottom-color: #222;
+}
 
-	.dropdown-menu li.divider {
-			background: #222;
-	}
+.modal-header .close {
+	color: #e1ffff;
+}
 
-	.daterangepicker:before,
-	.daterangepicker:after{
-			border-bottom-color:#29333a;
-	}
+.modal-footer {
+	border-top-color: #222;
+}
 
-	.ranges li{
-			background:#2d353c;
-			border-color:#222;
-	}
-	.panel {
-		background-color: #2d353c;
-	}
-	.panel-default>.panel-heading {
-		color: #CCC;
-		background-color: #29333a;
-	}
-	.form-control[readonly] {
-		background-color: #2a333a;
-		color: #CCC;
-	}
-	.form-control {
-		color: #CCC;
-	}
+.navbar .navbar-nav li a.navbar-btn {
+	color: #e1ffff;
+	border-color: #e1ffff !important;
+}
+
+.navbar .navbar-nav li a.navbar-btn:hover,
+.navbar .navbar-nav li a.navbar-btn:focus {
+	background: #586774;
+}
+
+.navbar .navbar-nav li a.navbar-btn:active {
+	background-color: #374049 !important;
+}
+
+#logged-in {
+	color: #e1ffff;
+}
+
+#fat-menu.open #logged-in {
+	background: #29333a;
+}
+
+.dropdown-menu {
+	background: #29333a;
+}
+
+.dropdown-menu li a {
+	color: #e1ffff;
+}
+
+.dropdown-menu li a:hover {
+	color: #e1ffff;
+	background: #586774;
+}
+
+.dropdown-menu li.divider {
+	background: #222;
+}
+
+.daterangepicker:before,
+.daterangepicker:after {
+	border-bottom-color: #29333a;
+}
+
+.ranges li {
+	background: #2d353c;
+	border-color: #222;
+}
+
+.panel {
+	background-color: #2d353c;
+}
+
+.panel-default>.panel-heading {
+	color: #CCC;
+	background-color: #29333a;
+}
+
+.form-control[readonly] {
+	background-color: #2a333a;
+	color: #CCC;
+}
+
+.form-control {
+	color: #CCC;
+}
+
+.goals-list .goal-card {
+	background-color: transparent;
+}
+
+#chart-eaf8a030-3c83-4196-8d41-d34272773cfb .graph>.background,
+#chart-eaf8a030-3c83-4196-8d41-d34272773cfb .plot>.background {
+	fill: #3b4b5d;
+}
+
+table.leaders tbody tr.current-user {
+	background-color: #082f5a;
+}
+
+.editor-icons .editor-icon {
+	color: #e1ffff;
+}
+
+.left-panel .avatar-box h1.name {
+	color: #f5f5f5;
+}
+
+.text-muted .backup-email-value {
+	color: #d9f6f6;
+}
+
+select, .search {
+	color: #2e353c;
 }
