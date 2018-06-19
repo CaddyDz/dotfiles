@@ -1,0 +1,34 @@
+body,
+#div_main {
+	font-size: 37pt;
+	padding: 0px;
+	background-color: #3b4b5d;
+}
+
+a.st_link_active {
+	color: aqua !important;
+}
+
+a.st_link,
+a.st_link:visited,
+.option_desc {
+	color: #e1ffff;
+}
+
+.lang_bar a {
+	color: #e1ffff !important;
+}
+
+#search_3,
+#inner_search {
+	background-color: #2e353c;
+}
+
+#div_title img,
+.important_announcement,
+#gam_search_landing_right_200x200_container,
+#div_icons,
+#gam_search_landing_728x90,
+#link_footer {
+	display: none;
+}
