@@ -106,9 +106,13 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>643 0 637 800 0 0 1280 800 </string>
+	<string>0 0 835 1028 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1030 50 1018 1208 0 0 2048 1258 </string>
+	<string>664 177 890 851 0 0 1680 1028 </string>
+	<key>NeverWarnAboutShortLivedSessions_B71CB9A4-B409-4280-86DC-8B2EF72CCEAE</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_B71CB9A4-B409-4280-86DC-8B2EF72CCEAE_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
