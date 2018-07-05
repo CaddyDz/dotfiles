@@ -1,30 +1,34 @@
 {
 	"files.autoSave": "onFocusChange",
 	"editor.fontSize": 15,
-	"editor.detectIndentation": false,
 	"editor.wordWrap": "on",
-	"editor.mouseWheelZoom": false,
 	"editor.tabSize": 2,
 	"git.confirmSync": false,
-	"workbench.colorTheme": "Material Theme Palenight",
+	"workbench.colorTheme": "Material Theme Ocean",
 	"workbench.startupEditor": "newUntitledFile",
 	"editor.fontFamily": "Fira Code",
 	"explorer.confirmDelete": false,
 	"editor.minimap.enabled": false,
 	"editor.insertSpaces": false,
-	"editor.glyphMargin": true,
 	"editor.renderIndentGuides": false,
 	"explorer.openEditors.visible": 0,
-	"workbench.statusBar.visible": true,
-	"atomKeymap.promptV3Features": true,
-	"editor.multiCursorModifier": "ctrlCmd",
+	"atomKeymap.promptV3Features": false,
 	"editor.formatOnPaste": true,
 	"files.insertFinalNewline": true,
 	"explorer.confirmDragAndDrop": false,
-	"workbench.iconTheme": "eq-material-theme-icons-palenight",
+	"workbench.iconTheme": "eq-material-theme-icons-ocean",
 	"editor.tabCompletion": true,
-	"workbench.activityBar.visible": false,
-	"materialTheme.fixIconsRunning": false,
-	"php-cs-fixer.onsave": true,
-	"window.zoomLevel": 0
+	"editor.lineHeight": 35,
+	"html.suggest.ionic": false,
+	"html.suggest.angular1": false,
+	"html.suggest.html5": false,
+	"emmet.triggerExpansionOnTab": true,
+	"blade.format.enable": true,
+	"emmet.includeLanguages": {
+		"blade": "html"
+	},
+	"code-runner.executorMap": {
+		"c": "cd $dir && gcc -w $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out"
+	},
+	"explorer.autoReveal": false
 }
