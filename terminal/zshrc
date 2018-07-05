@@ -11,3 +11,10 @@ function reset() {
 }
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 source ~/.aliases
+resup() {
+    local configFile="/usr/local/etc/supervisord.ini"
+    eval "sudo supervisorctl -c ${configFile} shutdown"
+    eval "sudo supervisord -c ${configFile}"
+    eval "sudo supervisorctl -c ${configFile} reread"
+    eval "sudo supervisorctl -c ${configFile} update"
+}
