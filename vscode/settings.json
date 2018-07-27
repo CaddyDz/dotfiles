@@ -1,34 +1,27 @@
 {
-	"files.autoSave": "onFocusChange",
-	"editor.fontSize": 15,
-	"editor.wordWrap": "on",
-	"editor.tabSize": 2,
-	"git.confirmSync": false,
-	"workbench.colorTheme": "Material Theme Ocean",
-	"workbench.startupEditor": "newUntitledFile",
-	"editor.fontFamily": "Fira Code",
-	"explorer.confirmDelete": false,
-	"editor.minimap.enabled": false,
-	"editor.insertSpaces": false,
-	"editor.renderIndentGuides": false,
-	"explorer.openEditors.visible": 0,
-	"atomKeymap.promptV3Features": false,
-	"editor.formatOnPaste": true,
-	"files.insertFinalNewline": true,
-	"explorer.confirmDragAndDrop": false,
-	"workbench.iconTheme": "eq-material-theme-icons-ocean",
-	"editor.tabCompletion": true,
-	"editor.lineHeight": 35,
-	"html.suggest.ionic": false,
-	"html.suggest.angular1": false,
-	"html.suggest.html5": false,
-	"emmet.triggerExpansionOnTab": true,
 	"blade.format.enable": true,
-	"emmet.includeLanguages": {
-		"blade": "html"
-	},
 	"code-runner.executorMap": {
 		"c": "cd $dir && gcc -w $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out"
 	},
-	"explorer.autoReveal": false
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.formatOnPaste": false,
+	"editor.minimap.enabled": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.renderIndentGuides": false,
+	"editor.wordWrap": "on",
+	"emmet.includeLanguages": {
+		"blade": "html"
+	},
+	"explorer.openEditors.visible": 0,
+	"files.autoSave": "onFocusChange",
+	"files.insertFinalNewline": true,
+	"workbench.editor.enablePreview": false,
+	"workbench.colorTheme": "Material Theme",
+	"materialTheme.fixIconsRunning": false,
+	"workbench.iconTheme": "eq-material-theme-icons-light",
+	"editor.lineHeight": 40,
+	"editor.fontSize": 18,
+	"explorer.autoReveal": false,
+	"atomKeymap.promptV3Features": true
 }
