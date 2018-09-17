@@ -5,6 +5,6 @@ plugins=(git ubuntu composer github laravel sudo)
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 function dumpdatabase () {
-        (mysqldump $1 > $2)
+        (mysqldump -u forge -p $1 > $2)
 }
 
