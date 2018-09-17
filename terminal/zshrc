@@ -13,3 +13,6 @@ source ~/.aliases
 function dumbdb() {
     (mysqldump -u root -p $1 > $2)
 }
+function v() {
+	(cd ~/Homestead && vagrant $1)
+}
