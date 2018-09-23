@@ -16,3 +16,4 @@ tips.md
 pkg/
 .DS_Store
 Homestead.yaml
+terminal/aliases
