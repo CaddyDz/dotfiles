@@ -1,0 +1,17 @@
+# Git
+alias gs="git status"
+alias gl="git log"
+alias gcom="git checkout master"
+alias gc="git commit -m"
+alias gcs="git commit -s -S"
+alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
+alias wip="git add . && git commit -s -S -m 'Work In Progress' -m 'This is a trash commit to save changes'"
+alias zshconf="nano ~/.zshrc"
+alias omz="cd ~/.oh-my-zsh"
+alias com="git commit -s -a -m 'Empty' --allow-empty"
+alias repush="git pull --rebase && git push"
+# OS
+alias install="sudo dpkg -i"
+alias copy="xclip -sel clip <"
+# Deployment
+alias ssh-dermato="ssh -p 65002 u385209005@156.67.222.85"
