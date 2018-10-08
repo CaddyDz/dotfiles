@@ -17,15 +17,13 @@
 	"files.autoSave": "onFocusChange",
 	"files.insertFinalNewline": true,
 	"workbench.editor.enablePreview": false,
-	"workbench.colorTheme": "Material Theme",
-	"materialTheme.fixIconsRunning": false,
-	"workbench.iconTheme": "eq-material-theme-icons",
+	"workbench.colorTheme": "Material Theme Palenight",
+	"workbench.iconTheme": "material-icon-theme",
 	"editor.lineHeight": 40,
 	"editor.fontSize": 18,
 	"explorer.autoReveal": false,
 	"atomKeymap.promptV3Features": true,
-	"window.zoomLevel": 2,
 	"files.hotExit": "off",
-	"window.menuBarVisibility": "toggle"
+	"window.menuBarVisibility": "toggle",
+	"window.zoomLevel": 1
 }
-
