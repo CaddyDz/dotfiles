@@ -25,5 +25,12 @@
 	"atomKeymap.promptV3Features": true,
 	"files.hotExit": "off",
 	"window.menuBarVisibility": "toggle",
-	"window.zoomLevel": 1
+	"window.zoomLevel": 0,
+	"workbench.startupEditor": "newUntitledFile",
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"php-cs-fixer.onsave": true,
+	"php-cs-fixer.lastDownload": 1539954512469,
+	"jshint.options": {
+		"esversion": 6
+	}
 }
