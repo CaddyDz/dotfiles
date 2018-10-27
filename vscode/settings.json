@@ -30,7 +30,10 @@
 	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
 	"php-cs-fixer.onsave": true,
 	"php-cs-fixer.lastDownload": 1539954512469,
-	"jshint.options": {
-		"esversion": 6
-	}
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"vue",
+		"vue-html"
+	]
 }
