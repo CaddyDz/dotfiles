@@ -25,16 +25,10 @@
 	"atomKeymap.promptV3Features": true,
 	"files.hotExit": "off",
 	"window.menuBarVisibility": "toggle",
-	"window.zoomLevel": 0,
 	"workbench.startupEditor": "newUntitledFile",
 	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
 	"php-cs-fixer.onsave": true,
-	"php-cs-fixer.lastDownload": 1539954512469,
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact",
-		"vue",
-		"vue-html"
-	],
-	"editor.tabSize": 2
+	"php-cs-fixer.lastDownload": 1541770093361,
+	"editor.tabSize": 2,
+	"workbench.settings.editor": "json"
 }
