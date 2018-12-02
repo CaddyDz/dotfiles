@@ -7,8 +7,11 @@ source ~/.aliases
 source ~/.bash_aliases
 source ~/.profile
 function dumpdb() {
-        (mysqldump $1 > $2)
+	(mysqldump $1 > $2)
 }
 function importdb() {
-        (mysql $1 < $2)
+	(mysql $1 < $2)
+}
+function resetdb() {
+				(mysql -e "drop database $1;create database $1")
 }
