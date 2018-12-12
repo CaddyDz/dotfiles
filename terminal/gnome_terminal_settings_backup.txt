@@ -1,0 +1,32 @@
+[legacy]
+new-terminal-mode='tab'
+theme-variant='dark'
+default-show-menubar=false
+
+[legacy/keybindings]
+new-tab='<Primary>t'
+copy='<Primary><Shift>c'
+preferences='<Primary>comma'
+new-window='<Primary>n'
+close-tab='<Primary><Shift>w'
+close-window='<Primary>q'
+select-all='<Primary>a'
+next-tab='<Primary>twosuperior'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(255,255,255)'
+visible-name='Caddy'
+palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+custom-command='/usr/bin/zsh'
+default-size-columns=140
+default-size-rows=30
+use-system-font=false
+use-custom-command=true
+use-theme-colors=true
+use-transparent-background=false
+font='Monospace 18'
+cursor-blink-mode='off'
+background-color='rgb(0,0,0)'
+background-transparency-percent=13
+text-blink-mode='never'
+audible-bell=false
