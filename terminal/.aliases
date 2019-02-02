@@ -14,4 +14,4 @@ alias repush="git pull --rebase && git push"
 alias install="sudo dpkg -i"
 alias copy="xclip -sel clip <"
 # Deployment
-alias ssh-dermato="ssh -p 65002 u385209005@156.67.222.85"
+alias ssh-dermato="ssh -p [SSH PORT] [USER]@[IP]"
