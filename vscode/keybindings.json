@@ -6,6 +6,14 @@
     {
         "key": "ctrl+q",
         "command": "-workbench.action.quit"
+    },
+    {
+      "key": "ctrl+t",
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "key": "ctrl+oem_3",
+      "command": "-workbench.action.terminal.toggleTerminal"
     }
-]
-
+  ]
+  
