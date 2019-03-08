@@ -28,7 +28,11 @@
 	"workbench.startupEditor": "newUntitledFile",
 	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
 	"php-cs-fixer.onsave": true,
-	"php-cs-fixer.lastDownload": 1541770093361,
+	"php-cs-fixer.lastDownload": 1551704910129,
 	"editor.tabSize": 2,
-	"workbench.settings.editor": "json"
+	"workbench.settings.editor": "json",
+	"window.zoomLevel": 0,
+	"d.dubPath": "/home/caddy/.local/share/code-d/bin/dub",
+	"d.servedPath": "/home/caddy/.local/share/code-d/bin/serve-d",
+	"csharp.referencesCodeLens.enabled": false
 }
