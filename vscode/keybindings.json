@@ -10,10 +10,6 @@
     {
       "key": "ctrl+t",
       "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-      "key": "ctrl+oem_3",
-      "command": "-workbench.action.terminal.toggleTerminal"
     }
   ]
   
