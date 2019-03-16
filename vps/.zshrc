@@ -11,6 +11,6 @@ function dumpdb() {
 function importdb() {
 	(mysql $1 < $2)
 }
-function resetdb() {
+function reset() {
 	(mysql -e "drop database $1;create database $1")
 }
