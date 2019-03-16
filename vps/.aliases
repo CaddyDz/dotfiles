@@ -11,4 +11,4 @@ alias test="vendor/bin/phpunit"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 # Server specific
-alias reloadphp="echo "" | sudo -S service php7.2-fpm reload"
+alias reloadphp="echo "" | sudo -S service php7.3-fpm reload"

@@ -15,3 +15,8 @@ alias install="sudo dpkg -i"
 alias copy="xclip -sel clip <"
 # Deployment
 alias ssh-dermato="ssh -p [SSH PORT] [USER]@[IP]"
+# PHP & Laravel
+alias test="vendor/bin/phpunit"
+alias art="php artisan"
+alias tinker="php artisan tinker"
+alias db="php artisan migrate:refresh --seed"

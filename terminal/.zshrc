@@ -7,6 +7,12 @@ ZSH_THEME="caddy"
 plugins=(git debian github sudo)
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-function v() {
-	(cd ~/Homestead && vagrant $1)
+function dumpdb() {
+	(mysqldump $1 > $2)
+}
+function importdb() {
+	(mysql $1 < $2)
+}
+function reset() {
+	(mysql -e "drop database $1;create database $1")
 }
