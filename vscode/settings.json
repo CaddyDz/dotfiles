@@ -22,10 +22,10 @@
     "atomKeymap.promptV3Features": true,
     "files.hotExit": "off",
     "workbench.startupEditor": "newUntitledFile",
-    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.onsave": true,
-    "php-cs-fixer.lastDownload": 1558377057435,
     "editor.tabSize": 2,
     "workbench.settings.editor": "json",
-    "window.zoomLevel": 0
-    }
+    "window.zoomLevel": 2,
+    "breadcrumbs.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "window.menuBarVisibility": "toggle"
+}
