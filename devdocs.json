@@ -1,5 +1,6 @@
 {
-	"dark": "1",
-	"docs": "css/dom/dom_events/html/http/javascript/bootstrap~4/bootstrap~3/git/jquery/laravel~5.8/markdown/moment/npm/php/phpunit~6/redis/sass/socketio/sqlite/vue~2/webpack/yarn",
-	"manualUpdate": "1"
+  "dark": "1",
+  "manualUpdate": "1",
+  "docs": "bootstrap~4/bootstrap~3/css/dom/dom_events/git/html/http/javascript/jquery/markdown/moment/npm/php/phpunit~6/redis/sass/socketio/sqlite/vue~2/webpack/yarn",
+  "hideIntro": "1"
 }
