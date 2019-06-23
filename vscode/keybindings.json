@@ -1,15 +1,41 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "ctrl+shift+q",
-        "command": "workbench.action.quit"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "-workbench.action.quit"
-    },
-    {
-      "key": "ctrl+t",
-      "command": "workbench.action.terminal.toggleTerminal"
-    }
-  ]
-  
+  {
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.quit"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+alt+w",
+    "command": "workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "workbench.action.reopenClosedEditor"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "-workbench.action.reopenClosedEditor"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  }
+]
