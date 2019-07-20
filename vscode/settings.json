@@ -14,7 +14,7 @@
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Material Theme Ocean",
+    "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
     "editor.lineHeight": 40,
     "editor.fontSize": 18,
@@ -50,7 +50,29 @@
         "menubar.selectionForeground": "#AB47BC"
     },
     "materialTheme.accent": "Purple",
-    "extensions.closeExtensionDetailsOnViewChange": true,
     "workbench.editor.closeEmptyGroups": false,
-    "window.closeWhenEmpty": false
+    "window.closeWhenEmpty": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "phpcs.errorSeverity": 5,
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+        "vue-html"
+    ],
+    "d.servedPath": "/home/caddy/.local/share/code-d/bin/serve-d",
+    "explorer.confirmDelete": false,
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "yaml.format.bracketSpacing": false,
+    "yaml.validate": false,
+    "yaml.completion": false,
+    "yaml.format.proseWrap": "never",
+    "yaml.hover": false,
+    "yaml.schemaStore.enable": false
 }
