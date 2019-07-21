@@ -68,11 +68,5 @@
     "explorer.confirmDelete": false,
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "yaml.format.bracketSpacing": false,
-    "yaml.validate": false,
-    "yaml.completion": false,
-    "yaml.format.proseWrap": "never",
-    "yaml.hover": false,
-    "yaml.schemaStore.enable": false
+    }
 }
