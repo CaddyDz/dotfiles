@@ -1,0 +1,14 @@
+[/]
+foreground-color='rgb(255,255,255)'
+visible-name='caddy'
+login-shell=false
+palette=['rgb(0,0,0)', 'rgb(170,0,0)', 'rgb(0,170,0)', 'rgb(170,85,0)', 'rgb(0,0,170)', 'rgb(170,0,170)', 'rgb(0,170,170)', 'rgb(170,170,170)', 'rgb(85,85,85)', 'rgb(255,85,85)', 'rgb(85,255,85)', 'rgb(255,255,85)', 'rgb(85,85,255)', 'rgb(255,85,255)', 'rgb(85,255,255)', 'rgb(255,255,255)']
+custom-command='/bin/zsh'
+default-size-columns=212
+default-size-rows=55
+use-system-font=false
+use-custom-command=true
+use-theme-colors=false
+font='DejaVu Sans Mono 20'
+background-color='rgb(0,0,0)'
+audible-bell=false

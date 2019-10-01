@@ -1,10 +1,8 @@
 screenfetch
-export PATH=/usr/bin:/usr/sbin:$PATH
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/bin:/sbin:$PATH
+export PATH=$HOME/.config/composer/vendor/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="caddy"
-plugins=(git debian github sudo)
+plugins=(git debian github sudo wakatime)
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 function dumpdb() {
