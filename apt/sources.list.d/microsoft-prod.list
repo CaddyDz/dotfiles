@@ -1,0 +1,2 @@
+
+deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/debian/10/prod buster main
