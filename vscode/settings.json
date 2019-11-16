@@ -14,7 +14,7 @@
     "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Material Theme Palenight",
+    "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
     "editor.lineHeight": 40,
     "editor.fontSize": 14,
@@ -26,7 +26,7 @@
     "breadcrumbs.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "workbench.colorCustomizations": {
         "activityBarBadge.background": "#80CBC4",
         "list.activeSelectionForeground": "#80CBC4",
@@ -80,6 +80,6 @@
     },
     "workbench.settings.useSplitJSON": true,
     "editor.formatOnSave": true,
-    "omnisharp.path": "latest",
-    "csharp.format.enable": true
+    "csharp.format.enable": true,
+    "extensions.ignoreRecommendations": true
 }
