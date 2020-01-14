@@ -17,7 +17,7 @@
     "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
     "editor.lineHeight": 40,
-    "editor.fontSize": 14,
+    "editor.fontSize": 12,
     "explorer.autoReveal": false,
     "atomKeymap.promptV3Features": true,
     "files.hotExit": "off",
@@ -25,8 +25,6 @@
     "workbench.settings.editor": "json",
     "breadcrumbs.enabled": false,
     "explorer.confirmDragAndDrop": false,
-    "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 2,
     "workbench.colorCustomizations": {
         "activityBarBadge.background": "#80CBC4",
         "list.activeSelectionForeground": "#80CBC4",
@@ -56,7 +54,6 @@
     "[javascript]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "phpcs.errorSeverity": 5,
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
     "eslint.validate": [
@@ -80,6 +77,5 @@
     },
     "workbench.settings.useSplitJSON": true,
     "editor.formatOnSave": true,
-    "csharp.format.enable": true,
     "extensions.ignoreRecommendations": true
 }
