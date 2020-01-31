@@ -77,5 +77,8 @@
     },
     "workbench.settings.useSplitJSON": true,
     "editor.formatOnSave": true,
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "git.alwaysSignOff": true,
+    "git.enableCommitSigning": true,
+    "git.postCommitCommand": "push"
 }
