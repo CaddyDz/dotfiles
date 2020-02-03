@@ -16,8 +16,8 @@
     "workbench.editor.enablePreview": false,
     "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.lineHeight": 40,
-    "editor.fontSize": 12,
+    "editor.lineHeight": 30,
+    "editor.fontSize": 14,
     "explorer.autoReveal": false,
     "atomKeymap.promptV3Features": true,
     "files.hotExit": "off",
@@ -80,5 +80,6 @@
     "extensions.ignoreRecommendations": true,
     "git.alwaysSignOff": true,
     "git.enableCommitSigning": true,
-    "git.postCommitCommand": "push"
+    "git.postCommitCommand": "push",
+    "zenMode.centerLayout": false
 }
