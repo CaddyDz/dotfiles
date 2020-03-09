@@ -14,6 +14,7 @@ alias repush="git pull --rebase && git push"
 alias install="brew install"
 alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
+alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 # Deployment
 alias ssh-dermato="ssh -p [SSH PORT] [USER]@[IP]"
 # PHP & Laravel
