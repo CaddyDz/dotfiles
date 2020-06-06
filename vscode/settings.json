@@ -81,5 +81,6 @@
     "git.alwaysSignOff": true,
     "git.enableCommitSigning": true,
     "git.postCommitCommand": "push",
-    "zenMode.centerLayout": false
+    "zenMode.centerLayout": false,
+    "csharp.suppressDotnetInstallWarning": true
 }
