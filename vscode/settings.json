@@ -1,4 +1,5 @@
 {
     "workbench.settings.editor": "json",
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "files.autoSave": "onFocusChange"
 }
