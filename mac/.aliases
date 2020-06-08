@@ -15,6 +15,7 @@ alias install="brew install"
 alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
 # Deployment
 alias ssh-dermato="ssh -p [SSH PORT] [USER]@[IP]"
 # PHP & Laravel
