@@ -5,5 +5,7 @@
     "workbench.colorTheme": "Solarized Dark",
     "workbench.startupEditor": "newUntitledFile",
     // Controls whether the minimap is shown.
-	"editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    // Show available settings and user setting side by side
+    "workbench.settings.useSplitJSON": true
 }
