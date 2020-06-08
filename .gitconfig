@@ -6,7 +6,7 @@
 	signingkey = best-kept-secret
 [core]
 	editor = vim
-	autocrlf = input
+	autocrlf = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
