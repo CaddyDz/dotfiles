@@ -1,3 +1,4 @@
 {
-    "workbench.settings.editor": "json"
+    "workbench.settings.editor": "json",
+    "explorer.openEditors.visible": 0
 }
