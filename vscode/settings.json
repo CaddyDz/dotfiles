@@ -1,5 +1,6 @@
 {
     "workbench.settings.editor": "json",
     "explorer.openEditors.visible": 0,
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Solarized Dark"
 }
