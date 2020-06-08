@@ -1,12 +1,10 @@
 tap "github/gh"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 brew "asciinema"
 brew "automake"
-brew "cloc"
 brew "cmake"
 brew "coreutils"
 brew "dnsmasq", restart_service: true
@@ -29,7 +27,6 @@ brew "php", restart_service: true
 brew "pkg-config"
 brew "pngquant"
 brew "rbenv"
-brew "redis", restart_service: true
 brew "ripgrep"
 brew "svgo"
 brew "the_silver_searcher"
