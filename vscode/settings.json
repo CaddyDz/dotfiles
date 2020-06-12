@@ -14,5 +14,6 @@
 	"editor.autoIndent": "brackets",
 	"editor.tabSize": 4,
 	"breadcrumbs.enabled": false,
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"window.restoreFullscreen": true
 }
