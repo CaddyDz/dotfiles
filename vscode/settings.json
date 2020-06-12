@@ -2,7 +2,6 @@
     "workbench.settings.editor": "json",
     "explorer.openEditors.visible": 0,
     "files.autoSave": "onFocusChange",
-    "workbench.colorTheme": "Solarized Dark",
     "workbench.startupEditor": "newUntitledFile",
     // Controls whether the minimap is shown.
     "editor.minimap.enabled": false,
