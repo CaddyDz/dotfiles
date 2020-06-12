@@ -12,5 +12,6 @@
     "editor.insertSpaces": false,
     "editor.renderWhitespace": "boundary",
     "editor.autoIndent": "brackets",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "breadcrumbs.enabled": false
 }
