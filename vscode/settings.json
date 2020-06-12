@@ -18,5 +18,6 @@
 	"window.restoreFullscreen": true,
 	"files.insertFinalNewline": true,
 	"workbench.editor.enablePreview": false,
-	"explorer.autoReveal": false
+	"explorer.autoReveal": false,
+	"extensions.ignoreRecommendations": true
 }
