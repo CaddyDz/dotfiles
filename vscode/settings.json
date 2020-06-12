@@ -1,17 +1,18 @@
 {
-    "workbench.settings.editor": "json",
-    "explorer.openEditors.visible": 0,
-    "files.autoSave": "onFocusChange",
-    "workbench.startupEditor": "newUntitledFile",
-    // Controls whether the minimap is shown.
-    "editor.minimap.enabled": false,
-    // Show available settings and user setting side by side
-    "workbench.settings.useSplitJSON": true,
-    "editor.wordWrap": "on",
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.autoIndent": "brackets",
-    "editor.tabSize": 4,
-    "breadcrumbs.enabled": false
+	"workbench.settings.editor": "json",
+	"explorer.openEditors.visible": 0,
+	"files.autoSave": "onFocusChange",
+	"workbench.startupEditor": "newUntitledFile",
+	// Controls whether the minimap is shown.
+	"editor.minimap.enabled": false,
+	// Show available settings and user setting side by side
+	"workbench.settings.useSplitJSON": true,
+	"editor.wordWrap": "on",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.autoIndent": "brackets",
+	"editor.tabSize": 4,
+	"breadcrumbs.enabled": false,
+	"editor.formatOnSave": true
 }
