@@ -15,5 +15,6 @@
 	"editor.tabSize": 4,
 	"breadcrumbs.enabled": false,
 	"editor.formatOnSave": true,
-	"window.restoreFullscreen": true
+	"window.restoreFullscreen": true,
+	"files.insertFinalNewline": true
 }
