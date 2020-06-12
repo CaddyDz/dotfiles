@@ -16,5 +16,6 @@
 	"breadcrumbs.enabled": false,
 	"editor.formatOnSave": true,
 	"window.restoreFullscreen": true,
-	"files.insertFinalNewline": true
+	"files.insertFinalNewline": true,
+	"workbench.editor.enablePreview": false
 }
