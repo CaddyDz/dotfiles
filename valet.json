@@ -1,6 +1,6 @@
 {
-    "tld": "dev",
-    "paths": [
-        "/Users/caddy/Sites"
-    ]
+	"tld": "dev",
+	"paths": [
+		"/Users/caddy/Sites"
+	]
 }
