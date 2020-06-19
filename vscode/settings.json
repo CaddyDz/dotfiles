@@ -22,5 +22,8 @@
 	"extensions.ignoreRecommendations": true,
 	"files.trimTrailingWhitespace": true,
 	"workbench.colorTheme": "One Dark Pro",
+	"editor.fontSize": 14,
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
 	"update.mode": "manual"
 }
