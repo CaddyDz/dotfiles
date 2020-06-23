@@ -25,5 +25,7 @@
 	"editor.fontSize": 14,
 	"editor.fontFamily": "Fira Code",
 	"editor.fontLigatures": true,
-	"update.mode": "manual"
+	"update.mode": "manual",
+	"vetur.format.options.useTabs": true,
+	"vetur.format.options.tabSize": 4
 }
