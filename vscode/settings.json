@@ -31,5 +31,6 @@
 	"d.servedPath": "/Users/caddy/.vscode/extensions/webfreak.code-d-0.22.0/bin/serve-d",
 	"d.dcdClientPath": "/Users/caddy/.code-d/bin/dcd-client",
 	"d.dcdServerPath": "/Users/caddy/.code-d/bin/dcd-server",
-	"explorer.confirmDragAndDrop": false
+	"explorer.confirmDragAndDrop": false,
+	"discord.silent": true
 }
