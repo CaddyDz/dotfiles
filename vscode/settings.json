@@ -27,5 +27,8 @@
 	"editor.fontLigatures": true,
 	"update.mode": "manual",
 	"vetur.format.options.useTabs": true,
-	"vetur.format.options.tabSize": 4
+	"vetur.format.options.tabSize": 4,
+	"d.servedPath": "/Users/caddy/.vscode/extensions/webfreak.code-d-0.22.0/bin/serve-d",
+	"d.dcdClientPath": "/Users/caddy/.code-d/bin/dcd-client",
+	"d.dcdServerPath": "/Users/caddy/.code-d/bin/dcd-server"
 }
