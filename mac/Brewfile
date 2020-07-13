@@ -18,7 +18,6 @@ brew "libyaml"
 brew "lynx"
 brew "mariadb", restart_service: true
 brew "nginx", restart_service: true
-brew "node"
 brew "optipng"
 brew "php", restart_service: true
 brew "pkg-config"
@@ -30,3 +29,4 @@ brew "the_silver_searcher"
 brew "wget"
 brew "zlib"
 cask "java"
+cask "sequel-ace"
