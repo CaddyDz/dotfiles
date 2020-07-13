@@ -32,5 +32,6 @@
 	"d.dcdClientPath": "/Users/caddy/.code-d/bin/dcd-client",
 	"d.dcdServerPath": "/Users/caddy/.code-d/bin/dcd-server",
 	"explorer.confirmDragAndDrop": false,
-	"discord.silent": true
+	"discord.silent": true,
+	"editor.multiCursorModifier": "ctrlCmd"
 }
