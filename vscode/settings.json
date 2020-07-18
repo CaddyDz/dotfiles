@@ -33,5 +33,11 @@
 	"d.dcdServerPath": "/Users/caddy/.code-d/bin/dcd-server",
 	"explorer.confirmDragAndDrop": false,
 	"discord.silent": true,
+	"discord.detailsEditing": "Fighting {filename}",
+	"discord.detailsIdle": "Coffee time",
+	"discord.smallImage": "vscode",
+	"discord.largeImageIdle": "Coffee time",
+	"discord.lowerDetailsEditing": "Project: {workspace}",
+	"discord.largeImage": "Fighting a {LANG} file",
 	"editor.multiCursorModifier": "ctrlCmd"
 }
