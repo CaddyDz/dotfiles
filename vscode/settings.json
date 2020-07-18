@@ -39,5 +39,15 @@
 	"discord.largeImageIdle": "Coffee time",
 	"discord.lowerDetailsEditing": "Project: {workspace}",
 	"discord.largeImage": "Fighting a {LANG} file",
-	"editor.multiCursorModifier": "ctrlCmd"
+	"editor.multiCursorModifier": "ctrlCmd",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/vendor": true,
+		"**/nova": true,
+		"**/storage/debugbar": true
+	},
+	"search.useGlobalIgnoreFiles": false,
+	"search.useIgnoreFiles": false
 }
