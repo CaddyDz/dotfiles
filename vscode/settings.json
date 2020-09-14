@@ -21,16 +21,11 @@
 	"explorer.autoReveal": false,
 	"extensions.ignoreRecommendations": true,
 	"files.trimTrailingWhitespace": true,
-	"workbench.colorTheme": "One Dark Pro",
-	"editor.fontSize": 14,
 	"editor.fontFamily": "Fira Code",
 	"editor.fontLigatures": true,
 	"update.mode": "manual",
 	"vetur.format.options.useTabs": true,
 	"vetur.format.options.tabSize": 4,
-	"d.servedPath": "/Users/caddy/.vscode/extensions/webfreak.code-d-0.22.0/bin/serve-d",
-	"d.dcdClientPath": "/Users/caddy/.code-d/bin/dcd-client",
-	"d.dcdServerPath": "/Users/caddy/.code-d/bin/dcd-server",
 	"explorer.confirmDragAndDrop": false,
 	"discord.silent": true,
 	"discord.detailsEditing": "Fighting {filename}",
@@ -40,14 +35,66 @@
 	"discord.lowerDetailsEditing": "Project: {workspace}",
 	"discord.largeImage": "Fighting a {LANG} file",
 	"editor.multiCursorModifier": "ctrlCmd",
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/bower_components": true,
-		"**/*.code-search": true,
-		"**/vendor": true,
-		"**/nova": true,
-		"**/storage/debugbar": true
+	"workbench.iconTheme": "vscode-icons",
+	"vsicons.dontShowNewVersionMessage": true,
+	"editor.fontSize": 18,
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
-	"search.useGlobalIgnoreFiles": false,
-	"search.useIgnoreFiles": false
+	"workbench.colorTheme": "GitHub Dark",
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	// Adding new filename extensions to an already supported icon.
+	// note: the format must match the existing one. If not, it will use the extension you provide.
+	"vsicons.associations.folders": [{
+			"icon": "macos",
+			"extensions": ["mac"],
+			"format": "svg"
+		},
+		{
+			"icon": "server",
+			"extensions": ["vps"],
+			"format": "svg"
+		},
+		{
+			"icon": "cli",
+			"extensions": ["terminal"],
+			"format": "svg"
+		},
+		{
+			"icon": "github",
+			"extensions": ["github"],
+			"format": "svg"
+		},
+		{
+			"icon": "git",
+			"extensions": ["git"],
+			"format": "svg"
+		},
+		{
+			"icon": "node",
+			"extensions": ["node"],
+			"format": "svg"
+		}
+	],
+	"vsicons.associations.files": [{
+			"icon": "mysql",
+			"extensions": [".my.cnf"],
+			"filename": true,
+			"format": "svg"
+		},
+		{
+			"icon": "nuxt",
+			"extensions": [".nuxtrc"],
+			"filename": true,
+			"format": "svg"
+		},
+		{
+			"icon": "php",
+			"extensions": [".pearrc"],
+			"filename": true,
+			"format": "svg"
+		}
+	]
 }

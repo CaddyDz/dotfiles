@@ -10,6 +10,7 @@ brew "gifsicle"
 brew "git"
 brew "graphviz"
 brew "htop"
+brew "httrack"
 brew "imagemagick"
 brew "jpegoptim"
 brew "libksba"
@@ -22,7 +23,9 @@ brew "optipng"
 brew "php", restart_service: true
 brew "pkg-config"
 brew "pngquant"
+brew "postgresql", restart_service: true
 brew "rbenv"
+brew "redis", restart_service: true
 brew "ripgrep"
 brew "svgo"
 brew "the_silver_searcher"

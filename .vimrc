@@ -7,12 +7,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " All of your Plugins must be added before the following line
-Plugin 'wakatime/vim-wakatime'
-
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-" filetype plugin on
+"filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -31,4 +29,4 @@ set autoindent
 set background=dark
 " Color scheme
 colorscheme simple-dark
-
+Plugin 'wakatime/vim-wakatime'
