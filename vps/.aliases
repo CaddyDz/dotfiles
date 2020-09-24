@@ -4,7 +4,7 @@ alias gl="git log"
 alias gcom="git checkout master"
 alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
 # ZSH
-alias zshconf="nano ~/.zshrc"
+alias zshconf="vim ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
 # PHP & Laravel
 alias test="vendor/bin/phpunit"
