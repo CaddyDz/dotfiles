@@ -86,8 +86,18 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>258 323 918 452 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 800 0 0 1280 800 </string>
+	<string>298 92 982 624 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
+	<string>0 0 1280 800 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>0 0 1280 800 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>0 0 1280 800 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>0 0 1280 800 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>0 0 1280 800 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
 	<string>0 0 1280 800 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
 	<array>
@@ -270,9 +280,9 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>9.4277423064720782</real>
+			<real>14.209892528553297</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1309,7 +1319,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.31781606916243665</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -2610,14 +2620,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1280, 800}}</string>
 		<key>topLeft</key>
-		<string>{145, 695}</string>
+		<string>{178, 732}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>A4274EA8-7AF5-4BA7-A8C3-28E1A602B454</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>39</integer>
+	<integer>250</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2954,6 +2964,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.jobPid</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>frame</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -3117,7 +3135,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession</string>
+				<string>currentSession.terminalWindowName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3174,6 +3192,14 @@
 				<true/>
 				<key>name</key>
 				<string>iterm2.localhostName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.jobPid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3307,19 +3333,19 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>currentSession</string>
 				<key>nonterminalContext</key>
 				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>currentSession.terminalWindowName</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
 			</dict>
 		</array>
 		<key>4</key>
@@ -3420,7 +3446,7 @@
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>5</integer>
+	<integer>6</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ToolbeltTools</key>
