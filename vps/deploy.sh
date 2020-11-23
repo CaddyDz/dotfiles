@@ -8,10 +8,11 @@ if [[ -n "$name" ]]; then
     git pull origin master
     composer install --optimize-autoloader --no-dev
     npm run prod
-    php artisan migrate:refresh --seed
+    php artisan migrate:refresh --seed --force
+    php artisan l5-swagger:generate
 
     ( flock -w 10 9 || exit 1
-        echo 'Restarting FPM...'; sudo -S service php7.4-fpm reload ) 9>/tmp/fpmlock
+        echo 'Restarting FPM...'; sudo -S service $FORGE_PHP_FPM reload ) 9>/tmp/fpmlock
 else
     echo "${RED}Error:${NC} Enter site name"
     exit 1
