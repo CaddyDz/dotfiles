@@ -2,7 +2,7 @@
 	default = simple
 [user]
 	name = Salim Djerbouh
-	email = github@caddydz.me
+	email = caddydz4@gmail.com
 	signingkey = best-kept-secret
 [core]
 	editor = vim
