@@ -35,66 +35,13 @@
 	"discord.lowerDetailsEditing": "Project: {workspace}",
 	"discord.largeImage": "Fighting a {LANG} file",
 	"editor.multiCursorModifier": "ctrlCmd",
-	"workbench.iconTheme": "vscode-icons",
-	"vsicons.dontShowNewVersionMessage": true,
-	"editor.fontSize": 18,
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.fontSize": 12,
 	"[php]": {
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
-	"workbench.colorTheme": "GitHub Dark",
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
-	// Adding new filename extensions to an already supported icon.
-	// note: the format must match the existing one. If not, it will use the extension you provide.
-	"vsicons.associations.folders": [{
-			"icon": "macos",
-			"extensions": ["mac"],
-			"format": "svg"
-		},
-		{
-			"icon": "server",
-			"extensions": ["vps"],
-			"format": "svg"
-		},
-		{
-			"icon": "cli",
-			"extensions": ["terminal"],
-			"format": "svg"
-		},
-		{
-			"icon": "github",
-			"extensions": ["github"],
-			"format": "svg"
-		},
-		{
-			"icon": "git",
-			"extensions": ["git"],
-			"format": "svg"
-		},
-		{
-			"icon": "node",
-			"extensions": ["node"],
-			"format": "svg"
-		}
-	],
-	"vsicons.associations.files": [{
-			"icon": "mysql",
-			"extensions": [".my.cnf"],
-			"filename": true,
-			"format": "svg"
-		},
-		{
-			"icon": "nuxt",
-			"extensions": [".nuxtrc"],
-			"filename": true,
-			"format": "svg"
-		},
-		{
-			"icon": "php",
-			"extensions": [".pearrc"],
-			"filename": true,
-			"format": "svg"
-		}
-	]
+	"workbench.colorTheme": "One Dark Pro"
 }
