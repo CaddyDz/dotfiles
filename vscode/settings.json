@@ -50,6 +50,7 @@
 		"**/nova": true,
 		"**/vendor": true,
 		"**/bower_components": true,
-		"**/*.code-search": true
+		"**/*.code-search": true,
+		"**/framework": true
 	}
 }
