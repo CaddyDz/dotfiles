@@ -43,5 +43,13 @@
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
-	"workbench.colorTheme": "One Dark Pro"
+	"workbench.colorTheme": "One Dark Pro",
+	"search.useIgnoreFiles": false,
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/nova": true,
+		"**/vendor": true,
+		"**/bower_components": true,
+		"**/*.code-search": true
+	}
 }
