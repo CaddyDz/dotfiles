@@ -43,7 +43,7 @@
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
-	"workbench.colorTheme": "One Dark Pro",
+	"workbench.colorTheme": "Community Material Theme Ocean",
 	"search.useIgnoreFiles": false,
 	"search.exclude": {
 		"**/node_modules": true,
@@ -51,6 +51,8 @@
 		"**/vendor": true,
 		"**/bower_components": true,
 		"**/*.code-search": true,
-		"**/framework": true
+		"**/storage/app": true,
+		"**/framework": true,
+		"**/.nuxt": true
 	}
 }
