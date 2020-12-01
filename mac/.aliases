@@ -24,5 +24,6 @@ alias art="php artisan"
 alias tinker="php artisan tinker"
 alias db="php artisan migrate:fresh --seed"
 alias docs="art l5-swagger:generate"
+alias fix="php-cs-fixer fix --allow-risky=yes"
 # Python
 alias python="python3"
