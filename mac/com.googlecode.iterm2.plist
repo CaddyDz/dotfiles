@@ -2549,6 +2549,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>PreventEscapeSequenceFromClearingHistory</key>
+	<false/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SavePasteHistory</key>
