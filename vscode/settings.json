@@ -52,6 +52,7 @@
 		"**/bower_components": true,
 		"**/*.code-search": true,
 		"**/storage/app": true,
+		"**/storage/debugbar": true,
 		"**/framework": true,
 		"**/.nuxt": true
 	}
