@@ -49,7 +49,7 @@
 	"search.exclude": {
 		"**/node_modules": true,
 		"**/nova": true,
-		"**/vendor": true,
+		"/vendor": true,
 		"**/bower_components": true,
 		"**/*.code-search": true,
 		"**/storage/app": true,
