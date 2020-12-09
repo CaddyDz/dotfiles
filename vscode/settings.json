@@ -26,6 +26,7 @@
 	"update.mode": "manual",
 	"vetur.format.options.useTabs": true,
 	"vetur.format.options.tabSize": 4,
+	"vetur.ignoreProjectWarning": true,
 	"explorer.confirmDragAndDrop": false,
 	"discord.silent": true,
 	"discord.detailsEditing": "Fighting {filename}",
