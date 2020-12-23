@@ -2,17 +2,23 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-brew "composer"
+brew "cmatrix"
+brew "curl"
 brew "dnsmasq", restart_service: true
+brew "ffmpeg"
+brew "freetds"
+brew "gh"
 brew "gnupg"
+brew "gource"
 brew "htop"
+brew "httrack"
+brew "imagemagick"
 brew "mariadb", restart_service: true
+brew "neofetch"
 brew "nginx", restart_service: true
 brew "node"
-brew "php-cs-fixer"
 brew "php@7.4", restart_service: true, link: true
-brew "redis", restart_service: true
+brew "watch"
 brew "wget"
-brew "zsh"
+cask "sequel-ace"
 cask "shiftit"
-cask "visual-studio-code"
