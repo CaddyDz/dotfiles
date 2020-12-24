@@ -1,50 +1,58 @@
 {
-	"workbench.settings.editor": "json",
-	"explorer.openEditors.visible": 0,
-	"files.autoSave": "onFocusChange",
-	"workbench.startupEditor": "newUntitledFile",
-	// Controls whether the minimap is shown.
-	"editor.minimap.enabled": false,
-	// Show available settings and user setting side by side
-	"workbench.settings.useSplitJSON": true,
-	"editor.wordWrap": "on",
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	"editor.renderWhitespace": "boundary",
-	"editor.autoIndent": "brackets",
-	"editor.tabSize": 4,
-	"breadcrumbs.enabled": false,
-	"editor.formatOnSave": true,
-	"window.restoreFullscreen": true,
-	"files.insertFinalNewline": true,
-	"workbench.editor.enablePreview": false,
-	"explorer.autoReveal": false,
-	"extensions.ignoreRecommendations": true,
-	"files.trimTrailingWhitespace": true,
-	"editor.fontFamily": "Fira Code",
-	"editor.fontLigatures": true,
-	"update.mode": "manual",
-	"vetur.format.options.useTabs": true,
-	"vetur.format.options.tabSize": 4,
-	"vetur.ignoreProjectWarning": true,
-	"explorer.confirmDragAndDrop": false,
-	"discord.silent": true,
-	"discord.detailsEditing": "Fighting {filename}",
-	"discord.detailsIdle": "Coffee time",
-	"discord.smallImage": "vscode",
-	"discord.largeImageIdle": "Coffee time",
-	"discord.lowerDetailsEditing": "Project: {workspace}",
-	"discord.largeImage": "Fighting a {LANG} file",
-	"editor.multiCursorModifier": "ctrlCmd",
-	"workbench.iconTheme": "material-icon-theme",
-	"editor.fontSize": 12,
 	"[php]": {
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
 	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
-	"workbench.colorTheme": "Community Material Theme Ocean",
+	// Enable/disable navigation breadcrumbs.
+	"breadcrumbs.enabled": false,
+	// Decides if error messages are shown to the user
+	"discord.silent": true,
+	// Custom string for the details section of the rich presence
+	// - '{null}' will be replaced with an empty space.
+	// - '{filename}' will be replaced with the current file name.
+	// - '{dirname}' will get replaced with the folder name that has the current file.
+	// - '{fulldirname}' will get replaced with the full directory name without the current file name.
+	// - '{workspace}' will be replaced with the current workspace name, if any.
+	// - '{workspaceFolder}' will be replaced with the currently accessed workspace folder, if any.
+	// - '{workspaceAndFolder} will be replaced with the currently accessed workspace and workspace folder like this: 'Workspace - WorkspaceFolder'
+	// - '{currentcolumn}' will get replaced with the current column of the current line.
+	// - '{currentline}' will get replaced with the current line number.
+	// - '{totallines}' will get replaced with the total line number.
+	// - '{filesize}' will get replaced with the current file's size.
+	// - '{gitreponame}' will be replaced with the active Git repository name (from the git URL)
+	// - '{gitbranch}' will be replaced with the current active branch name.
+	"discord.detailsEditing": "Fighting {filename}",
+	// Custom string for the details section of the rich presence when idling
+	// - '{null}' will be replaced with an empty space.
+	"discord.detailsIdle": "Coffee time",
+	"discord.smallImage": "vscode",
+	"discord.largeImageIdle": "Coffee time",
+	"discord.lowerDetailsEditing": "Project: {workspace}",
+	"discord.largeImage": "Fighting a {LANG} file",
+	// Controls the font family.
+	"editor.fontFamily": "Fira Code",
+	// Configures font ligatures or font features.
+	"editor.fontLigatures": true,
+	// Number of editors shown in the Open Editors pane. Setting this to 0 hides the Open Editors pane.
+	"explorer.openEditors.visible": 0,
+	"editor.autoIndent": "brackets",
+	// Controls whether the minimap is shown.
+	"editor.minimap.enabled": false,
+	"editor.detectIndentation": false,
+	"editor.wordWrap": "on",
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.tabSize": 4,
+	"editor.formatOnSave": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"explorer.confirmDragAndDrop": false,
+	"explorer.autoReveal": false,
+	"extensions.ignoreRecommendations": true,
+	"files.autoSave": "onFocusChange",
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
 	"search.useIgnoreFiles": false,
 	"search.exclude": {
 		"**/node_modules": true,
@@ -56,5 +64,16 @@
 		"**/storage/debugbar": true,
 		"**/framework": true,
 		"**/.nuxt": true
-	}
+	},
+	"window.restoreFullscreen": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "Community Material Theme",
+	// Determines which settings editor to use by default.
+	// - ui: Use the settings UI editor.
+	// - json: Use the JSON file editor.
+	"workbench.settings.editor": "json",
+	"workbench.startupEditor": "newUntitledFile",
+	// Controls whether to use the split JSON editor when editing settings as JSON.
+	"workbench.settings.useSplitJSON": true,
+	"workbench.editor.enablePreview": false,
 }
