@@ -18,6 +18,7 @@ alias install="brew install"
 alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
 alias flush-dns="dscacheutil -flushcache"
+alias dns="sudo networksetup -setdnsservers Wi-Fi 8.26.56.26 8.8.8.8"
 # PHP & Laravel
 alias test="vendor/bin/phpunit"
 alias art="php artisan"
