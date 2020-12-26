@@ -17,7 +17,7 @@ alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
 alias install="brew install"
 alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
-alias dns="dscacheutil -flushcache"
+alias flush-dns="dscacheutil -flushcache"
 # PHP & Laravel
 alias test="vendor/bin/phpunit"
 alias art="php artisan"
