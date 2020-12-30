@@ -66,9 +66,15 @@
 		"**/.nuxt": true
 	},
 	"vetur.ignoreProjectWarning": true,
+	// If set, automatically switch to the preferred color theme based on the OS appearance.
+	"window.autoDetectColorScheme": true,
+	// Specifies the preferred color theme for dark OS appearance when `window.autoDetectColorScheme` is enabled.
+	"workbench.preferredDarkColorTheme": "Material Theme Ocean",
+	// Specifies the preferred color theme for light OS appearance when `window.autoDetectColorScheme` is enabled.
+	"workbench.preferredLightColorTheme": "Material Theme Lighter",
 	"window.restoreFullscreen": true,
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "Community Material Theme",
+	"workbench.colorTheme": "Material Theme Lighter",
 	// Determines which settings editor to use by default.
 	// - ui: Use the settings UI editor.
 	// - json: Use the JSON file editor.
@@ -78,4 +84,5 @@
 	"workbench.settings.useSplitJSON": true,
 	"workbench.editor.enablePreview": false,
 	"explorer.confirmDelete": false,
+	"editor.fontSize": 20,
 }
