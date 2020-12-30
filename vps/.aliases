@@ -10,8 +10,13 @@ alias omz="cd ~/.oh-my-zsh"
 alias test="vendor/bin/phpunit"
 alias art="php artisan"
 alias tinker="php artisan tinker"
+alias docs="art l5-swagger:generate"
+# Python
+alias python="python3"
 # OS Specific
+alias install="sudo apt install"
+alias copy="xclip -sel clip <"
+alias reloadphp="( flock -w 10 9 || exit 1 echo 'Restarting FPM...'; sudo -S service php7.4-fpm reload ) 9>/tmp/fpmlock"
+# Misc
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
-# Server specific
-alias reloadphp="( flock -w 10 9 || exit 1
-    echo 'Restarting FPM...'; sudo -S service php7.4-fpm reload ) 9>/tmp/fpmlock"
+alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
