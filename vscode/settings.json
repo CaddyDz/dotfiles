@@ -65,6 +65,7 @@
 		"**/framework": true,
 		"**/.nuxt": true
 	},
+	"vetur.ignoreProjectWarning": true,
 	"window.restoreFullscreen": true,
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.colorTheme": "Community Material Theme",
