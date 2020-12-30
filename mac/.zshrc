@@ -1,5 +1,5 @@
 neofetch
-export PATH=$HOME/.config/composer/vendor/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="caddy"
 plugins=(git osx github sudo wakatime)
