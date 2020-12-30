@@ -76,4 +76,5 @@
 	// Controls whether to use the split JSON editor when editing settings as JSON.
 	"workbench.settings.useSplitJSON": true,
 	"workbench.editor.enablePreview": false,
+	"explorer.confirmDelete": false,
 }
