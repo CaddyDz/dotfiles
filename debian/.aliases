@@ -16,7 +16,7 @@ alias install="sudo dpkg -i"
 alias copy="xclip -sel clip <"
 alias open="nemo ."
 # PHP & Laravel
-alias test="vendor/bin/phpunit"
+alias test="php artisan test"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias db="php artisan migrate:fresh --seed"

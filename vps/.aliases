@@ -7,7 +7,7 @@ alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
 alias zshconf="vim ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
 # PHP & Laravel
-alias test="vendor/bin/phpunit"
+alias test="php artisan test"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias docs="art l5-swagger:generate"

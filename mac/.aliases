@@ -13,7 +13,7 @@ alias repush="git pull --rebase && git push"
 alias zshconf="vim ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
 # PHP & Laravel
-alias test="vendor/bin/phpunit"
+alias test="php artisan test"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias db="php artisan migrate:fresh --seed"
