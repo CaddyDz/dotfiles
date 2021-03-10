@@ -1,4 +1,5 @@
 # Git
+
 alias gs="git status"
 alias gl="git log"
 alias gcom="git checkout master"
@@ -9,19 +10,29 @@ alias wip="git add . && git commit -s -S -m 'Work In Progress' -m 'This is a tra
 alias omz="cd ~/.oh-my-zsh"
 alias com="git commit -s -a -m 'Empty' --allow-empty"
 alias repush="git pull --rebase && git push"
+
 # ZSH
+
 alias zshconf="vim ~/.zshrc"
 alias omz="cd ~/.oh-my-zsh"
+
 # PHP & Laravel
+
+alias c="composer"
 alias test="php artisan test"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias db="php artisan migrate:fresh --seed"
 alias docs="art l5-swagger:generate"
 alias fix="php-cs-fixer fix --allow-risky=yes"
+
+
 # Python
+
 alias python="python3"
+
 # OS Specific
+
 alias install="brew install"
 alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
