@@ -27,6 +27,11 @@ alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
 alias flush-dns="dscacheutil -flushcache"
 alias dns="sudo networksetup -setdnsservers Wi-Fi 8.26.56.26 8.8.8.8"
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
 # Misc
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
