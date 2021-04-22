@@ -34,32 +34,47 @@
 	// Number of editors shown in the Open Editors pane. Setting this to 0 hides the Open Editors pane.
 	"explorer.openEditors.visible": 0,
 	"editor.autoIndent": "brackets",
-	// Controls whether the minimap is shown.
 	"editor.detectIndentation": false,
+	"editor.fontSize": 18,
+	// Controls whether the minimap is shown.
 	"editor.minimap.enabled": false,
 	"editor.insertSpaces": false,
-	"editor.renderWhitespace": "boundary",
 	"editor.tabSize": 4,
 	"editor.formatOnSave": true,
 	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.renderWhitespace": "boundary",
 	"editor.wordWrap": "on",
-	"explorer.confirmDragAndDrop": false,
 	"explorer.autoReveal": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
 	"extensions.ignoreRecommendations": true,
 	"files.autoSave": "onFocusChange",
 	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
+	"git.autofetch": true,
+	"git.alwaysSignOff": true,
+	"git.autoStash": true,
+	"git.enableCommitSigning": true,
 	"search.useIgnoreFiles": false,
 	"search.exclude": {
 		"**/node_modules": true,
 		"**/nova": true,
-		"/vendor": true,
+		"**/vendor": true,
 		"**/bower_components": true,
 		"**/*.code-search": true,
 		"**/storage/app": true,
 		"**/storage/debugbar": true,
 		"**/framework": true,
 		"**/.nuxt": true
+	},
+	"vetur.format.defaultFormatter.html": "prettyhtml",
+	"vetur.format.options.useTabs": true,
+	"vetur.format.options.tabSize": 4,
+	"vetur.format.defaultFormatterOptions": {
+		"prettyhtml": {
+			"wrapAttributes": false,
+			"printWidth": 9999
+		}
 	},
 	"vetur.ignoreProjectWarning": true,
 	// If set, automatically switch to the preferred color theme based on the OS appearance.
@@ -70,7 +85,7 @@
 	"workbench.preferredLightColorTheme": "Material Theme Lighter",
 	"window.restoreFullscreen": true,
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "Material Theme Lighter",
+	"workbench.colorTheme": "Material Theme Ocean",
 	// Determines which settings editor to use by default.
 	// - ui: Use the settings UI editor.
 	// - json: Use the JSON file editor.
@@ -78,7 +93,5 @@
 	"workbench.startupEditor": "newUntitledFile",
 	// Controls whether to use the split JSON editor when editing settings as JSON.
 	"workbench.settings.useSplitJSON": true,
-	"workbench.editor.enablePreview": false,
-	"explorer.confirmDelete": false,
-	"editor.fontSize": 20,
+	"workbench.editor.enablePreview": false
 }

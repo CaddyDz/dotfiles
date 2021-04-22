@@ -50,3 +50,5 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 # Misc
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
+
+alias sql="cloud_sql_proxy -instances=shyfter-v3:europe-west1:shyfter-v3-db-dev=tcp:3307"
