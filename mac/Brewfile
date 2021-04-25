@@ -1,10 +1,16 @@
+tap "getsentry/tools"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "nicoverbruggen/cask"
+brew "cloc"
 brew "cmatrix"
+brew "code-server"
 brew "curl"
+brew "dcd"
 brew "dnsmasq", restart_service: true
+brew "dub"
 brew "ffmpeg"
 brew "freetds"
 brew "gh"
@@ -12,13 +18,21 @@ brew "gnupg"
 brew "gource"
 brew "htop"
 brew "httrack"
+brew "libheif"
 brew "imagemagick"
+brew "krb5"
+brew "libpq"
 brew "mariadb", restart_service: true
 brew "neofetch"
 brew "nginx", restart_service: true
+brew "nmap"
 brew "node"
-brew "php@7.4", restart_service: true, link: true
+brew "php", restart_service: true, link: false
+brew "php@7.4", link: true
+brew "redis", restart_service: true
 brew "watch"
 brew "wget"
-cask "sequel-ace"
+brew "youtube-dl"
+cask "phpmon"
+cask "rar"
 cask "shiftit"
