@@ -27,12 +27,11 @@ brew "neofetch"
 brew "nginx", restart_service: true
 brew "nmap"
 brew "node"
-brew "php", restart_service: true, link: false
-brew "php@7.4", link: true
+brew "php", link: false
+brew "php@7.4", restart_service: true, link: true
 brew "redis", restart_service: true
 brew "watch"
 brew "wget"
 brew "youtube-dl"
 cask "phpmon"
 cask "rar"
-cask "shiftit"
