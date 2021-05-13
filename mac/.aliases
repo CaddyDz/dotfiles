@@ -25,8 +25,8 @@ alias tinker="php artisan tinker"
 alias db="php artisan migrate:fresh --seed"
 alias docs="art l5-swagger:generate"
 alias fix="php-cs-fixer fix --allow-risky=yes"
-alias php8="brew unlink php@7.4 && brew link --overwrite --force php"
-alias php7="brew unlink php && brew link --overwrite --force php@7.4"
+alias php8="brew unlink php@7.4 && brew link --overwrite --force php && valet use php@8.0"
+alias php7="brew unlink php && brew link --overwrite --force php@7.4 && valet use php@7.4"
 
 # Python
 
