@@ -1,9 +1,6 @@
 {
     "require": {
-        "laravel/valet": "^2.7",
-        "squizlabs/php_codesniffer": "*",
-        "laravel/installer": "^3.0",
-        "rubenrua/symfony-clean-tags-composer-plugin": "^1.0",
-        "friendsofphp/php-cs-fixer": "^2.16"
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "laravel/valet": "^2.13"
     }
 }
