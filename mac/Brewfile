@@ -10,7 +10,7 @@ brew "cmatrix"
 brew "code-server"
 brew "composer"
 brew "dcd"
-brew "dnsmasq", restart_service: true
+brew "dnsmasq"
 brew "dub"
 brew "ffmpeg"
 brew "freetds"
