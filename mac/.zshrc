@@ -29,10 +29,3 @@ function remove-merged-branches () {
 function clone() {
 	httrack -F "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" $1 -O $2 -%v -s0
 }
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/caddy/Downloads/Programs/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/caddy/Downloads/Programs/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/caddy/Downloads/Programs/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/caddy/Downloads/Programs/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/usr/local/sbin:$PATH"
