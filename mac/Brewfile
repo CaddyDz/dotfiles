@@ -8,14 +8,15 @@ tap "nicoverbruggen/cask"
 brew "cloc"
 brew "cmatrix"
 brew "code-server"
+brew "freetds"
+brew "php", restart_service: true
 brew "composer"
 brew "dcd"
 brew "dnsmasq"
 brew "dub"
 brew "ffmpeg"
-brew "freetds"
 brew "gh"
-brew "gnupg", link: false
+brew "gnupg"
 brew "gource"
 brew "htop"
 brew "httrack"
@@ -26,8 +27,7 @@ brew "neofetch"
 brew "nginx"
 brew "nmap"
 brew "nvm"
-brew "php", link: false
-brew "php@7.4", restart_service: true, link: true
+brew "php@7.4"
 brew "redis", restart_service: true
 brew "watch"
 brew "wget"
