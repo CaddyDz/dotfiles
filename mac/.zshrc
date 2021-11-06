@@ -1,5 +1,7 @@
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 ZSH_THEME="caddy"
 plugins=(git macos github sudo)
 source $ZSH/oh-my-zsh.sh
