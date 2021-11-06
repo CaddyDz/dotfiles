@@ -2,7 +2,7 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH=$HOME/.flutter/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="caddy"
-plugins=(git osx github sudo wakatime)
+plugins=(git macos github sudo)
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 function dumpdb() {
