@@ -2,19 +2,13 @@
 
 alias gs="git status"
 alias gl="git log"
-alias gcom="git checkout master"
-alias gc="git commit -m"
 alias gcs="git commit -s -S"
 alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
 alias wip="git add . && git commit -s -S -m 'Work In Progress' -m 'This is a trash commit to save changes'"
-alias omz="cd ~/.oh-my-zsh"
-alias com="git commit -s -a -m 'Empty' --allow-empty"
-alias repush="git pull --rebase && git push"
 
 # ZSH
 
 alias zshconf="vim ~/.zshrc"
-alias omz="cd ~/.oh-my-zsh"
 
 # PHP & Laravel
 
@@ -23,32 +17,16 @@ alias test="php artisan test"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias db="php artisan migrate:fresh --seed"
-alias docs="art l5-swagger:generate"
-alias fix="php-cs-fixer fix --allow-risky=yes"
-alias php8="brew unlink php@7.4 && brew link --overwrite --force php && valet use php@8.0"
-alias php7="brew unlink php && brew link --overwrite --force php@7.4 && valet use php@7.4"
-
-# Python
-
-alias python="python3"
+alias php8="brew unlink php@7.4 && brew link --overwrite --force php"
+alias php7="brew unlink php && brew link --overwrite --force php@7.4"
 
 # OS Specific
 
-alias install="brew install"
 alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
 alias flush-dns="dscacheutil -flushcache"
 alias dns="sudo networksetup -setdnsservers Wi-Fi 8.26.56.26 8.8.8.8"
 
-# Empty the Trash on all mounted volumes and the main HDD
-# Also, clear Apple’s System Logs to improve shell startup speed
-alias trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
-
-# Lock the screen
-alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
 # Misc
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
-alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
 
-alias sql="cloud_sql_proxy -instances=shyfter-v3:europe-west1:shyfter-v3-db-dev=tcp:3307"
