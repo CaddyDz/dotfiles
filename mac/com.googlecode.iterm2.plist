@@ -731,15 +731,19 @@
 					</dict>
 					<dict>
 						<key>class</key>
-						<string>iTermStatusBarFixedSpacerComponent</string>
+						<string>iTermStatusBarSpringComponent</string>
 						<key>configuration</key>
 						<dict>
 							<key>knobs</key>
 							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
 								<key>base: priority</key>
 								<real>5</real>
-								<key>iTermStatusBarFixedSpacerComponentWidthKnob</key>
-								<integer>5</integer>
+								<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+								<integer>1</integer>
+								<key>iTermStatusBarSpringComponentSpringConstantKey</key>
+								<real>0.01</real>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
@@ -759,9 +763,7 @@
 								<key>algorithm</key>
 								<integer>1</integer>
 								<key>auto-rainbow style</key>
-								<integer>2</integer>
-								<key>font</key>
-								<string>.AppleSystemUIFont 12</string>
+								<integer>0</integer>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
