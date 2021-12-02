@@ -29,4 +29,3 @@ alias dns="sudo networksetup -setdnsservers Wi-Fi 8.26.56.26 8.8.8.8"
 
 # Misc
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
-
