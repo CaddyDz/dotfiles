@@ -252,6 +252,8 @@
 			<string>511F1B1E-854E-4CBE-9402-503487FC7471</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
