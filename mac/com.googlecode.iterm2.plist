@@ -606,12 +606,16 @@
 						<dict>
 							<key>knobs</key>
 							<dict>
+								<key>abbreviate-localhost</key>
+								<string>🏠</string>
 								<key>base: compression resistance</key>
 								<integer>1</integer>
 								<key>base: priority</key>
 								<real>5</real>
-								<key>path</key>
-								<string>hostname</string>
+								<key>maxwidth</key>
+								<real>+infinity</real>
+								<key>minwidth</key>
+								<string>0</string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
@@ -631,7 +635,9 @@
 								<key>algorithm</key>
 								<integer>1</integer>
 								<key>auto-rainbow style</key>
-								<integer>0</integer>
+								<integer>2</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
@@ -652,8 +658,6 @@
 								<real>+infinity</real>
 								<key>minwidth</key>
 								<integer>0</integer>
-								<key>path</key>
-								<string>path</string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
