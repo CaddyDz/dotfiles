@@ -1,11 +1,23 @@
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-brew "php", restart_service: true
 brew "composer"
-brew "dnsmasq"
-brew "gh"
+brew "dnsmasq", restart_service: true
 brew "mariadb", restart_service: true
 brew "nginx", restart_service: true
-brew "php@7.4"
+brew "openjdk"
+brew "php@7.4", restart_service: true, link: true
 brew "redis", restart_service: true
+cask "alfred"
+cask "discord"
+cask "google-chrome"
+cask "iterm2"
+cask "postman"
+cask "sequel-ace"
+cask "slack"
+cask "telegram"
+cask "tiles"
+cask "tinkerwell"
+cask "tunnelblick"
+cask "visual-studio-code"
