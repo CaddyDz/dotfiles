@@ -13,12 +13,11 @@ alias zshconf="vim ~/.zshrc"
 # PHP & Laravel
 
 alias c="composer"
-alias test="php artisan test"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias db="php artisan migrate:fresh --seed"
-alias php8="brew unlink php@7.4 && brew link --overwrite --force php"
-alias php7="brew unlink php && brew link --overwrite --force php@7.4"
+alias php8="brew unlink php@7.4 && brew link --overwrite --force php@8.0"
+alias php7="brew unlink php@8.0 && brew link --overwrite --force php@7.4"
 
 # OS Specific
 
