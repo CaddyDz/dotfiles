@@ -15,6 +15,7 @@ brew "openjdk"
 brew "php@7.4"
 brew "php@8.0"
 brew "redis", restart_service: true
+brew "semgrep"
 cask "alfred"
 cask "discord"
 cask "google-chrome"
