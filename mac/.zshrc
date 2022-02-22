@@ -9,3 +9,4 @@ source ~/.aliases
 function reset() {
 	(mysql -e "drop database $1;create database $1")
 }
+export PATH="/usr/local/opt/node@16/bin:$PATH"
