@@ -3,11 +3,12 @@
 [user]
 	name = Salim Djerbouh
 	email = caddydz4@gmail.com
-	signingkey = best-kept-secret
+	signingkey = 48EC0123EF70902F
 [core]
 	editor = vim
 	autocrlf = false
 	hooksPath = hooks
+	excludesfile = /Users/caddydz/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
