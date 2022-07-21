@@ -1,32 +1,11 @@
 {
-	"[php]": {
-		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	// Enable/disable navigation breadcrumbs.
 	"breadcrumbs.enabled": false,
-	// Custom string for the details section of the rich presence
-	// - '{null}' will be replaced with an empty space.
-	// - '{filename}' will be replaced with the current file name.
-	// - '{dirname}' will get replaced with the folder name that has the current file.
-	// - '{fulldirname}' will get replaced with the full directory name without the current file name.
-	// - '{workspace}' will be replaced with the current workspace name, if any.
-	// - '{workspaceFolder}' will be replaced with the currently accessed workspace folder, if any.
-	// - '{workspaceAndFolder} will be replaced with the currently accessed workspace and workspace folder like this: 'Workspace - WorkspaceFolder'
-	// - '{currentcolumn}' will get replaced with the current column of the current line.
-	// - '{currentline}' will get replaced with the current line number.
-	// - '{totallines}' will get replaced with the total line number.
-	// - '{filesize}' will get replaced with the current file's size.
-	// - '{gitreponame}' will be replaced with the active Git repository name (from the git URL)
-	// - '{gitbranch}' will be replaced with the current active branch name.
-	"discord.detailsEditing": "Fighting {filename}",
-	// Custom string for the details section of the rich presence when idling
-	// - '{null}' will be replaced with an empty space.
-	"discord.smallImage": "vscode",
-	"discord.lowerDetailsEditing": "Project: {workspace}",
-	"discord.largeImage": "Fighting a {LANG} file",
+	// When enabled, the diff editor ignores changes in leading or trailing whitespace.
+	"diffEditor.ignoreTrimWhitespace": false,
 	// Controls the font family.
 	"editor.fontFamily": "Fira Code",
 	// Configures font ligatures or font features.
@@ -35,12 +14,10 @@
 	"explorer.openEditors.visible": 0,
 	"editor.autoIndent": "brackets",
 	"editor.detectIndentation": false,
-	"editor.fontSize": 18,
 	// Controls whether the minimap is shown.
 	"editor.minimap.enabled": false,
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
-	"editor.formatOnSave": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.renderWhitespace": "boundary",
 	"editor.wordWrap": "on",
@@ -67,25 +44,16 @@
 		"**/framework": true,
 		"**/.nuxt": true
 	},
-	"vetur.format.defaultFormatter.html": "prettyhtml",
-	"vetur.format.options.useTabs": true,
-	"vetur.format.options.tabSize": 4,
-	"vetur.format.defaultFormatterOptions": {
-		"prettyhtml": {
-			"wrapAttributes": false,
-			"printWidth": 9999
-		}
-	},
-	"vetur.ignoreProjectWarning": true,
-	// If set, automatically switch to the preferred color theme based on the OS appearance.
+	// ****Note:*** If this setting is 'off', no telemetry will be sent regardless of other telemetry settings. If this setting is set to anything except 'off' and telemetry is disabled with deprecated settings, no telemetry will be sent.*
+	//
+	//  - all: Sends usage data, errors, and crash reports.
+	//  - error: Sends general error telemetry and crash reports.
+	//  - crash: Sends OS level crash reports.
+	//  - off: Disables all product telemetry.
+	"telemetry.telemetryLevel": "off",
+	// If set, automatically switch to the preferred color theme based on the OS appearance. If the OS appearance is dark, the theme specified at `workbench.preferredDarkColorTheme#` is used, for light `#workbench.preferredLightColorTheme`.
 	"window.autoDetectColorScheme": true,
-	// Specifies the preferred color theme for dark OS appearance when `window.autoDetectColorScheme` is enabled.
-	"workbench.preferredDarkColorTheme": "Material Theme Ocean",
-	// Specifies the preferred color theme for light OS appearance when `window.autoDetectColorScheme` is enabled.
-	"workbench.preferredLightColorTheme": "Material Theme Lighter",
 	"window.restoreFullscreen": true,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "Material Theme Ocean",
 	// Determines which settings editor to use by default.
 	// - ui: Use the settings UI editor.
 	// - json: Use the JSON file editor.
@@ -93,5 +61,6 @@
 	"workbench.startupEditor": "newUntitledFile",
 	// Controls whether to use the split JSON editor when editing settings as JSON.
 	"workbench.settings.useSplitJSON": true,
-	"workbench.editor.enablePreview": false
+	"workbench.editor.enablePreview": false,
+	"workbench.colorTheme": "Default Light+"
 }
