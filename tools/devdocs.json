@@ -1,9 +1,1 @@
-{
-	"manualUpdate": "1",
-	"docs": "bootstrap~4/bootstrap~3/css/d/dom/dom_events/git/html/http/javascript/jquery/laravel~5.7/markdown/moment/npm/php/phpunit~6/redis/sass/socketio/sqlite/vue~2/webpack/yarn",
-	"hideIntro": "1",
-	"tips": "KeyNav",
-	"theme": "dark",
-	"analyticsConsentAsked": "1",
-	"analyticsConsent": "1"
-}
+{"analyticsConsentAsked":"1","analyticsConsent":"1","manualUpdate":"1","hideIntro":"1","tips":"KeyNav","theme":"dark","docs":"bootstrap~4/bootstrap~3/css/d/git/homebrew/html/http/javascript/jquery/laravel~9/laravel~8/laravel~7/markdown/moment/npm/php/phpunit~6/phpunit~9/redis/sass/sqlite/vue~2/vue~3/dom"}
