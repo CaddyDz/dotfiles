@@ -25,6 +25,7 @@ brew "pkcs11-helper"
 brew "python@3.10"
 brew "redis", restart_service: true
 brew "mongodb/brew/mongodb-community"
+cask "alfred"
 cask "google-chrome"
 cask "iterm2"
 cask "postman"
