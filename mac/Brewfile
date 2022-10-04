@@ -10,7 +10,7 @@ brew "curl"
 brew "freetds"
 brew "krb5"
 brew "libpq"
-brew "php"
+brew "php", link: false
 brew "composer"
 brew "dnsmasq"
 brew "htop"
@@ -20,7 +20,7 @@ brew "mysql", restart_service: true
 brew "nginx"
 brew "openjdk"
 brew "php@7.4"
-brew "php@8.0"
+brew "php@8.0", link: true
 brew "pkcs11-helper"
 brew "python@3.10"
 brew "redis", restart_service: true
