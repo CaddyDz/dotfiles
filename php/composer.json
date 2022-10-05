@@ -2,5 +2,10 @@
 	"require": {
 		"laravel/valet": "^2.13",
 		"friendsofphp/php-cs-fixer": "^3.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"symfony/flex": true
+		}
 	}
 }
