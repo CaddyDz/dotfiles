@@ -18,6 +18,7 @@ brew "imagemagick"
 brew "libfido2"
 brew "mysql", restart_service: true
 brew "nginx"
+brew "node"
 brew "openjdk"
 brew "php@7.4"
 brew "php@8.0", link: true
