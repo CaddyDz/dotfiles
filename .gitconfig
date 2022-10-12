@@ -1,5 +1,6 @@
 [push]
 	default = simple
+	autoSetupRemote = true
 [user]
 	name = Salim Djerbouh
 	email = caddydz4@gmail.com
