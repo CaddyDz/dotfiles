@@ -2,7 +2,7 @@
 	"require": {
 		"laravel/valet": "^2.16",
 		"friendsofphp/php-cs-fixer": "^3.3",
-		"laravel/installer": "^4.2"
+		"laravel/installer": "^4.0"
 	},
 	"config": {
 		"allow-plugins": {
