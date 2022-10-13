@@ -51,6 +51,8 @@
 	//  - crash: Sends OS level crash reports.
 	//  - off: Disables all product telemetry.
 	"telemetry.telemetryLevel": "off",
+	// Vetur will warn about not setup correctly for the project. You can disable it.
+	"vetur.ignoreProjectWarning": true,
 	// If set, automatically switch to the preferred color theme based on the OS appearance. If the OS appearance is dark, the theme specified at `workbench.preferredDarkColorTheme#` is used, for light `#workbench.preferredLightColorTheme`.
 	"window.autoDetectColorScheme": true,
 	"window.restoreFullscreen": true,
