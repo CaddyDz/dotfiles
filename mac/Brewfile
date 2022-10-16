@@ -18,6 +18,7 @@ brew "dnsmasq"
 brew "htop"
 brew "imagemagick"
 brew "libfido2"
+brew "mailhog"
 brew "mysql", restart_service: true
 brew "nginx"
 brew "node"
