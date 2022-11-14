@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git filter-branch --env-filter '
+git filter-repo --env-filter '
 OLD_EMAIL=""
 CORRECT_NAME="Salim Djerbouh"
 CORRECT_EMAIL=""

@@ -15,6 +15,7 @@ brew "libpq"
 brew "php", link: false
 brew "composer"
 brew "dnsmasq"
+brew "git-filter-repo"
 brew "htop"
 brew "imagemagick"
 brew "libfido2"
