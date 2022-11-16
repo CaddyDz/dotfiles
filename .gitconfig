@@ -3,8 +3,8 @@
 	autoSetupRemote = true
 [user]
 	name = Salim Djerbouh
-	email = caddydz4@gmail.com
-	signingkey = 48EC0123EF70902F
+	email = 13698160+CaddyDz@users.noreply.github.com
+	signingkey = 6A3119EC83996E86
 [core]
 	editor = vim
 	autocrlf = false
