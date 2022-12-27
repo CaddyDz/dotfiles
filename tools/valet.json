@@ -2,6 +2,6 @@
     "tld": "test",
     "loopback": "127.0.0.1",
     "paths": [
-        "/Users/caddydz/Sites"
+        "/Users/caddy/Sites"
     ]
 }
