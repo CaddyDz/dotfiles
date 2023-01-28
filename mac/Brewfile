@@ -10,6 +10,7 @@ brew "nginx"
 brew "php@8.0"
 brew "php@8.1", link: true
 brew "redis", restart_service: true
+cask "android-file-transfer"
 cask "google-chrome"
 cask "gpg-suite-no-mail"
 cask "iterm2"
