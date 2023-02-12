@@ -33,3 +33,4 @@ alias index="sudo mdutil -E -i"
 
 # Delete all containers
 alias clco='docker rm -f $(docker ps -a --format {{.ID}})'
+alias dvm="docker run -it --rm --privileged --pid=host justincormack/nsenter1"
