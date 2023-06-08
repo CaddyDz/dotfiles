@@ -60,4 +60,5 @@ root    ALL = (ALL) ALL
 #includedir /private/etc/sudoers.d
 
 # Allow me to run sudo commands without prompting for the password
+# Sounds like a bad idea I know, but I never accidentally run sudo and I want the speed
 caddy ALL=(ALL) NOPASSWD:ALL

@@ -4,12 +4,12 @@
 [user]
 	name = Salim Djerbouh
 	email = 13698160+CaddyDz@users.noreply.github.com
-	signingkey = 6A3119EC83996E86
+	signingkey = 5305E49F7B960ED2
 [core]
 	editor = vim
 	autocrlf = false
 	hooksPath = hooks
-	excludesfile = /Users/caddydz/.gitignore_global
+	excludesfile = /Users/caddy/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -21,3 +21,5 @@
 	defaultBranch = master
 [commit]
 	gpgsign = true
+[submodule]
+	recurse = true
