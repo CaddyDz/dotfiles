@@ -1,4 +1,5 @@
-> You should ensure that the value of `stopwaitsecs` is greater than the number of seconds consumed by your longest running job.  
+> You should ensure that the value of `stopwaitsecs` is greater than the number of seconds consumed by your longest running job.
+
 Otherwise, Supervisor may kill the job before it is finished processing.
 
 # Starting Supervisor

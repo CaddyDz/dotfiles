@@ -2,18 +2,15 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "shivammathur/extensions" # Better pecl
-tap "shivammathur/php" # Needed for PHP 7.4
-brew "bat"
-brew "libpq" # Required by PHP
+tap "shivammathur/extensions"
+tap "shivammathur/php"
+brew "libpq"
 brew "composer"
 brew "dnsmasq"
-brew "htop"
-brew "mysql"
-brew "neofetch"
+brew "mysql", restart_service: true
 brew "nginx"
-brew "php@8.0"
-brew "php@8.1", link: true
+brew "php@8.0", restart_service: true, link: true
+brew "php@8.1"
 brew "redis"
 brew "wget"
 brew "shivammathur/extensions/imagick@7.4"
@@ -23,7 +20,7 @@ brew "shivammathur/extensions/redis@7.4"
 brew "shivammathur/extensions/redis@8.0"
 brew "shivammathur/php/php@7.4"
 cask "alfred"
-cask "blackhole-16ch" # OBS Desktop Audio
+cask "blackhole-16ch"
 cask "docker"
 cask "google-chrome"
 cask "gpg-suite-no-mail"
