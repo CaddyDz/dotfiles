@@ -50,6 +50,8 @@ cask "iterm2"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Desktop virtualization software
+cask "parallels"
 # Collaboration platform for API development
 cask "postman"
 # Time optimising application
@@ -62,6 +64,8 @@ cask "slack"
 cask "tiles"
 # Open-source BitTorrent client
 cask "transmission"
+# Development environment
+cask "vagrant"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
