@@ -32,9 +32,7 @@ function installCommandLineTools() {
         # This temporary file prompts the 'softwareupdate' utility to list the Command Line Tools
         touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
         PROD=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | sed 's/^[^C]* //')
-        softwareupdate -i "$PROD" --verbose 2>&1 | while IFS= read -r line; do
-            echo $line
-        done
+        softwareupdate -i "$PROD" --verbose;
         echo "Command Line Tools installed successfully!"
     else
         echo "Command Line Tools already installed."
