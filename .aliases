@@ -3,8 +3,9 @@
 alias gs="git status"
 alias gl="git log"
 alias gcs="git commit -s -S"
-alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
+alias nah="git reset --hard;git clean -df"
 alias wip="git add . && git commit -s -S -m 'Work In Progress' -m 'This is a trash commit to save changes'"
+alias pop="git stash pop && git restore --staged ."
 
 # ZSH
 
