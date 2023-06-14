@@ -5,6 +5,8 @@ alias gl="git log"
 alias gcs="git commit -s -S"
 alias nah="git reset --hard;git clean -df"
 alias wip="git add . && git commit -s -S -m 'Work In Progress' -m 'This is a trash commit to save changes'"
+alias stash="git stash save --include-untracked"
+alias pop="git stash pop"
 
 # ZSH
 
