@@ -1,0 +1,8 @@
+brew 🍺: Brewfile
+
+# Add 'repo' label to files that affect only the GitHub Repository
+repo:
+  - .gitignore
+  - .gitattribute
+  - .github/*
+  - ./README.md
