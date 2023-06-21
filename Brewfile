@@ -22,6 +22,8 @@ brew "php@8.1"
 brew "redis"
 # Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
 # Imagick PHP extension
 brew "shivammathur/extensions/imagick@7.4"
 # Mcrypt PHP extension
