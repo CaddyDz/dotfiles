@@ -42,6 +42,8 @@ cask "alfred"
 cask "blackhole-16ch"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Developer platform
+cask "dotnet-sdk"
 # Web browser
 cask "google-chrome"
 # Tools to protect your files
@@ -77,6 +79,7 @@ vscode "bmewburn.vscode-intelephense-client"
 vscode "bradlc.vscode-tailwindcss"
 vscode "Equinusocio.vsc-community-material-theme"
 vscode "IronGeek.vscode-env"
+vscode "ms-dotnettools.csharp"
 vscode "PKief.material-icon-theme"
 vscode "sleistner.vscode-fileutils"
 vscode "Vue.volar"
