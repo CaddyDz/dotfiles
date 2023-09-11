@@ -6,3 +6,4 @@
 /Users/caddy/.composer/vendor/bin
 /Users/caddy/.composer/vendor/laravel/valet/bin
 /opt/homebrew/bin
+/opt/homebrew/Cellar/postgresql@15/15.4/bin
