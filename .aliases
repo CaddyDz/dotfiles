@@ -31,6 +31,7 @@ alias flush-dns="dscacheutil -flushcache"
 alias dns="sudo networksetup -setdnsservers Wi-Fi 8.26.56.26 8.8.8.8"
 alias index="sudo mdutil -E -i"
 alias dump-brew="rm Brewfile && brew bundle dump --describe"
+alias python="python3"
 
 # Docker
 
