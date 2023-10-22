@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+# GitHub command-line tool
+brew "gh"
 # GNU utilities for networking
 brew "inetutils"
 # Postgres C API library

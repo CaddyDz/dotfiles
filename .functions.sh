@@ -24,10 +24,52 @@ function gp() {
 
   # Check if the upstream branch is already set
   if ! git rev-parse --abbrev-ref "@{u}" >/dev/null 2>&1; then
-    # Set the upstream branch
-    git push --set-upstream origin "$branch"
+	# Set the upstream branch
+	git push --set-upstream origin "$branch"
   fi
 
   # Push the current branch
   git push
+}
+
+function deleteClosedIssues() {
+	gh issue list --state closed
+	for issue in $(gh issue list --state closed --json number -q '.[].number'); do
+		gh issue delete $issue --yes
+	done
+}
+
+function handleDependabot() {
+	# List of all CI job names
+	CI_JOBS=("triage" "style" "laravel-tests")
+
+	# Check all pull requests for the current repository
+	for pr in $(gh pr list --json number --jq '.[] | .number'); do
+		all_passed=true
+
+		# Fetch the status of checks for the PR and store in a temporary file
+		gh pr checks $pr > /tmp/gh_checks_$pr.txt
+
+		# Check status for each CI job
+		for ci_job in "${CI_JOBS[@]}"; do
+			# Fetch the status of checks for the PR from the first line
+			ci_status=$(cat /tmp/gh_checks_$pr.txt | grep "$ci_job" | awk '{print $2}')
+			if [[ "$ci_status" != "pass" ]]; then
+			all_passed=false
+			break
+			fi
+		done
+
+		# Clean up the temporary file
+		rm /tmp/gh_checks_$pr.txt
+
+		# If all CI jobs have passed, approve and comment
+		if $all_passed; then
+			gh pr review $pr --approve
+			gh pr comment $pr --body "@dependabot merge"
+		else
+			# Request changes if any CI job has failed
+			gh pr review $pr --request-changes --body "@dependabot recreate"
+		fi
+	done
 }
