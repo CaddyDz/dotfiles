@@ -6,3 +6,5 @@ repo:
   - .gitattribute
   - .github/*
   - ./README.md
+
+config: *.conf
