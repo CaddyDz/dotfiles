@@ -16,7 +16,7 @@ alias python="python3"
 # OS Specific
 alias install="sudo apt install"
 alias copy="xclip -sel clip <"
-alias reloadphp="( flock -w 10 9 || exit 1 echo 'Restarting FPM...'; sudo -S service php8.1-fpm reload ) 9>/tmp/fpmlock"
+alias reloadphp="( flock -w 10 9 || exit 1 echo 'Restarting FPM...'; sudo -S service php8.2-fpm reload ) 9>/tmp/fpmlock"
 # Misc
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
