@@ -8,6 +8,8 @@ brew "gh"
 brew "inetutils"
 # Postgres C API library
 brew "libpq"
+# Ultra relevant, instant and typo-tolerant full-text search API
+brew "meilisearch", restart_service: true
 # Open source relational database management system
 brew "mysql", restart_service: true
 # Platform built on V8 to build network applications
