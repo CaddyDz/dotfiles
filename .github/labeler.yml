@@ -7,4 +7,4 @@ repo:
   - .github/*
   - ./README.md
 
-config: *.conf
+config: "**/*.conf"
