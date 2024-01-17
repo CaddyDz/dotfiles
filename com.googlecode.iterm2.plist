@@ -588,7 +588,13 @@
 				<key>Red Component</key>
 				<real>0.70980000495910645</real>
 			</dict>
+			<key>Send Bell Alert</key>
+			<false/>
 			<key>Send Code When Idle</key>
+			<false/>
+			<key>Send Session Ended Alert</key>
+			<false/>
+			<key>Send Terminal Generated Alerts</key>
 			<false/>
 			<key>Session Close Undo Timeout</key>
 			<integer>60</integer>
