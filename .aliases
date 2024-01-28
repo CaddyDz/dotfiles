@@ -1,5 +1,4 @@
 # Git
-
 alias gs="git status"
 alias gl="git log"
 alias gcs="git commit -s -S"
@@ -9,22 +8,26 @@ alias stash="git stash save --include-untracked"
 alias pop="git stash pop"
 
 # ZSH
-
 alias zshconf="vim ~/.zshrc"
 
-# PHP & Laravel
-
-alias c="composer"
-alias art="php artisan"
-alias tinker="php artisan tinker"
-alias db="php artisan migrate:fresh --seed"
-alias php8="brew unlink php@7.4 && brew link --overwrite --force php@8.0"
-alias php7="brew unlink php@8.0 && brew link --overwrite --force php@7.4"
-alias fix="vendor/bin/php-cs-fixer fix --allow-risky=yes"
+# Docker
+# Execute a shell command inside the container named after the current folder (lowercase)
+#alias dex='docker exec -it $(typeset -l foldername; foldername=$(basename "$PWD"); echo $foldername)'
+# Delete all containers
+alias clco='docker rm -f $(docker ps -a --format {{.ID}})'
+# Enter the Linux VM of Docker on Mac
+alias dvm="docker run -it --rm --privileged --pid=host justincormack/nsenter1"
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
-# OS Specific
 
+# PHP & Laravel in Docker
+alias c='sail composer'
+alias art='sail php artisan'
+alias tinker="art tinker"
+alias db="art migrate:fresh --seed"
+alias fix="sail php vendor/bin/php-cs-fixer fix --allow-risky=yes"
+
+# OS Specific
 alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
 alias flush-dns="dscacheutil -flushcache"
@@ -32,9 +35,3 @@ alias dns="sudo networksetup -setdnsservers Wi-Fi 8.26.56.26 8.8.8.8"
 alias index="sudo mdutil -E -i"
 alias dump-brew="rm Brewfile && brew bundle dump --describe"
 alias python="python3"
-
-# Docker
-
-# Delete all containers
-alias clco='docker rm -f $(docker ps -a --format {{.ID}})'
-alias dvm="docker run -it --rm --privileged --pid=host justincormack/nsenter1"
