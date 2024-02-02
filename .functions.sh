@@ -73,3 +73,25 @@ function handleDependabot() {
 		fi
 	done
 }
+
+port() {
+    word=$1
+    
+    # Simple hash: Sum ASCII values of characters
+    sum=0
+    for (( i=0; i<${#word}; i++ )); do
+        char=${word:$i:1}
+        ascii=$(printf "%d" "'$char")
+        ((sum+=ascii))
+    done
+    
+    # Define port range for dynamic/private ports
+    min_port=49152
+    max_port=65535
+    port_range=$((max_port - min_port + 1))
+    
+    # Calculate port number
+    port=$((min_port + (sum % port_range)))
+    
+    echo $port
+}
