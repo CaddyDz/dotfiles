@@ -10,22 +10,15 @@ alias pop="git stash pop"
 # ZSH
 alias zshconf="vim ~/.zshrc"
 
+# Laravel
+alias art="php artisan"
+alias tinker="php artisan tinker"
+
 # Docker
-# Execute a shell command inside the container named after the current folder (lowercase)
-#alias dex='docker exec -it $(typeset -l foldername; foldername=$(basename "$PWD"); echo $foldername)'
 # Delete all containers
 alias clco='docker rm -f $(docker ps -a --format {{.ID}})'
 # Enter the Linux VM of Docker on Mac
 alias dvm="docker run -it --rm --privileged --pid=host justincormack/nsenter1"
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-
-
-# PHP & Laravel in Docker
-alias c='sail composer'
-alias art='sail php artisan'
-alias tinker="art tinker"
-alias db="art migrate:fresh --seed"
-alias fix="sail php vendor/bin/php-cs-fixer fix --allow-risky=yes"
 
 # OS Specific
 alias copy="pbcopy <"

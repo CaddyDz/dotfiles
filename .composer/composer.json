@@ -1,7 +1,0 @@
-{
-    "require": {
-        "laravel/valet": "^3.3",
-        "friendsofphp/php-cs-fixer": "^3.14",
-        "laravel/installer": "^4.4"
-    }
-}
