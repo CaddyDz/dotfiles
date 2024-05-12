@@ -1,0 +1,93 @@
+server {
+    listen 127.0.0.1:80;
+    #listen 127.0.0.1:80; # valet loopback
+    server_name control.fraudcentral.test.test www.control.fraudcentral.test.test *.control.fraudcentral.test.test;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 127.0.0.1:443 ssl;
+    #listen VALET_LOOPBACK:443 ssl; # valet loopback
+    server_name control.fraudcentral.test.test www.control.fraudcentral.test.test *.control.fraudcentral.test.test;
+    root /;
+    charset utf-8;
+    client_max_body_size 512M;
+    http2  on;
+
+    location /41c270e4-5535-4daa-b23e-c269744c2f45/ {
+        internal;
+        alias /;
+        try_files $uri $uri/;
+    }
+
+    ssl_certificate "/Users/caddy/.config/valet/Certificates/control.fraudcentral.test.test.crt";
+    ssl_certificate_key "/Users/caddy/.config/valet/Certificates/control.fraudcentral.test.test.key";
+
+    location / {
+        rewrite ^ "/Users/caddy/.composer/vendor/laravel/valet/server.php" last;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    access_log off;
+    error_log "/Users/caddy/.config/valet/Log/nginx-error.log";
+
+    error_page 404 "/Users/caddy/.composer/vendor/laravel/valet/server.php";
+
+    location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass "unix:/Users/caddy/.config/valet/valet.sock";
+        fastcgi_index "/Users/caddy/.composer/vendor/laravel/valet/server.php";
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME "/Users/caddy/.composer/vendor/laravel/valet/server.php";
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+server {
+    listen 127.0.0.1:60;
+    #listen 127.0.0.1:60; # valet loopback
+    server_name control.fraudcentral.test.test www.control.fraudcentral.test.test *.control.fraudcentral.test.test;
+    root /;
+    charset utf-8;
+    client_max_body_size 128M;
+
+    add_header X-Robots-Tag 'noindex, nofollow, nosnippet, noarchive';
+
+    location /41c270e4-5535-4daa-b23e-c269744c2f45/ {
+        internal;
+        alias /;
+        try_files $uri $uri/;
+    }
+
+    location / {
+        rewrite ^ "/Users/caddy/.composer/vendor/laravel/valet/server.php" last;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    access_log off;
+    error_log "/Users/caddy/.config/valet/Log/nginx-error.log";
+
+    error_page 404 "/Users/caddy/.composer/vendor/laravel/valet/server.php";
+
+    location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass "unix:/Users/caddy/.config/valet/valet.sock";
+        fastcgi_index "/Users/caddy/.composer/vendor/laravel/valet/server.php";
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME "/Users/caddy/.composer/vendor/laravel/valet/server.php";
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+

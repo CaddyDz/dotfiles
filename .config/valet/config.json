@@ -2,6 +2,7 @@
     "tld": "test",
     "loopback": "127.0.0.1",
     "paths": [
+        "/Users/caddy/.config/valet/Sites",
         "/Users/caddy/Sites"
     ]
 }
