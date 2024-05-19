@@ -1,17 +1,12 @@
-*.tar
-*.tar.*
-*.exe
-*.msi
 *.zip
 *.tgz
 *.log
 *.log.*
-*.sig
-*.deb
-*.deb.part
-partial
-lock
-plan.md
-tips.md
-pkg/
 .DS_Store
+.config/iterm2
+.config/psysh
+
+# Docker
+.docker/*
+!.docker/config.json
+!.docker/daemon.json
