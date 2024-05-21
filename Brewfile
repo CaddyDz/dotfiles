@@ -2,26 +2,26 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+# Lightweight DNS forwarder and DHCP server
+brew "dnsmasq"
 # GitHub command-line tool
 brew "gh"
-# GNU utilities for networking
-brew "inetutils"
 # Postgres C API library
 brew "libpq"
 # Ultra relevant, instant and typo-tolerant full-text search API
 brew "meilisearch", restart_service: true
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql@8.0", restart_service: true, link: true
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
 # Platform built on V8 to build network applications
-brew "node@18"
+brew "node@18", link: true
 # General-purpose scripting language
-brew "php"
+brew "php@8.2", link: true
 # Object-relational database system
-brew "postgresql@15", restart_service: true
+brew "postgresql@16", restart_service: true, link: true
 # Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
-# Internet file retriever
-brew "wget"
+brew "redis@6.2", restart_service: true, link: true
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
 # Application launcher and productivity software
@@ -30,8 +30,6 @@ cask "alfred"
 cask "google-chrome"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
-# Laravel and PHP development environment manager
-cask "herd"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Provides updates to various Microsoft products
