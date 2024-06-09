@@ -10,9 +10,12 @@ alias pop="git stash pop"
 # ZSH
 alias zshconf="vim ~/.zshrc"
 
-# Laravel
+# Laravel & PHP
 alias art="php artisan"
 alias tinker="php artisan tinker"
+alias c="composer"
+alias db="php artisan migrate:fresh --seed"
+alias format="vendor/bin/php-cs-fixer fix --allow-risky=yes"
 
 # Docker
 # Delete all containers
