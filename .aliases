@@ -24,10 +24,11 @@ alias clco='docker rm -f $(docker ps -a --format {{.ID}})'
 alias dvm="docker run -it --rm --privileged --pid=host justincormack/nsenter1"
 
 # OS Specific
-alias copy="pbcopy <"
 alias clean="find . -name ".DS_Store" -delete"
-alias flush-dns="dscacheutil -flushcache"
+alias copy="pbcopy <"
 alias dns="sudo networksetup -setdnsservers Wi-Fi 8.26.56.26 8.8.8.8"
-alias index="sudo mdutil -E -i"
 alias dump-brew="rm Brewfile && brew bundle dump --describe"
+alias flush-dns="dscacheutil -flushcache"
+alias index="sudo mdutil -E -i"
 alias python="python3"
+alias redis-cli='redis-cli -s /tmp/redis.sock'
