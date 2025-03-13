@@ -95,3 +95,17 @@ port() {
     
     echo $port
 }
+
+# Prevent brew upgrade commands
+brew() {
+  local command="$1"
+  shift
+
+  if [[ "$command" == "upgrade" ]] || [[ "$command" == "update" && "$*" == *"--greedy"* ]] || [[ "$command" == "update" && "$*" == *"upgrade"* ]]; then
+    echo "⛔️ BREW UPGRADE BLOCKED: This command has been disabled to prevent breaking your system, it will break Postgres & Meilisearch and you will waste a lot of time fixing them."
+    echo "If you really need to upgrade packages, use 'command brew $command $*' to bypass this protection."
+    return 1
+  else
+    command brew "$command" "$@"
+  fi
+}
