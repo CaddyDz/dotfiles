@@ -2,36 +2,41 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
-# Lightweight DNS forwarder and DHCP server
-brew "dnsmasq"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # GitHub command-line tool
 brew "gh"
-# Postgres C API library
-brew "libpq"
-# Ultra relevant, instant and typo-tolerant full-text search API
-brew "meilisearch", restart_service: true
-# Open source relational database management system
-brew "mysql@8.0", restart_service: true, link: true
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
-# Platform built on V8 to build network applications
-brew "node@18", link: true
-# General-purpose scripting language
-brew "php@8.2", link: true
-# Object-relational database system
-brew "postgresql@16", restart_service: true, link: true
-# Persistent key-value database, with built-in net interface
-brew "redis@6.2", restart_service: true, link: true
+# Improved top (interactive process viewer)
+brew "htop"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# SOund eXchange: universal sound sample translator
+brew "sox"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
-# Application launcher and productivity software
-cask "alfred"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Write, edit, and chat about your code with AI
+cask "cursor"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+cask "font-sf-pro"
 # Web browser
 cask "google-chrome"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# File system integration
+cask "macfuse"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
@@ -42,24 +47,22 @@ cask "obsidian"
 cask "phpstorm"
 # Collaboration platform for API development
 cask "postman"
-# Time optimising application
-cask "rescuetime"
 # Native GUI tool for relational databases
 cask "tableplus"
-# Window manager
-cask "tiles"
-# Tinker tool for PHP and Laravel developers
-cask "tinkerwell"
 # Open-source code editor
 cask "visual-studio-code"
+vscode "anysphere.cursorpyright"
+vscode "anysphere.remote-ssh"
 vscode "bmewburn.vscode-intelephense-client"
 vscode "bradlc.vscode-tailwindcss"
 vscode "esbenp.prettier-vscode"
-vscode "GitHub.copilot"
-vscode "GitHub.copilot-chat"
-vscode "GitHub.github-vscode-theme"
-vscode "IronGeek.vscode-env"
-vscode "PKief.material-icon-theme"
+vscode "laravel.vscode-laravel"
+vscode "mikestead.dotenv"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "open-southeners.laravel-pint"
+vscode "pkief.material-icon-theme"
+vscode "redhat.vscode-xml"
 vscode "sleistner.vscode-fileutils"
-vscode "Vue.volar"
-vscode "WakaTime.vscode-wakatime"
+vscode "vue.volar"
+vscode "xdebug.php-debug"

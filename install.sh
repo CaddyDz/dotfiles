@@ -61,7 +61,6 @@ function symLinkDotFiles() {
     ln -sf $HOME/Code/dotfiles/.vimrc
     ln -sf $HOME/Code/dotfiles/.env $HOME/.env
     ln -sf $HOME/Code/dotfiles/.zshrc $HOME/.zshrc
-    ln -sf $HOME/Code/dotfiles/.my.cnf $HOME/.my.cnf
     ln -sf $HOME/Code/dotfiles/.aliases $HOME/.aliases
     ln -sf $HOME/Code/dotfiles/.gitconfig $HOME/.gitconfig
     ln -sf $HOME/Code/dotfiles/.functions.sh $HOME/.functions.sh

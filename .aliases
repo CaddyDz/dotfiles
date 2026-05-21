@@ -10,13 +10,6 @@ alias pop="git stash pop"
 # ZSH
 alias zshconf="vim ~/.zshrc"
 
-# Laravel & PHP
-alias art="php artisan"
-alias tinker="php artisan tinker"
-alias c="composer"
-alias db="php artisan migrate:fresh --seed"
-alias format="vendor/bin/php-cs-fixer fix --allow-risky=yes"
-
 # Docker
 # Delete all containers
 alias clco='docker rm -f $(docker ps -a --format {{.ID}})'
@@ -31,4 +24,3 @@ alias dump-brew="rm Brewfile && brew bundle dump --describe"
 alias flush-dns="dscacheutil -flushcache"
 alias index="sudo mdutil -E -i"
 alias python="python3"
-alias redis-cli='redis-cli -s /tmp/redis.sock'
