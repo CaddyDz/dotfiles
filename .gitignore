@@ -3,6 +3,7 @@
 *.log
 *.log.*
 .DS_Store
+.config/github-copilot
 .config/iterm2
 .config/psysh
 
