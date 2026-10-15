@@ -3,9 +3,15 @@
 *.log
 *.log.*
 .DS_Store
-.config/github-copilot
-.config/iterm2
-.config/psysh
+
+# ~/.config is symlinked here; only track real config, never app state or auth
+.config/*
+!.config/claude/
+!.config/gh/
+.config/gh/*
+!.config/gh/config.yml
+!.config/htop/
+!.config/neofetch/
 
 # Docker
 .docker/*
