@@ -1,6 +1,6 @@
 source ~/.env
 
-plugins=(git)
+plugins=(docker-compose git systemadmin)
 
 # Third-party completions (Homebrew, Docker Desktop) must be on fpath *before*
 # oh-my-zsh runs compinit, so one compinit covers everything. Calling compinit
