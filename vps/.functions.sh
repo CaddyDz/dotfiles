@@ -44,6 +44,18 @@ function gp() {
 	fi
 	git push
 }
+# Pop this branch's newest stash rather than the newest one overall
+function pop() {
+	local branch ref
+	branch=$(git rev-parse --abbrev-ref HEAD) || return
+	ref=$(git stash list --format='%gd%x09%gs' | awk -F '\t' -v b="$branch" \
+		'index($2, "WIP on " b ":") == 1 || index($2, "On " b ":") == 1 { print $1; exit }')
+	if [[ -z $ref ]]; then
+		echo "No stash for $branch" >&2
+		return 1
+	fi
+	git stash pop "$ref"
+}
 # Clone a website into a folder with HTTRACK
 function clone() {
 	httrack -F "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" $1 -O $2 -%v -s0
