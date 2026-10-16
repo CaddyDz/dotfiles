@@ -12,7 +12,7 @@ function splitCsv() {
 }
 
 # Remove oh-my-zsh alias
-unalias gp
+unalias gp 2>/dev/null
 # Register a global function
 function gp() {
   # Get the current branch name
@@ -26,6 +26,20 @@ function gp() {
 
   # Push the current branch
   git push
+}
+
+function remove-merged-branches () {
+	currentBranch=$(git rev-parse --abbrev-ref HEAD)
+
+	read -q "REPLY?Delete branches merged into $currentBranch y/N? "
+	echo
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
+		git branch --merged | grep -v $currentBranch | while read i; do git branch -d $i; done;
+		echo "Branches removed successfully"
+	else
+		echo "Operation canceled"
+	fi
 }
 
 function deleteClosedIssues() {

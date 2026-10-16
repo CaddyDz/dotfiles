@@ -5,7 +5,7 @@ function dumpdb() {
 function importdb() {
 	(mysql $1 < $2)
 }
-function reset() {
+function resetdb() {
 	(mysql -e "drop database $1;create database $1")
 }
 # Text manipulation functions
@@ -25,7 +25,7 @@ function splitCsv() {
 function remove-merged-branches () {
 	currentBranch=$(git rev-parse --abbrev-ref HEAD)
 
-	read -p "Delete branches merges into $currentBranch y/N? " -n 1 -r
+	read -q "REPLY?Delete branches merged into $currentBranch y/N? "
 	echo
 	if [[ $REPLY =~ ^[Yy]$ ]]
 	then
@@ -34,6 +34,15 @@ function remove-merged-branches () {
 	else
 		echo "Operation canceled"
 	fi
+}
+# Push the current branch, setting its upstream on the first push
+unalias gp 2>/dev/null
+function gp() {
+	branch=$(git rev-parse --abbrev-ref HEAD)
+	if ! git rev-parse --abbrev-ref "@{u}" >/dev/null 2>&1; then
+		git push --set-upstream origin "$branch"
+	fi
+	git push
 }
 # Clone a website into a folder with HTTRACK
 function clone() {
