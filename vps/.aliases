@@ -2,12 +2,12 @@
 alias gs="git status"
 alias gl="git log"
 alias gcom="git checkout master"
-alias nah="git checkout -- . && git reset --hard HEAD && git clean -df"
+alias nah="git reset --hard && git clean -df"
+alias stash="git stash save --include-untracked"
+alias pop="git stash pop"
 # ZSH
 alias zshconf="vim ~/.zshrc"
-alias omz="cd ~/.oh-my-zsh"
 # PHP & Laravel
-alias test="php artisan test"
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias docs="art l5-swagger:generate"
@@ -20,3 +20,5 @@ alias reloadphp="( flock -w 10 9 || exit 1 echo 'Restarting FPM...'; sudo -S ser
 # Misc
 alias fast="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 alias speed="for i in $(seq 1 10); do /usr/bin/time $SHELL -i -c exit; done"
+# RoboGuard
+alias last_match_run='grep "art retro:match" ~/.zsh_history | tail -1 | sed '\''s/^: \([0-9]*\):.*/\1/'\'' | xargs -I {} date -d @{} '\''+%Y-%m-%d %H:%M:%S'\'''
