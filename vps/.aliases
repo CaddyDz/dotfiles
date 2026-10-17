@@ -4,7 +4,6 @@ alias gl="git log"
 alias gcom="git checkout master"
 alias nah="git reset --hard && git clean -df"
 alias stash="git stash save --include-untracked"
-alias pop="git stash pop"
 # ZSH
 alias zshconf="vim ~/.zshrc"
 # PHP & Laravel

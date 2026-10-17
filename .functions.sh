@@ -42,6 +42,19 @@ function remove-merged-branches () {
 	fi
 }
 
+# Pop this branch's newest stash rather than the newest one overall
+function pop() {
+	local branch ref
+	branch=$(git rev-parse --abbrev-ref HEAD) || return
+	ref=$(git stash list --format='%gd%x09%gs' | awk -F '\t' -v b="$branch" \
+		'index($2, "WIP on " b ":") == 1 || index($2, "On " b ":") == 1 { print $1; exit }')
+	if [[ -z $ref ]]; then
+		echo "No stash for $branch" >&2
+		return 1
+	fi
+	git stash pop "$ref"
+}
+
 function deleteClosedIssues() {
 	gh issue list --state closed
 	for issue in $(gh issue list --state closed --json number -q '.[].number'); do
