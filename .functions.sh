@@ -94,24 +94,47 @@ function handleDependabot() {
 	done
 }
 
+# Legacy `port`: sums character codes, so anagrams collide. Kept because
+# FraudCentral (50427), Roboguard/Sockets (50117), Roboguard -> Control (49921)
+# and xeldex (49802) hardcode values it generated.
+port_legacy() {
+	local word=$1 sum=0 i
+	for (( i=0; i<${#word}; i++ )); do
+		(( sum += $(printf "%d" "'${word:$i:1}") ))
+	done
+	echo $(( 49152 + sum % 16384 ))
+}
+
+# Warn on stderr if a port is listening locally, published by a running
+# container, or written in a docker-compose*.yml/.env under ~/Code
+_port_check() {
+	local p=$1 hits
+	if lsof -nP -iTCP:"$p" -sTCP:LISTEN -t >/dev/null 2>&1; then
+		echo "port $p: listening on this Mac" >&2
+	fi
+	hits=$(docker ps --format '{{.Names}} {{.Ports}}' 2>/dev/null | grep -F ":$p->" | cut -d' ' -f1)
+	[[ -n $hits ]] && echo "port $p: published by container(s): ${hits//$'\n'/, }" >&2
+	hits=$(grep -rlE "(^|[^0-9])$p([^0-9]|$)" --include='docker-compose*.yml' --include='.env' \
+		--exclude-dir={node_modules,vendor,.git} ~/Code 2>/dev/null)
+	[[ -n $hits ]] && echo "port $p: found in\n${hits//$HOME/~}" >&2
+	return 0
+}
+
+# Hash a string (e.g. a project name) into a port in 49152-65535
+# Usage: port [--check] <string>
 port() {
-    word=$1
-    
-    # Simple hash: Sum ASCII values of characters
-    sum=0
-    for (( i=0; i<${#word}; i++ )); do
-        char=${word:$i:1}
-        ascii=$(printf "%d" "'$char")
-        ((sum+=ascii))
-    done
-    
-    # Define port range for dynamic/private ports
-    min_port=49152
-    max_port=65535
-    port_range=$((max_port - min_port + 1))
-    
-    # Calculate port number
-    port=$((min_port + (sum % port_range)))
-    
-    echo $port
+	local check=0 word
+	[[ $1 == --check ]] && { check=1; shift; }
+	word=$1
+	if [[ -z $word ]]; then
+		echo "usage: port [--check] <string>" >&2
+		return 1
+	fi
+
+	local crc len p
+	read -r crc len < <(printf %s "$word" | cksum)
+	p=$(( 49152 + crc % 16384 ))
+
+	(( check )) && _port_check $p
+	echo $p
 }
