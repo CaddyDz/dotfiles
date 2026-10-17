@@ -10,15 +10,12 @@ function resetdb() {
 }
 # Text manipulation functions
 function splitCsv() {
-	HEADER=$(head -1 $1)
-	if [ -n "$2" ]; then
-		CHUNK=$2
-	else
-		CHUNK=1000
-	fi
-	tail -n +2 $1 | split -l $CHUNK - $1_split_
-	for i in $1_split_*; do
-		sed -i -e "1i$HEADER" "$i"
+	HEADER=$(head -1 "$1")
+	CHUNK=${2:-1000}
+	tail -n +2 "$1" | split -l "$CHUNK" - "$1_split_"
+	# Prepend the header portably (`sed -i -e "1i…"` is GNU-only)
+	for i in "$1"_split_*; do
+		{ printf '%s\n' "$HEADER"; cat "$i"; } > "$i.tmp" && mv "$i.tmp" "$i"
 	done
 }
 # Git functions
