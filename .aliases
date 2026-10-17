@@ -14,6 +14,11 @@ alias zshconf="vim ~/.zshrc"
 alias clco='docker rm -f $(docker ps -a --format {{.ID}})'
 # Enter the Linux VM of Docker on Mac
 alias dvm="docker run -it --rm --privileged --pid=host justincormack/nsenter1"
+# Shared local Traefik reverse proxy (other projects join its `traefik` network)
+alias traefik-up="docker compose -f ~/.config/traefik/docker-compose.yml up -d"
+alias traefik-down="docker compose -f ~/.config/traefik/docker-compose.yml down"
+alias traefik-logs="docker compose -f ~/.config/traefik/docker-compose.yml logs -f"
+alias traefik-ps="docker compose -f ~/.config/traefik/docker-compose.yml ps"
 
 # OS Specific
 alias clean="find . -name ".DS_Store" -delete"
