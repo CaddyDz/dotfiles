@@ -6,7 +6,6 @@
 
 # ~/.config is symlinked here; only track real config, never app state or auth
 .config/*
-!.config/claude/
 !.config/gh/
 .config/gh/*
 !.config/gh/config.yml
