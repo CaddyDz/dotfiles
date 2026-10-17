@@ -16,3 +16,6 @@
 .docker/*
 !.docker/config.json
 !.docker/daemon.json
+
+# scripts/inventory.sh output that can hold personal data; this repo is public
+inventory/*/private/
