@@ -1,0 +1,77 @@
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "omlahore/tap"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# GitHub command-line tool
+brew "gh"
+# Open-source GitLab command-line tool
+brew "glab"
+# Improved top (interactive process viewer)
+brew "htop"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# Non-interactive SSH password auth
+brew "sshpass"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
+# Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups
+brew "omlahore/tap/removemacai", trusted: true
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Command-line agent for Cursor
+cask "cursor-cli"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# Web browser
+cask "google-chrome"
+# Tools to protect your files
+cask "gpg-suite-no-mail"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# PHP IDE by JetBrains
+cask "phpstorm"
+# Collaboration platform for API development
+cask "postman"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Native GUI tool for relational databases
+cask "tableplus"
+# Automatic time and productivity tracking app
+cask "timing"
+# Open-source code editor
+cask "visual-studio-code"
+vscode "bradlc.vscode-tailwindcss"
+vscode "esbenp.prettier-vscode"
+vscode "mikestead.dotenv"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-containers"
+vscode "pkief.material-icon-theme"
+vscode "redhat.vscode-xml"
+vscode "sleistner.vscode-fileutils"
+vscode "vue.volar"
+npm "@playwright/mcp"
+npm "@sentry/mcp-server"
+npm "mcp-remote"
+npm "todoist-mcp-server"

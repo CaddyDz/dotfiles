@@ -1,0 +1,7 @@
+/opt/homebrew/lib
+├── @playwright/mcp@0.0.83
+├── @sentry/mcp-server@0.42.0
+├── mcp-remote@0.1.38
+├── npm@11.20.0
+└── todoist-mcp-server@1.0.7
+

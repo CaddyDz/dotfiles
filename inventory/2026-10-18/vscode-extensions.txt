@@ -1,0 +1,12 @@
+bradlc.vscode-tailwindcss
+esbenp.prettier-vscode
+mikestead.dotenv
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+ms-vscode-remote.remote-containers
+pkief.material-icon-theme
+redhat.vscode-xml
+sleistner.vscode-fileutils
+vue.volar
