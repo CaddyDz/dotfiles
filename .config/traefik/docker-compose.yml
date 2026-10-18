@@ -1,0 +1,24 @@
+name: traefik
+
+services:
+  traefik:
+    container_name: traefik
+    image: traefik:v2.11
+    command:
+      - '--api.dashboard=true'
+      - '--api.insecure=true'
+      - '--providers.docker=true'
+      - '--providers.docker.endpoint=unix:///var/run/docker.sock'
+      - '--providers.docker.exposedbydefault=false'
+      - '--entrypoints.web.address=:80'
+    ports:
+      - '80:80'
+      - '127.0.0.1:8080:8080'
+    volumes:
+      - /Users/caddy/.docker/run/docker.sock:/var/run/docker.sock
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true

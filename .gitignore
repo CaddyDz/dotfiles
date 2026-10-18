@@ -11,6 +11,7 @@
 !.config/gh/config.yml
 !.config/htop/
 !.config/neofetch/
+!.config/traefik/
 
 # Docker
 .docker/*
