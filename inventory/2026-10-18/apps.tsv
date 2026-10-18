@@ -1,0 +1,22 @@
+source	app	bundle_id	version
+cask	Claude.app	com.anthropic.claudefordesktop	2.42304.0
+mas	Dark Reader for Safari.app	org.darkreader.DarkReaderSafari	2.1.11
+cask	Docker.app	com.docker.docker	4.95.0
+cask	Google Chrome.app	com.google.Chrome	155.0.8059.80
+manual	GPG Keychain.app	org.gpgtools.gpgkeychain	1.12
+mas	GRIDLegends.app	com.feralinteractive.gridlegends	1.0
+cask	iTerm.app	com.googlecode.iterm2	3.7.4
+manual	Microsoft Teams.app	com.microsoft.teams2	26225.1706.5101.3140
+cask	Obsidian.app	md.obsidian	1.14.4
+cask	PhpStorm.app	com.jetbrains.PhpStorm	2026.2.3
+cask	Postman.app	com.postmanlabs.mac	12.32.4
+cask	Rectangle.app	com.knollsoft.Rectangle	2.0
+apple	Safari.app	com.apple.Safari	27.0.1
+cask	TablePlus.app	com.tinyapp.TablePlus	27.0.2
+mas	Termius.app	com.termius.mac	10.2.1
+cask	Timing.app	info.eurocomp.Timing2	2026.5.2
+mas	Todoist.app	com.todoist.mac.Todoist	9.31.0
+cask	Visual Studio Code.app	com.microsoft.VSCode	1.141.2
+mas	WireGuard.app	com.wireguard.macos	1.0.16
+mas	Xcode.app	com.apple.dt.Xcode	27.1
+manual	Claude Code URL Handler.app	com.anthropic.claude-code-url-handler	?

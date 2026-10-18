@@ -1,0 +1,5 @@
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+Architecture: arm64
+Login shell: /bin/zsh

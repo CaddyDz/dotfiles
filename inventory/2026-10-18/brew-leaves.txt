@@ -1,0 +1,13 @@
+fastfetch
+gh
+glab
+htop
+node
+omlahore/tap/removemacai
+openssl@3
+rsync
+sshpass
+tree
+watch
+wireguard-tools
+xcodegen

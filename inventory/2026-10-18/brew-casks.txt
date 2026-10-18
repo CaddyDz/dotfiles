@@ -1,0 +1,15 @@
+claude
+cursor-cli
+docker-desktop
+google-chrome
+gpg-suite-no-mail
+iterm2
+microsoft-auto-update
+microsoft-teams
+obsidian
+phpstorm
+postman
+rectangle
+tableplus
+timing
+visual-studio-code

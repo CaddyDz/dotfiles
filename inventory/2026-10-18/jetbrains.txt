@@ -1,0 +1,10 @@
+bl
+consentOptions
+crl
+Daemon
+discovery
+Phpstorm
+PhpStorm2024.2
+PhpStorm2024.3
+PhpStorm2026.2
+PrivacyPolicy
