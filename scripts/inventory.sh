@@ -88,8 +88,9 @@ echo "• System"
 
 echo "• Homebrew"
 if have brew; then
-	# Includes `mas` and `vscode` lines when those tools are installed
-	brew bundle dump --describe --force --file="$out/Brewfile" ||
+	# Describes each entry and includes `mas`, `vscode` and `npm` lines when
+	# those tools are installed. Homebrew 7 rejects the old --describe flag.
+	brew bundle dump --force --file="$out/Brewfile" ||
 		echo "# brew bundle dump failed" >"$out/Brewfile"
 	capture "$out/brew-taps.txt" brew tap
 	capture "$out/brew-leaves.txt" brew leaves --installed-on-request
