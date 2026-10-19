@@ -4,7 +4,7 @@
 [user]
 	name = Salim Djerbouh
 	email = 13698160+CaddyDz@users.noreply.github.com
-	signingkey = 5305E49F7B960ED2
+ 	signingkey = /Users/caddy/.ssh/id_ed25519.pub
 [core]
 	editor = vim
 	autocrlf = false
@@ -23,3 +23,5 @@
 	gpgsign = true
 [submodule]
 	recurse = true
+[gpg]
+	format = ssh
