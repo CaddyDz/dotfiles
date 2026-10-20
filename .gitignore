@@ -4,7 +4,8 @@
 *.log.*
 .DS_Store
 
-# ~/.config is symlinked here; only track real config, never app state or auth
+# Entries of ~/.config are linked here one by one (see links); only track real
+# config, never app state or auth
 .config/*
 !.config/gh/
 .config/gh/*
