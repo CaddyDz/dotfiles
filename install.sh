@@ -49,8 +49,13 @@ function installOMZ() {
     # Install zsh
     echo 'Install oh-my-zsh'
     echo '-----------------'
-    rm -rf $HOME/.oh-my-zsh
-    curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+    if [ -d "$HOME/.oh-my-zsh" ]; then
+        echo "oh-my-zsh already installed."
+        return
+    fi
+    # Don't start a new zsh, change the login shell or replace .zshrc
+    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh |
+        RUNZSH=no CHSH=no KEEP_ZSHRC=yes sh -s -- --unattended
 }
 
 function cloneRepo() {
@@ -58,13 +63,8 @@ function cloneRepo() {
 }
 
 function symLinkDotFiles() {
-    ln -sf $HOME/Code/dotfiles/.vimrc
-    ln -sf $HOME/Code/dotfiles/.env $HOME/.env
-    ln -sf $HOME/Code/dotfiles/.zshrc $HOME/.zshrc
-    ln -sf $HOME/Code/dotfiles/.aliases $HOME/.aliases
-    ln -sf $HOME/Code/dotfiles/.gitconfig $HOME/.gitconfig
-    ln -sf $HOME/Code/dotfiles/.functions.sh $HOME/.functions.sh
-    ln -sf $HOME/Code/dotfiles/.gitignore_global $HOME/.gitignore_global
+    # Links everything listed in the `links` manifest, backing up real files
+    $HOME/Code/dotfiles/scripts/link.sh
 }
 
 function installAll() {

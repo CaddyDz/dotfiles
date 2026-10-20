@@ -1,0 +1,38 @@
+# Symlinks that scripts/link.sh creates, one per line:
+#
+#   <source in this repo>  ->  <target under $HOME>
+#
+# A directory source links the whole directory. Blank lines and # comments are
+# ignored. Paths may contain spaces; " -> " separates the two sides.
+
+# zsh
+.zshrc -> .zshrc
+.env -> .env
+.aliases -> .aliases
+.functions.sh -> .functions.sh
+.oh-my-zsh/themes/caddy.zsh-theme -> .oh-my-zsh/custom/themes/caddy.zsh-theme
+.oh-my-zsh/themes/claude.zsh-theme -> .oh-my-zsh/custom/themes/claude.zsh-theme
+
+# git
+.gitconfig -> .gitconfig
+.gitignore_global -> .gitignore_global
+
+# editors
+.vimrc -> .vimrc
+.vim -> .vim
+.prettierrc -> .prettierrc
+vscode/keybindings.json -> Library/Application Support/Code/User/keybindings.json
+vscode/keybindings.json -> Library/Application Support/Cursor/User/keybindings.json
+
+# ssh: private hosts stay in ~/.ssh/config.local, which the tracked config includes
+.ssh/config -> .ssh/config
+
+# docker: only the two files, the rest of ~/.docker is app state
+.docker/config.json -> .docker/config.json
+.docker/daemon.json -> .docker/daemon.json
+
+# ~/.config, per entry: gh/hosts.yml holds the auth token and stays out of the repo
+.config/gh/config.yml -> .config/gh/config.yml
+.config/htop -> .config/htop
+.config/neofetch -> .config/neofetch
+.config/traefik -> .config/traefik
