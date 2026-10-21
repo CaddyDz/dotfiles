@@ -1,6 +1,6 @@
 # Inventory manifest
 
-What the bootstrap installs and configures on a new Mac, and what it leaves out. Every row comes from the [2026-10-18 snapshot](2026-10-18/) (`scripts/inventory.sh`) or from the read-only review of that snapshot. Later tasks build from this file: the Brewfile (T10), oh-my-zsh (T11), links (T13), `install/60-macos.sh` (T14), app preferences (T15) and secrets (T16).
+What the bootstrap installs and configures on a new Mac, and what it leaves out. Every row comes from the [2026-10-18 snapshot](2026-10-18/) (`scripts/inventory.sh`) or from the read-only review of that snapshot, and the `defaults` keys also from a comparison with the reinstalled Mac. Later tasks build from this file: the Brewfile (T10), oh-my-zsh (T11), links (T13), `install/60-macos.sh` (T14), app preferences (T15) and secrets (T16).
 
 The snapshot predates the 2026-10 clean reinstall (Monterey → Ventura → Tahoe). The Mac now runs macOS Tahoe 26.7.1, which is the floor: Xcode needs 26.6 or later and Docker Desktop supports only the current release and the two before it. Xcode 27.1 is installed and active, and the host names from `hostnames.txt` are applied. Commit signing moved from GPG to SSH, so every GPG item below is dropped.
 
@@ -37,7 +37,7 @@ This repo is public. Values that could identify the machine or its owner stay in
 | `auto` | Created by another item's installer. No row of its own in the bootstrap |
 | `drop` | Not reproduced |
 | `none` | Nothing to reproduce |
-| `pending` | Waiting on the `defaults` diff subtask (see [macOS defaults](#macos-defaults)) |
+| `manual T14` | Set by hand from a checklist in that task. The keys aren't stable enough to write |
 
 ## Apps
 
@@ -253,27 +253,43 @@ From the per-app `defaults` domains in `private/defaults/`. None of their values
 
 526 user domains and 40 `-currentHost` domains were exported. Everything outside the list below is app or system state: `drop`.
 
-The domains below hold real preferences. Which **keys** to keep is `pending` until the subtask *Capture `defaults` diffs for trackpad, keyboard, Finder, menu bar and Mission Control* has run: a key the diff shows you changed is `keep T14`, and a key that matches the macOS default is `drop`. Until then, these are candidates with their current values.
+The keys were classified on 2026-10-21 by comparing the snapshot with the clean Tahoe install from 2026-10-19, which stands in for macOS's own defaults:
 
-| Domain | Candidate keys (current value) | Action |
-|---|---|---|
-| NSGlobalDomain | `KeyRepeat` 2, `InitialKeyRepeat` 30, `NSAutomaticSpellingCorrectionEnabled` / `WebAutomaticSpellingCorrectionEnabled` false, `NSAutomaticQuoteSubstitutionEnabled` / `NSAutomaticDashSubstitutionEnabled` / `NSAutomaticPeriodSubstitutionEnabled` false, `NSAutomaticCapitalizationEnabled` true, `NSAutomaticTextCompletionEnabled` true, `AppleInterfaceStyleSwitchesAutomatically` true, `AppleICUForce24HourTime` true, `AppleFirstWeekday` Monday, metric units and Celsius, `AppleKeyboardUIMode` 2, `AppleActionOnDoubleClick` Fill, `com.apple.keyboard.fnState` false, `com.apple.trackpad.scaling` 0.875, `com.apple.trackpad.forceClick` false, `com.apple.sound.uiaudio.enabled` 0, `com.apple.sound.beep.sound` Blow, `NSQuitAlwaysKeepsWindows` true, `NSTableViewDefaultSizeMode` 2, `UIPreferredContentSizeCategoryName` XL | `pending` |
-| NSGlobalDomain, `-currentHost` | `com.apple.mouse.tapBehavior` 1, `com.apple.trackpad.*` gestures (mirrors the trackpad domains) | `pending` |
-| com.apple.AppleMultitouchTrackpad, com.apple.driver.AppleBluetoothMultitouch.trackpad | `Clicking` true, `TrackpadRightClick` true, `TrackpadThreeFingerDrag` false, `Dragging` off, `FirstClickThreshold` 1, `ActuationStrength` 0, 3- and 4-finger swipes = Spaces/Mission Control, `TrackpadTwoFingerDoubleTapGesture` 1. Write both domains | `pending` |
-| com.apple.AppleMultitouchMouse, com.apple.driver.AppleBluetoothMultitouch.mouse | `MouseButtonMode` OneButton, `MouseTwoFingerDoubleTapGesture` 3, `MouseTwoFingerHorizSwipeGesture` 2 | `pending` |
-| com.apple.dock | `autohide` true, `tilesize` 64, `magnification` true with `largesize` 30 (smaller than `tilesize`, so it has no effect), `show-recents` false, `launchanim` false, `minimize-to-application` true, `showAppExposeGestureEnabled` false, `wvous-br-corner` 1. `mru-spaces` is unset (Spaces rearrange themselves) | `pending` |
-| com.apple.finder | `FXPreferredViewStyle` icnv, `FXDefaultSearchScope` SCcf, `FXEnableExtensionChangeWarning` false, `FXRemoveOldTrashItems` true, `WarnOnEmptyTrash` false, `NewWindowTarget` PfHm, `ShowExternalHardDrivesOnDesktop` / `ShowRemovableMediaOnDesktop` true, `ShowHardDrivesOnDesktop` / `ShowMountedServersOnDesktop` false, `ShowRecentTags` false, `FontSizeCategory` L. iCloud Desktop & Documents is an iCloud setting, not a key to write | `pending` |
-| com.apple.screencapture | `style` window, `target-screenshot` file. `location` and `type` are unset (Desktop, PNG) | `pending` |
-| com.apple.menuextra.clock | `Show24Hour` true, `ShowDayOfWeek` true, `ShowDayOfMonth` true, `ShowSeconds` false | `pending` |
-| com.apple.controlcenter (and `-currentHost`) | Menu bar items: Bluetooth, Now Playing, Screen Mirroring, FaceTime hidden; `BatteryShowPercentage` false. The visibility integers change between macOS releases | `pending` |
-| com.apple.WindowManager | `GloballyEnabled` false (Stage Manager off), `EnableStandardClickToShowDesktop` false, `EnableTiledWindowMargins` false, `StandardHideWidgets` true | `pending` |
-| com.apple.HIToolbox | Enabled input sources and `AppleFnUsageType` 2. Values in the private export | `pending` |
-| com.apple.symbolichotkeys | 95 shortcuts, 24 disabled. Write only the IDs the diff shows changed | `pending` |
-| com.apple.screensaver, `-currentHost` | `idleTime` 0 (never), `showClock` true | `pending` |
-| com.apple.loginwindow | `TALLogoutSavesState` false | `pending` |
-| com.apple.universalaccess | Only default values seen. No candidates | `drop` |
-| com.apple.spaces | Only the live Spaces layout | `drop` |
-| com.apple.desktopservices | Not set. `DSDontWriteNetworkStores` / `DSDontWriteUSBStores` would be new settings, not restored ones | `drop` |
-| com.apple.SoftwareUpdate | Only notification state | `drop` |
-| com.apple.LaunchServices | About 60 default-app handlers in the live file (not in the snapshot), many for removed apps. A curated `duti` list would be new work, not a restore | `drop` |
-| com.apple.Safari, com.apple.TextEdit | Empty exports. Their preferences are in sandbox containers, out of reach of `defaults` | `drop` |
+- A key that still has its snapshot value is `keep T14`. It was either set again after the reinstall or written by Tahoe itself, and writing it again is harmless either way.
+- A key the reinstall reset is `keep T14` only where the old value was wanted back. Otherwise it is `drop` and stays at Tahoe's default.
+- Units, temperature, first weekday and 24-hour time follow the Region chosen in Setup Assistant: `drop`.
+
+This replaces the per-area `inventory.sh --diff` runs. `--diff` is still the way to find the key behind a setting that isn't listed here. Values in the `keep T14` rows are the ones T14 writes.
+
+| Domain | Keys | Action | Notes |
+|---|---|---|---|
+| NSGlobalDomain | `KeyRepeat` 2, `InitialKeyRepeat` 30, `NSAutomaticSpellingCorrectionEnabled` / `WebAutomaticSpellingCorrectionEnabled` false, `NSAutomaticQuoteSubstitutionEnabled` / `NSAutomaticDashSubstitutionEnabled` / `NSAutomaticPeriodSubstitutionEnabled` false, `NSAutomaticCapitalizationEnabled` true, `AppleInterfaceStyleSwitchesAutomatically` true, `AppleKeyboardUIMode` 2, `com.apple.trackpad.scaling` 0.875, `com.apple.trackpad.forceClick` false, `com.apple.sound.uiaudio.enabled` 0, `NSTableViewDefaultSizeMode` 3 | `keep T14` | `NSTableViewDefaultSizeMode` was 2 in the snapshot. 3 (large sidebar icons) is the current choice |
+| NSGlobalDomain | `AppleICUForce24HourTime`, `AppleFirstWeekday`, `AppleMeasurementUnits`, `AppleMetricUnits`, `AppleTemperatureUnit` | `drop` | The Region sets them |
+| NSGlobalDomain | `NSAutomaticTextCompletionEnabled`, `com.apple.keyboard.fnState`, `com.apple.sound.beep.sound`, `NSQuitAlwaysKeepsWindows`, `UIPreferredContentSizeCategoryName`, `AppleActionOnDoubleClick` | `drop` | |
+| NSGlobalDomain, `-currentHost` | `com.apple.mouse.tapBehavior` 1, and the `com.apple.trackpad.*` gesture keys with the same values as the trackpad domains | `keep T14` | Tap to click needs `tapBehavior` here as well as `Clicking` |
+| com.apple.AppleMultitouchTrackpad, com.apple.driver.AppleBluetoothMultitouch.trackpad | `Clicking` true, `TrackpadRightClick` true, `TrackpadThreeFingerDrag` false, `Dragging` false, `FirstClickThreshold` 1, 3- and 4-finger swipes 2 (Spaces and Mission Control), `TrackpadTwoFingerDoubleTapGesture` 1 | `keep T14` | Write both domains |
+| com.apple.AppleMultitouchTrackpad, com.apple.driver.AppleBluetoothMultitouch.trackpad | `ActuationStrength` | `drop` | Silent clicking stays off |
+| com.apple.AppleMultitouchMouse, com.apple.driver.AppleBluetoothMultitouch.mouse | `MouseButtonMode` OneButton, `MouseTwoFingerDoubleTapGesture` 3, `MouseTwoFingerHorizSwipeGesture` 2 | `keep T14` | Write both domains |
+| com.apple.dock | `autohide` true, `tilesize` 64, `show-recents` false, `launchanim` false, `minimize-to-application` true, `showAppExposeGestureEnabled` false | `keep T14` | The pinned apps are under [Machine settings](#machine-settings) |
+| com.apple.dock | `magnification`, `largesize`, `wvous-br-corner`, `mru-spaces` | `drop` | Magnification had no effect: `largesize` 30 is smaller than `tilesize`. The bottom-right hot corner keeps Tahoe's Quick Note. `mru-spaces` was never set |
+| com.apple.finder | `FXPreferredViewStyle` icnv, `NewWindowTarget` PfHm, `FXDefaultSearchScope` SCcf, `FXEnableExtensionChangeWarning` false, `WarnOnEmptyTrash` false, `FXRemoveOldTrashItems` true, `ShowExternalHardDrivesOnDesktop` / `ShowRemovableMediaOnDesktop` true, `ShowHardDrivesOnDesktop` false, `ShowRecentTags` false | `keep T14` | iCloud Desktop & Documents is an iCloud setting, not a key to write |
+| com.apple.finder | `FontSizeCategory`, `ShowMountedServersOnDesktop` | `drop` | |
+| com.apple.screencapture | `style` window | `keep T14` | `location` and `type` stay unset (Desktop, PNG) |
+| com.apple.screencapture | `target-screenshot` | `drop` | |
+| com.apple.menuextra.clock | `ShowDayOfWeek` true, `ShowDate` 1 (Always) | `keep T14` | Tahoe replaced `ShowDayOfMonth` with `ShowDate` |
+| com.apple.menuextra.clock | `Show24Hour`, `ShowSeconds`, `ShowDayOfMonth` | `drop` | The Region sets 24-hour time |
+| com.apple.controlcenter (and `-currentHost`) | Menu bar items, `BatteryShowPercentage` | `manual T14` | Tahoe stores these under new keys (`NSStatusItem Visible*`, `VisibleCC *`) that change between releases. In System Settings → Menu Bar, hide Bluetooth, Now Playing, Screen Mirroring and FaceTime, and leave the battery percentage off |
+| com.apple.WindowManager | `EnableStandardClickToShowDesktop` false, `StandardHideWidgets` true, `EnableTiledWindowMargins` false | `keep T14` | |
+| com.apple.WindowManager | `GloballyEnabled` | `drop` | Stage Manager is off by default |
+| com.apple.HIToolbox | `AppleEnabledInputSources`, `AppleSelectedInputSources` | `keep T14` | The values stay private. Copy them from this Mac's live domain |
+| com.apple.HIToolbox | `AppleFnUsageType` | `drop` | The Globe key keeps Tahoe's default |
+| com.apple.symbolichotkeys | all | `drop` | The clean install's 19 entries haven't changed since Setup Assistant, so no shortcut was customized again |
+| com.apple.screensaver, `-currentHost` | `idleTime` 0 (never) | `keep T14` | |
+| com.apple.screensaver, `-currentHost` | `showClock` | `drop` | |
+| com.apple.loginwindow | `TALLogoutSavesState` | `drop` | Windows reopen at login, Tahoe's default |
+| com.apple.universalaccess | all | `drop` | Only default values seen |
+| com.apple.spaces | all | `drop` | Only the live Spaces layout |
+| com.apple.desktopservices | none set | `drop` | `DSDontWriteNetworkStores` / `DSDontWriteUSBStores` would be new settings, not restored ones |
+| com.apple.SoftwareUpdate | all | `drop` | Only notification state |
+| com.apple.LaunchServices | all | `drop` | About 60 default-app handlers in the live file (not in the snapshot), many for removed apps. A curated `duti` list would be new work, not a restore |
+| com.apple.Safari, com.apple.TextEdit | all | `drop` | Empty exports. Their preferences are in sandbox containers, out of reach of `defaults` |
