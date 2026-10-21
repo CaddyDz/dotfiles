@@ -31,8 +31,6 @@ cask "docker-desktop"
 cask "font-sf-pro"
 # Web browser
 cask "google-chrome"
-# Tools to protect your files
-cask "gpg-suite-no-mail"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # File system integration
