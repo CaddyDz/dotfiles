@@ -4,7 +4,7 @@ What the bootstrap installs and configures on a new Mac, and what it leaves out.
 
 The snapshot predates the 2026-10 clean reinstall (Monterey → Ventura → Tahoe). The Mac now runs macOS Tahoe 26.7.1, which is the floor: Xcode needs 26.6 or later and Docker Desktop supports only the current release and the two before it. Xcode 27.1 is installed and active, and the host names from `hostnames.txt` are applied. Commit signing moved from GPG to SSH, so every GPG item below is dropped.
 
-`T14` means task 14 of the bootstrap plan (the Todoist project for the *Mac bootstrap v1.0* milestone). `#80` means a GitHub issue in this repo.
+`T14` means task 14 of the bootstrap plan behind the *Mac bootstrap v1.0* milestone. `#80` means a GitHub issue in this repo.
 
 This repo is public. Values that could identify the machine or its owner stay in `2026-10-18/private/` and are only referred to by file name here.
 
