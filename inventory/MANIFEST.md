@@ -2,6 +2,8 @@
 
 What the bootstrap installs and configures on a new Mac, and what it leaves out. Every row comes from the [2026-10-18 snapshot](2026-10-18/) (`scripts/inventory.sh`) or from the read-only review of that snapshot. Later tasks build from this file: the Brewfile (T10), oh-my-zsh (T11), links (T13), `install/60-macos.sh` (T14), app preferences (T15) and secrets (T16).
 
+The snapshot predates the 2026-10 clean reinstall (Monterey → Ventura → Tahoe). The Mac now runs macOS Tahoe 26.7.1, which is the floor: Xcode needs 26.6 or later and Docker Desktop supports only the current release and the two before it. Xcode 27.1 is installed and active, and the host names from `hostnames.txt` are applied. Commit signing moved from GPG to SSH, so every GPG item below is dropped.
+
 `T14` means task 14 of the bootstrap plan (the Todoist project for the *Mac bootstrap v1.0* milestone). `#80` means a GitHub issue in this repo.
 
 This repo is public. Values that could identify the machine or its owner stay in `2026-10-18/private/` and are only referred to by file name here.
@@ -47,7 +49,7 @@ All 21 bundles in `/Applications` and `~/Applications`. The snapshot's `apps.tsv
 | Claude Code URL Handler.app | `drop` † | | The Claude Code CLI recreates it in `~/Applications` |
 | Dark Reader for Safari.app | `mas` | id 1438243180 | No cask (Safari extension) |
 | Docker.app | `cask` | `docker-desktop` | Also creates the `docker*`/`kubectl` links in `/usr/local/bin` and `~/.docker/cli-plugins` |
-| GPG Keychain.app | `drop` † | | Came with the `gpg-suite-no-mail` cask, which is replaced by brew `gnupg` (see [GPG](#homebrew-formulae)) |
+| GPG Keychain.app | `drop` † | | Came with the `gpg-suite-no-mail` cask. Dropped: commit signing moved to SSH, so GPG isn't used at all |
 | Google Chrome.app | `cask` | `google-chrome` | |
 | GRIDLegends.app | `mas` | id 1636273501 | |
 | iTerm.app | `cask` | `iterm2` | Preferences tracked in the repo (T15) |
@@ -86,11 +88,11 @@ The 13 leaves, `lz4` from the dump, and what the config needs but isn't installe
 | openssl@3 | `drop` | Nothing installed uses it. node and rsync use `openssl@4` |
 | omlahore/tap/removemacai | `drop` | Already run on this Mac. Drop the `omlahore/tap` tap with it |
 | git-lfs | `brew` (new) | `.gitconfig` has a `required` lfs filter, but git-lfs isn't installed |
-| gnupg | `brew` (new) | Replaces the `gpg-suite-no-mail` cask (gpg 2.2.41 from 2023). Signs commits. Never install both: `/etc/paths` puts `/usr/local/bin` (GPG Suite's `gpg`) before `/opt/homebrew/bin`, and with `commit.gpgsign = true` a mismatched gpg/pinentry blocks every commit. On this Mac, uninstall GPG Suite when switching |
-| pinentry-mac | `brew` (new) | Passphrase prompt for gnupg (T16) |
+| gnupg | `none` | Dropped. Commit signing uses SSH (`gpg.format = ssh`, key `~/.ssh/id_ed25519.pub`), so no GPG is installed |
+| pinentry-mac | `none` | Dropped with gnupg |
 | mas | `brew` (new) | Needed before any `mas` line runs |
 | dockutil | `brew` (new) | Formula, not a cask. Rebuilds the Dock (T14) |
-| bitwarden-cli | `brew` (new) | Restores SSH/GPG keys (T16) |
+| bitwarden-cli | `brew` (new) | Restores SSH keys (T16). No GPG: commit signing uses SSH |
 
 Taps: drop `homebrew/cask` and `homebrew/core` from the Brewfile. Current Homebrew warns that local clones of them are unnecessary.
 
@@ -104,7 +106,7 @@ The 15 installed casks, the replacements chosen above, and fonts.
 | cursor-cli | `cask` | Replaces the native install in `~/.local/share/cursor-agent`. Provides `cursor-agent` only: the native `agent` and `cursor` shims go away (nothing in the repo uses them) |
 | docker-desktop | `cask` | |
 | google-chrome | `cask` | Creates the Google updater LaunchAgents |
-| gpg-suite-no-mail | `drop` | Replaced by brew `gnupg` + `pinentry-mac` |
+| gpg-suite-no-mail | `drop` | Dropped. Commit signing moved to SSH, so nothing replaces it |
 | iterm2 | `cask` | |
 | microsoft-auto-update | `cask` | The Teams cask leaves Microsoft AutoUpdate out, so it is installed on its own to keep Teams updated |
 | microsoft-teams | `cask` | |
@@ -192,14 +194,14 @@ Values live in the named `private/` file.
 | Touch ID for sudo (`pam-sudo_local.txt`) | `keep T14` | `pam_tid.so` in `/etc/pam.d/sudo_local`, which survives OS updates |
 | `/etc/paths` (`etc-paths.txt`) | `keep T14` | The repo's `etc/paths` is out of date: it lacks `/opt/homebrew/sbin`, the PhpStorm launcher dir and `~/.local/bin`, and has Homebrew after the system dirs |
 | `/etc/paths.d/go` | `drop` | Points at `/usr/local/go/bin`, which doesn't exist. Remove the file |
-| `/etc/paths.d/MacGPG2` | `drop` | Goes away with GPG Suite |
+| `/etc/paths.d/MacGPG2` | `drop` | Came with GPG Suite, which is dropped (signing moved to SSH) |
 | `/etc/paths.d/10-cryptex`, `10-pmk-global`, `100-rvictl` | `apple` | |
 | Computer, local host and host names (`hostnames.txt`) | `keep T14` | `scutil --set` |
 | Power settings (`pmset.txt`) | `keep T14` | Includes `displaysleep 0` on battery and AC |
 | Login items (`login-items.txt`): Rectangle, Timing Tracker | `keep T15` | |
 | Dock layout | `keep T14` | `dockutil` wasn't installed, so `dock.txt` is empty. Pinned apps from `com.apple.dock` in order: Mail, Safari, Docker Desktop (`Docker.app`), Visual Studio Code, Microsoft Teams, Todoist, Music, PhpStorm, Claude, Postman, TablePlus, iTerm, Obsidian. No folders |
 | User LaunchAgents (`launch-agents.txt`) | `auto` | Google updater, from the Chrome cask |
-| System LaunchAgents, LaunchDaemons and privileged helpers | `auto` / `drop` | Docker items come with the `docker-desktop` cask and Microsoft items with `microsoft-auto-update`. The `org.gpgtools.*` agents and `GPGPreferences.prefPane` are removed by `brew uninstall --cask gpg-suite-no-mail`. Oracle Java and macFUSE leftovers are listed above |
+| System LaunchAgents, LaunchDaemons and privileged helpers | `auto` / `drop` | Docker items come with the `docker-desktop` cask and Microsoft items with `microsoft-auto-update`. The `org.gpgtools.*` agents and `GPGPreferences.prefPane` came with GPG Suite, which is dropped. Oracle Java and macFUSE leftovers are listed above |
 | Quick Actions in `~/Library/Services` (three Claude workflows) | `auto` | Probably created by Claude.app. Check on the VM after the cask installs, and add `~/Library/Services` to `inventory.sh` (#80) |
 | crontab | none | Empty |
 | `~/.hushlogin` | `keep T11` | Untracked. `install.sh` creates it today |
@@ -212,9 +214,9 @@ Untracked entries in `~` (`home-dotfiles.txt`) that hold more than cache.
 
 | Entry | Action | Notes |
 |---|---|---|
-| SSH and GPG private keys | `keep T16` | From Bitwarden, never the repo. `~/.ssh` holds more key pairs than `id_ed25519`: decide in T16 which ones to restore |
-| GPG ownertrust | `keep T16` | `gpg --export-ownertrust` into Bitwarden, or set ultimate trust on the key as T16 plans |
-| `~/.gnupg/gpg.conf`, `gpg-agent.conf` | `keep T16` | Not secret. Keep `default-cache-ttl 600` and `max-cache-ttl 7200` when T16 adds the `pinentry-program` line |
+| SSH private keys | `keep T16` | From the encrypted backup, never the repo. Restored by hand after the 2026-10 reinstall: `id_ed25519` (GitHub auth and signing) plus the per-host keys that `~/.ssh/config.local` references. No GPG keys |
+| GPG ownertrust | `drop` | GPG is no longer used. `~/.gnupg` doesn't exist on this Mac |
+| `~/.gnupg/gpg.conf`, `gpg-agent.conf` | `drop` | GPG is no longer used. `~/.gnupg` doesn't exist on this Mac |
 | `~/.ssh/config` | `keep T13` | Already tracked as `.ssh/config` |
 | `~/.ssh/known_hosts` | `drop` | |
 | `~/.docker/config.json`, `daemon.json` | `keep T13` | Already tracked. `daemon.json` sets the builder GC limit |
