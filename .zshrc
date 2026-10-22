@@ -22,5 +22,3 @@ zstyle ':omz:update' mode disabled
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.functions.sh
-# The native Claude Code installer puts `claude` here and updates it in place.
-export PATH="$HOME/.local/bin:$PATH"
