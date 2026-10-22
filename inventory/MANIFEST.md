@@ -88,6 +88,7 @@ The 13 leaves, `lz4` from the dump, and what the config needs but isn't installe
 | openssl@3 | `drop` | Nothing installed uses it. node and rsync use `openssl@4` |
 | omlahore/tap/removemacai | `drop` | Already run on this Mac. Drop the `omlahore/tap` tap with it |
 | git-lfs | `brew` (new) | `.gitconfig` has a `required` lfs filter, but git-lfs isn't installed |
+| git-delta | `brew` (new) | `.gitconfig` pages diffs through `delta` (`core.pager`, `interactive.diffFilter`) with line numbers. Installed 2026-10-22 |
 | gnupg | `none` | Dropped. Commit signing uses SSH (`gpg.format = ssh`, key `~/.ssh/id_ed25519.pub`), so no GPG is installed |
 | pinentry-mac | `none` | Dropped with gnupg |
 | mas | `brew` (new) | Needed before any `mas` line runs |

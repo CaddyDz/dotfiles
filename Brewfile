@@ -6,6 +6,8 @@ tap "homebrew/services"
 brew "fastfetch"
 # GitHub command-line tool
 brew "gh"
+# Syntax-highlighting pager for git, diff, grep, and blame output
+brew "git-delta"
 # Improved top (interactive process viewer)
 brew "htop"
 # Extremely Fast Compression algorithm
