@@ -17,6 +17,10 @@
 .gitconfig -> .gitconfig
 .gitignore_global -> .gitignore_global
 
+# Claude Code: rules every session loads, in every repository. The file, not
+# ~/.claude/rules, so a machine can keep private rules next to it
+.claude/rules/git-and-prs.md -> .claude/rules/git-and-prs.md
+
 # editors
 .vimrc -> .vimrc
 .vim -> .vim
