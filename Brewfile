@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "openai/tools"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # GitHub command-line tool
@@ -24,6 +25,10 @@ brew "tree"
 brew "watch"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Software networking with isolation for Tart
+brew "openai/tools/softnet", trusted: true
+# Run macOS and Linux VMs on Apple Hardware
+brew "openai/tools/tart", trusted: true
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Write, edit, and chat about your code with AI

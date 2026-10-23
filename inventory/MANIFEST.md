@@ -94,8 +94,10 @@ The 13 leaves, `lz4` from the dump, and what the config needs but isn't installe
 | mas | `brew` (new) | Needed before any `mas` line runs |
 | dockutil | `brew` (new) | Formula, not a cask. Rebuilds the Dock (T14) |
 | bitwarden-cli | `brew` (new) | Restores SSH keys (T16). No GPG: commit signing uses SSH |
+| openai/tools/tart | `brew` | Runs the test VMs. Installed after the snapshot. Its old `cirruslabs/cli` tap is dead (stuck at 2.32.1, and current Homebrew rejects its formula) |
+| openai/tools/softnet | `brew` | Tart's dependency. Listed only so its line can carry `trusted: true`: Homebrew won't load a formula from an untrusted tap, dependencies included |
 
-Taps: drop `homebrew/cask` and `homebrew/core` from the Brewfile. Current Homebrew warns that local clones of them are unnecessary.
+Taps: drop `homebrew/cask` and `homebrew/core` from the Brewfile. Current Homebrew warns that local clones of them are unnecessary. Add `openai/tools` for Tart, and trust only its two formulae (`trusted: true`), not the whole tap.
 
 ## Homebrew casks
 
