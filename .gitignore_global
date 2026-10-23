@@ -2,3 +2,4 @@
 /vendor
 *.pub
 **/.claude/settings.local.json
+**/.claude/worktrees/
