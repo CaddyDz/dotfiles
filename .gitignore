@@ -19,5 +19,9 @@
 !.docker/config.json
 !.docker/daemon.json
 
+# Claude Code: only the shared rules, never session state or worktrees
+.claude/*
+!.claude/rules/
+
 # scripts/inventory.sh output that can hold personal data; this repo is public
 inventory/*/private/
